@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+div.navigation.create a[href='/workout.planner/create'] {
+    color: $activeLinkColor;
+}
+
+div.navigation.edit a[href='/workout.planner/edit'] {
+    color: $activeLinkColor;
+}
