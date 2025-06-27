@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Tabs, type TabsProps } from 'antd';
+import { Button, Tabs, type TabsProps } from 'antd';
 
 import { setClassName } from '../model/navigation';
 
@@ -15,11 +15,21 @@ export function Navigation() {
         },
         {
             key: '2',
-            label: <Link to='/workout.planner/create'>Написать новый</Link>
+            label:
+                <Link to='/workout.planner/create'>
+                    <Button variant='filled' color='blue'>
+                        Написать новый
+                    </Button>
+                </Link>
         },
         {
             key: '3',
-            label: <Link to='/workout.planner/edit'>Изменить существующий</Link>
+            label:
+                <Link to='/workout.planner/edit'>
+                    <Button variant='filled' color='purple'>
+                        Изменить существующий
+                    </Button>
+                </Link>
         }
     ];
 
