@@ -23,9 +23,10 @@ export enum MuscleGroup {
     Biceps = 'Бицепс'
 };
 
-interface Attempt {
-    times: number,
-    weight: number
+export interface Attempt {
+    number: number,
+    times: number | null,
+    weight: number | null
 };
 
 interface Exercise {
