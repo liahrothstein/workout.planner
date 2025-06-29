@@ -1,0 +1,1 @@
+export { exerciseSilce, pushExercise } from './exercise-slice';

@@ -1,7 +1,9 @@
 import { TrainingType } from "../../../shared/types/workout";
 import type {
     TrainingTypeOption,
-    TrainingTypeCascaderProps
+    TrainingTypeCascaderProps,
+    CardioCascaderProps,
+    CardioOption
 } from "../../../shared/types/cascader";
 
 const trainingTypeOptions: TrainingTypeOption[] = [
@@ -39,3 +41,23 @@ export const trainingTypeCascaderProps: TrainingTypeCascaderProps = {
     options: trainingTypeOptions,
     placeholder: 'Вид тренировки'
 };
+
+const cardioOptions: CardioOption[] = [
+    {
+        value: 'Эллипс',
+        label: 'Эллипс'
+    },
+    {
+        value: 'Беговая дорожка',
+        label: 'Беговая дорожка'
+    },
+    {
+        value: 'Велотренажёр',
+        label: 'Велотренажёр'
+    }
+];
+
+export const cardioCascaderProps: CardioCascaderProps = {
+    options: cardioOptions,
+    placeholder: 'Кардиотренировка'
+}

@@ -34,5 +34,14 @@ export interface TrainingTypeCascaderProps {
     placeholder: string
 }
 
+export interface CardioOption {
+    value: string;
+    label: string;
+}
+export interface CardioCascaderProps {
+    options: CardioOption[],
+    placeholder: string
+}
+
 export type SetTimes = Dispatch<SetStateAction<number | null>>;
 export type SetWeight = Dispatch<SetStateAction<number | null>>;

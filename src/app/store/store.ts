@@ -1,17 +1,16 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import { } from '../../shared/lib/slices';
+import { exerciseSilce } from '../../shared/lib/slices/index';
 
 const rootReducer = combineReducers({
-    
+    exercise: exerciseSilce.reducer
 });
 
 export function setupStore() {
     return (
         configureStore({
             reducer: rootReducer,
-            middleware: (getDefaultMiddleware) => (getDefaultMiddleware()
-            )
+            middleware: (getDefaultMiddleware) => (getDefaultMiddleware())
         })
     )
 };
