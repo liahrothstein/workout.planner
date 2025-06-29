@@ -1,6 +1,6 @@
 import { exercises } from '@constants/exercises';
-import type { SetTimes, SetWeight, TrainingTypeCascaderProps } from '../../../shared/types/cascader';
-import type { ExerciseArray } from '../../../shared/types/exercise';
+import type { SetTimes, SetWeight, ExerciseCascaderProps } from '../../../shared/types/cascader';
+import type { ExerciseArray, ExerciseWithAttmepts } from '../../../shared/types/exercise';
 import type { Attempt } from '../../../shared/types/workout';
 
 function exercisesChildren(array: string[]): any {
@@ -29,7 +29,7 @@ function exerciseArray(array: ExerciseArray[]) {
 
 const exercisesOptions: any[] = exerciseArray(exercises);
 
-export const exercisesCascaderProps: TrainingTypeCascaderProps = {
+export const exercisesCascaderProps: ExerciseCascaderProps = {
     options: exercisesOptions,
     placeholder: 'Упражнение'
 };
@@ -93,7 +93,7 @@ export function pushAttempt(attempts: Attempt[], times: number | null, weight: n
         weight: null
     };
     let array: Attempt[] = attempts;
-    
+
     if (times) {
         attempt.times = times
     }
@@ -103,4 +103,11 @@ export function pushAttempt(attempts: Attempt[], times: number | null, weight: n
     array[num] = attempt;
 
     return (array)
+};
+
+export function editExerciseWithAttempt(exercise: string[] | null | undefined, attempt: Attempt[]): ExerciseWithAttmepts {
+    return ({
+        attempts: attempt,
+        exercise: exercise
+    })
 }

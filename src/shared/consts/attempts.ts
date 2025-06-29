@@ -1,3 +1,4 @@
+import type { ExerciseWithAttmepts } from "../types/exercise";
 import type { Attempt } from "../types/workout";
 
 export const attempts: number[] = [1, 2, 3, 4, 5];
@@ -10,4 +11,10 @@ attempts.forEach((num) => {
         weight: null
     })
 });
-export { initAttempt };
+
+const initExerciseWithAttempt: ExerciseWithAttmepts = {
+    exercise: null,
+    attempts: initAttempt
+};
+
+export { initAttempt, initExerciseWithAttempt };

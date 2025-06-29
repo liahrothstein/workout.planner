@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Cascader, InputNumber, Typography } from 'antd';
 
-import { attempts, initAttempt } from '@constants/attempts';
-import { exercisesCascaderProps, pushAttempt, setTimes, setWeight } from '../model/exercise';
+import { attempts, initAttempt, initExerciseWithAttempt } from '@constants/attempts';
+import { editExerciseWithAttempt, exercisesCascaderProps, pushAttempt, setTimes, setWeight } from '../model/exercise';
 
 import type { Attempt } from '../../../shared/types/workout';
+import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
 
 import './Exercise.scss';
 
@@ -21,38 +22,29 @@ export function Exercise() {
     const [weight4, setWeight4] = useState<number | null>(null);
     const [weight5, setWeight5] = useState<number | null>(null);
 
+    const [exercise, setExercise] = useState<string[] | null | undefined>(null);
     const [attempt, setAttempt] = useState<Attempt[]>(initAttempt);
+    const [exerciseWithAttempt, setExerciseWithAttempt] = useState<ExerciseWithAttmepts>(initExerciseWithAttempt);
 
     useEffect(() => {
         setAttempt(pushAttempt(attempt, times1, weight1, 0))
-    }, [
-        times1,
-        weight1
-    ]);
+    }, [times1, weight1]);
     useEffect(() => {
         setAttempt(pushAttempt(attempt, times2, weight2, 1))
-    }, [
-        times2,
-        weight2
-    ]);
+    }, [times2, weight2]);
     useEffect(() => {
         setAttempt(pushAttempt(attempt, times3, weight3, 2))
-    }, [
-        times3,
-        weight3
-    ]);
+    }, [times3, weight3]);
     useEffect(() => {
         setAttempt(pushAttempt(attempt, times4, weight4, 3))
-    }, [
-        times4,
-        weight4
-    ]);
+    }, [times4, weight4]);
     useEffect(() => {
         setAttempt(pushAttempt(attempt, times5, weight5, 4))
-    }, [
-        times5,
-        weight5
-    ]);
+    }, [times5, weight5]);
+
+    useEffect(() => {
+        setExerciseWithAttempt(editExerciseWithAttempt(exercise, attempt))
+    }, [exercise, attempt]);
 
     const { Text } = Typography;
 
@@ -60,7 +52,8 @@ export function Exercise() {
         <div className="exercise">
             <Cascader
                 options={exercisesCascaderProps.options}
-                placeholder={exercisesCascaderProps.placeholder} />
+                placeholder={exercisesCascaderProps.placeholder}
+                onChange={(value) => { setExercise(value) }} />
             {attempts.map((num) => (
                 <div className="attempt" key={num}>
                     <Text keyboard={true}>{`Подход ${num}`}</Text>
@@ -69,13 +62,13 @@ export function Exercise() {
                         min={1}
                         max={20}
                         placeholder='Количество повторений'
-                        onChange={(e) => { setTimes(num, setTimes1, setTimes2, setTimes3, setTimes4, setTimes5)(e) }} />
+                        onChange={(value) => { setTimes(num, setTimes1, setTimes2, setTimes3, setTimes4, setTimes5)(value) }} />
                     <InputNumber
                         className='weight'
                         min={0}
                         max={500}
                         placeholder='Вес'
-                        onChange={(e) => { setWeight(num, setWeight1, setWeight2, setWeight3, setWeight4, setWeight5)(e) }} />
+                        onChange={(value) => { setWeight(num, setWeight1, setWeight2, setWeight3, setWeight4, setWeight5)(value) }} />
                 </div>
             ))}
         </div>

@@ -12,10 +12,21 @@ export interface ExerciseFirstLevelOption {
     children?: ExerciseSecondLevelOption[];
 }
 
+export interface ExerciseOption {
+    value: string;
+    label: string;
+    children?: ExerciseOption[];
+}
+
 export interface TrainingTypeOption {
     value: TrainingType;
     label: TrainingType;
     children?: TrainingTypeOption[];
+}
+
+export interface ExerciseCascaderProps {
+    options: ExerciseOption[],
+    placeholder: string
 }
 
 export interface TrainingTypeCascaderProps {
