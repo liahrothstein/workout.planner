@@ -1,0 +1,50 @@
+import type { Attempt } from "../../../shared/types/workout";
+
+export function titleCheck(exercise: string[] | null | undefined): string {
+    if (exercise) {
+        return (exercise[1])
+    } else {
+        return ('Пусто')
+    }
+};
+
+export const columns = [
+    {
+        title: 'Подходы',
+        dataIndex: 'attempts',
+        key: 'attempts',
+    },
+    {
+        title: 'Количество повторений',
+        dataIndex: 'times',
+        key: 'times',
+    },
+    {
+        title: 'Вес',
+        dataIndex: 'weight',
+        key: 'weight',
+    }
+];
+
+export function generateDataSource(attempts: Attempt[]) {
+    let tempArray = new Array();
+
+    function checkNumber(number: number | null): string {
+        if (number === null) {
+            return ('⎯')
+        } else {
+            return (`${number}`)
+        }
+    };
+
+    attempts.forEach((attempt) => {
+        tempArray.push({
+            key: `${attempt.number}`,
+            attempts: `Подход ${attempt.number}`,
+            times: checkNumber(attempt.times),
+            weight: checkNumber(attempt.weight)
+        })
+    });
+
+    return (tempArray);
+}
