@@ -105,31 +105,39 @@ export function addExersice(
     weight4: number | null,
     weight5: number | null
 ): void {
+    function checkNumber(number: number | null): number | null {
+        if (number) {
+            return (number)
+        } else {
+            return (null)
+        }
+    };
+
     let attempts: Attempt[] = [
         {
             number: 1,
-            times: times1,
-            weight: weight1
+            times: checkNumber(times1),
+            weight: checkNumber(weight1)
         },
         {
             number: 2,
-            times: times2,
-            weight: weight2
+            times: checkNumber(times2),
+            weight: checkNumber(weight2)
         },
         {
             number: 3,
-            times: times3,
-            weight: weight3
+            times: checkNumber(times3),
+            weight: checkNumber(weight3)
         },
         {
             number: 4,
-            times: times4,
-            weight: weight4
+            times: checkNumber(times4),
+            weight: checkNumber(weight4)
         },
         {
             number: 5,
-            times: times5,
-            weight: weight5
+            times: checkNumber(times5),
+            weight: checkNumber(weight5)
         }
     ];
 
