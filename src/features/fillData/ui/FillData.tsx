@@ -13,7 +13,6 @@ import './FillData.scss';
 
 export function FillData() {
     const exercises: ExerciseWithAttmepts[] = useAppSelector((state) => (state.exercise));
-    console.log(exercises)
 
     return (
         <>
@@ -23,12 +22,13 @@ export function FillData() {
             <Cardio />
             <AddExercise />
             <div className="preliminaryExercises">
-                {exercises.map((exercise, index) => (
+                {exercises.map((exercise, index, exercises) => (
                     <PreliminaryExercise
                         key={index + 5}
                         exercise={exercise.exercise}
                         attempts={exercise.attempts}
-                        index={index} />
+                        index={index}
+                        exercises={exercises} />
                 ))}
             </div>
         </>

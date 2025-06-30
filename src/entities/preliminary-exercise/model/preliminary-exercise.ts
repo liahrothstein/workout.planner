@@ -1,3 +1,4 @@
+import type { ExerciseWithAttmepts } from "../../../shared/types/exercise";
 import type { Attempt } from "../../../shared/types/workout";
 
 export function titleCheck(exercise: string[] | null | undefined): string {
@@ -47,4 +48,16 @@ export function generateDataSource(attempts: Attempt[]) {
     });
 
     return (tempArray);
+};
+
+export function deleteExercise(index: number, exercises: ExerciseWithAttmepts[]): ExerciseWithAttmepts[] {
+    let tempArray = new Array();
+
+    exercises.forEach((exercise, i) => {
+        if (index !== i) {
+            tempArray.push(exercise)
+        }
+    });
+
+    return (tempArray)
 }
