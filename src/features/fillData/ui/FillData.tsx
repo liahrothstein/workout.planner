@@ -3,6 +3,7 @@ import { Cascader } from 'antd';
 import { AddExercise } from '@entities/add-exercise';
 import { Cardio } from '@entities/cardio';
 import { PreliminaryExercise } from '@entities/preliminary-exercise';
+import { MuscleGroups } from '@entities/muscle-groups';
 
 import { useAppSelector } from '@store/hooks';
 import { trainingTypeCascaderProps } from '../model/fill-data';
@@ -19,6 +20,7 @@ export function FillData() {
             <Cascader
                 options={trainingTypeCascaderProps.options}
                 placeholder={trainingTypeCascaderProps.placeholder} />
+            <MuscleGroups />
             <Cardio />
             <AddExercise />
             <div className="preliminaryExercises">
