@@ -39,3 +39,11 @@ export const trainingTypeCascaderProps: TrainingTypeCascaderProps = {
     options: trainingTypeOptions,
     placeholder: 'Вид тренировки'
 };
+
+export function ejectTrainingType(trainingType: TrainingType[] | undefined | null): TrainingType | string {
+    if ((trainingType === null) || (trainingType === undefined)) {
+        return ('Пусто')
+    } else {
+        return (trainingType[0])
+    }
+};
