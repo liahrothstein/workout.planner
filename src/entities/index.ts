@@ -1,1 +1,2 @@
-export { Exercise } from './exercise';
+export { AddExercise } from './add-exercise';
+export { Cardio } from './cardio';

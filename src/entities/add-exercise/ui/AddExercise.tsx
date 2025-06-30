@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react';
-import { Cascader, InputNumber, Typography } from 'antd';
+import { useState } from 'react';
+import { Button, Cascader, InputNumber, Typography } from 'antd';
+import { PlusOutlined } from '@ant-design/icons';
 
-import { attempts, initAttempt, initExerciseWithAttempt } from '@constants/attempts';
-import { editExerciseWithAttempt, exercisesCascaderProps, pushAttempt, setTimes, setWeight } from '../model/exercise';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
+import { addExersice, exercisesCascaderProps, setTimes, setWeight, attempts } from '../model/add-exercise';
 
-import type { Attempt } from '../../../shared/types/workout';
-import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
+import './AddExercise.scss';
 
-import './Exercise.scss';
+export function AddExercise() {
+    const dispatch = useAppDispatch();
+    const exerciseArray = useAppSelector((state) => (state.exercise));
 
-export function Exercise() {
     const [times1, setTimes1] = useState<number | null>(null);
     const [times2, setTimes2] = useState<number | null>(null);
     const [times3, setTimes3] = useState<number | null>(null);
@@ -23,33 +24,11 @@ export function Exercise() {
     const [weight5, setWeight5] = useState<number | null>(null);
 
     const [exercise, setExercise] = useState<string[] | null | undefined>(null);
-    const [attempt, setAttempt] = useState<Attempt[]>(initAttempt);
-    const [exerciseWithAttempt, setExerciseWithAttempt] = useState<ExerciseWithAttmepts>(initExerciseWithAttempt);
-
-    useEffect(() => {
-        setAttempt(pushAttempt(attempt, times1, weight1, 0))
-    }, [times1, weight1]);
-    useEffect(() => {
-        setAttempt(pushAttempt(attempt, times2, weight2, 1))
-    }, [times2, weight2]);
-    useEffect(() => {
-        setAttempt(pushAttempt(attempt, times3, weight3, 2))
-    }, [times3, weight3]);
-    useEffect(() => {
-        setAttempt(pushAttempt(attempt, times4, weight4, 3))
-    }, [times4, weight4]);
-    useEffect(() => {
-        setAttempt(pushAttempt(attempt, times5, weight5, 4))
-    }, [times5, weight5]);
-
-    useEffect(() => {
-        setExerciseWithAttempt(editExerciseWithAttempt(exercise, attempt))
-    }, [exercise, attempt]);
 
     const { Text } = Typography;
 
     return (
-        <div className="exercise">
+        <div className="addExercise">
             <Cascader
                 options={exercisesCascaderProps.options}
                 placeholder={exercisesCascaderProps.placeholder}
@@ -71,6 +50,9 @@ export function Exercise() {
                         onChange={(value) => { setWeight(num, setWeight1, setWeight2, setWeight3, setWeight4, setWeight5)(value) }} />
                 </div>
             ))}
+            <Button
+                icon={<PlusOutlined />}
+                onClick={() => { addExersice(exerciseArray, dispatch, exercise, times1, times2, times3, times4, times5, weight1, weight2, weight3, weight4, weight5) }}>Добавить упражнение</Button>
         </div>
     )
 }

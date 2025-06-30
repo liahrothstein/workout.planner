@@ -3,16 +3,16 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import type { ExerciseWithAttmepts } from '../../types/exercise';
 
-const initialState = new Array();
+const initialState: any = [];
 
 export const exerciseSilce = createSlice({
     name: 'exercise',
     initialState,
     reducers: {
-        pushExercise: (state, action: PayloadAction<ExerciseWithAttmepts>) => {
-            state.push(action.payload)
+        editExercise: (state, action: PayloadAction<ExerciseWithAttmepts[]>) => {
+            return (action.payload)
         }
     }
 });
 
-export const { pushExercise } = exerciseSilce.actions;
+export const { editExercise } = exerciseSilce.actions;

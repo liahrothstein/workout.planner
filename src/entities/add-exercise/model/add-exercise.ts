@@ -2,6 +2,10 @@ import { exercises } from '@constants/exercises';
 import type { SetTimes, SetWeight, ExerciseCascaderProps } from '../../../shared/types/cascader';
 import type { ExerciseArray, ExerciseWithAttmepts } from '../../../shared/types/exercise';
 import type { Attempt } from '../../../shared/types/workout';
+import type { Dispatch, ThunkDispatch, UnknownAction } from '@reduxjs/toolkit';
+import { editExercise } from '../../../shared/lib/slices';
+
+export const attempts: number[] = [1, 2, 3, 4, 5];
 
 function exercisesChildren(array: string[]): any {
     let tempArray: any = [];
@@ -86,28 +90,53 @@ export function setWeight(
     }
 };
 
-export function pushAttempt(attempts: Attempt[], times: number | null, weight: number | null, num: number): Attempt[] {
-    let attempt: Attempt = {
-        number: (num + 1),
-        times: null,
-        weight: null
-    };
-    let array: Attempt[] = attempts;
+export function addExersice(
+    exerciseArray: ExerciseWithAttmepts[],
+    dispatch: ThunkDispatch<{ exercise: any; }, undefined, UnknownAction> & Dispatch<UnknownAction>,
+    exercise: string[] | null | undefined,
+    times1: number | null,
+    times2: number | null,
+    times3: number | null,
+    times4: number | null,
+    times5: number | null,
+    weight1: number | null,
+    weight2: number | null,
+    weight3: number | null,
+    weight4: number | null,
+    weight5: number | null
+): void {
+    let attempts: Attempt[] = [
+        {
+            number: 1,
+            times: times1,
+            weight: weight1
+        },
+        {
+            number: 2,
+            times: times2,
+            weight: weight2
+        },
+        {
+            number: 3,
+            times: times3,
+            weight: weight3
+        },
+        {
+            number: 4,
+            times: times4,
+            weight: weight4
+        },
+        {
+            number: 5,
+            times: times5,
+            weight: weight5
+        }
+    ];
 
-    if (times) {
-        attempt.times = times
-    }
-    if (weight) {
-        attempt.weight = weight
-    }
-    array[num] = attempt;
-
-    return (array)
-};
-
-export function editExerciseWithAttempt(exercise: string[] | null | undefined, attempt: Attempt[]): ExerciseWithAttmepts {
-    return ({
-        attempts: attempt,
+    let exerciseWithAttempt: ExerciseWithAttmepts = {
+        attempts: attempts,
         exercise: exercise
-    })
+    };
+
+    dispatch(editExercise([...exerciseArray, exerciseWithAttempt]));
 }

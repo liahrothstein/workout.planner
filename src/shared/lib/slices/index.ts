@@ -1,1 +1,1 @@
-export { exerciseSilce, pushExercise } from './exercise-slice';
+export { exerciseSilce, editExercise } from './exercise-slice';
