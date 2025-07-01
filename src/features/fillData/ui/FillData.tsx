@@ -8,15 +8,19 @@ import { MuscleGroups } from '@entities/muscle-groups';
 
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { ejectTrainingType, trainingTypeCascaderProps } from '../model/fill-data';
-import { editTrainingType, setNotes } from '../../../shared/lib/slices';
+import { editTrainingType, setNotes, setWorkout } from '../../../shared/lib/slices';
 
-import type { TrainingType } from '../../../shared/types/workout';
+import type { CardioExercise, MuscleGroup, TrainingType } from '../../../shared/types/workout';
 import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
 
 import './FillData.scss';
 
 export function FillData() {
+    const trainingType: TrainingType | string = useAppSelector((state) => (state.trainingType));
+    const muscleGroups: MuscleGroup[] = useAppSelector((state) => (state.muscleGroups));
     const exercises: ExerciseWithAttmepts[] = useAppSelector((state) => (state.exercise));
+    const cardioExercises: CardioExercise = useAppSelector((state) => (state.cardio));
+    const notes: string = useAppSelector((state) => (state.notes));
     const dispatch = useAppDispatch();
 
     const [trainingTypeArray, setTrainingTypeArray] = useState<TrainingType[] | undefined | null>(null);
@@ -26,6 +30,16 @@ export function FillData() {
     useEffect(() => {
         dispatch(editTrainingType(ejectTrainingType(trainingTypeArray)))
     }, [trainingTypeArray]);
+
+    useEffect(() => {
+        dispatch(setWorkout({
+            trainingType: trainingType,
+            muscleGroups: muscleGroups,
+            exercises: exercises,
+            cardioExercises: cardioExercises,
+            notes: notes
+        }))
+    }, [trainingType, muscleGroups, exercises, cardioExercises, notes]);
 
     return (
         <>

@@ -1,3 +1,5 @@
+import type { ExerciseWithAttmepts } from "./exercise";
+
 export enum CardioType {
     Ellipse = 'Эллипс',
     Treadmill = 'Беговая дорожка',
@@ -41,9 +43,9 @@ export interface CardioExercise {
 };
 
 export interface Workout {
-    trainingType: TrainingType,
+    trainingType: TrainingType | string,
     muscleGroups: MuscleGroup[],
-    exercises: Exercise[],
-    cardioExercises: CardioExercise | null,
+    exercises: ExerciseWithAttmepts[],
+    cardioExercises: CardioExercise,
     notes: string
 }
