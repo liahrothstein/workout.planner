@@ -1,5 +1,5 @@
 import type { Dispatch, SetStateAction } from 'react';
-import { MuscleGroup, TrainingType } from './workout';
+import { CardioType, MuscleGroup, TrainingType } from './workout';
 
 export interface ExerciseSecondLevelOption {
     value: string;
@@ -35,8 +35,8 @@ export interface TrainingTypeCascaderProps {
 }
 
 export interface CardioOption {
-    value: string;
-    label: string;
+    value: CardioType;
+    label: CardioType;
 }
 export interface CardioCascaderProps {
     options: CardioOption[],

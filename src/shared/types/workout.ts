@@ -1,4 +1,4 @@
-export enum Cardio {
+export enum CardioType {
     Ellipse = 'Эллипс',
     Treadmill = 'Беговая дорожка',
     ExerciseBike = 'Велотренажёр'
@@ -34,16 +34,16 @@ interface Exercise {
     attempts: Attempt[]
 };
 
-interface CardioExercise {
-    name: Cardio,
+export interface CardioExercise {
+    name: CardioType | null,
     time: string,
-    rhythm: number
+    rhythm: number | null
 };
 
 export interface Workout {
     trainingType: TrainingType,
     muscleGroups: MuscleGroup[],
     exercises: Exercise[],
-    cardioExercises: CardioExercise[] | null,
+    cardioExercises: CardioExercise | null,
     notes: string
 }
