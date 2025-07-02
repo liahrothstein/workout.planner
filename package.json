@@ -14,6 +14,7 @@
     "@reduxjs/toolkit": "^2.8.2",
     "antd": "^5.26.2",
     "crypto-js": "^4.2.0",
+    "lz-string": "^1.5.0",
     "path": "^0.12.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

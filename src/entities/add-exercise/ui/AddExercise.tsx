@@ -39,7 +39,7 @@ export function AddExercise() {
                     <InputNumber
                         className='times'
                         min={1}
-                        max={20}
+                        max={50}
                         placeholder='Количество повторений'
                         onChange={(value) => { setTimes(num, setTimes1, setTimes2, setTimes3, setTimes4, setTimes5)(value) }} />
                     <InputNumber

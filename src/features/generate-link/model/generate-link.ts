@@ -1,10 +1,12 @@
+import LZString from 'lz-string';
+
 import { workoutUrl } from '@constants/url';
 
 import type { Workout } from '../../../shared/types/workout';
 
 export function generateParams(workout: Workout): string {
     let objString: string = JSON.stringify(workout);
-    let params: string = encodeURIComponent(objString);
+    let params: string = LZString.compressToEncodedURIComponent(objString);
 
     return (params)
 };
