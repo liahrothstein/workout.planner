@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Create, Home } from '@pages/index'
+import { Create, Home, Workout } from '@pages/index'
 
 import type { JSX } from "react";
 
@@ -8,6 +8,6 @@ export const routes: JSX.Element = (
         <Route path="/workout.planner/" element={<Home />} />
         <Route path="/workout.planner/create/" element={<Create />} />
         <Route path="/workout.planner/edit/" />
-        <Route path="/workout.planner/workout/:hash" />
+        <Route path="/workout.planner/workout/" element={<Workout />} />
     </Routes>
 );

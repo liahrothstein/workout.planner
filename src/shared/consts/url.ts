@@ -1,0 +1,1 @@
+export const workoutUrl = new URL('http://localhost:3000/workout.planner/workout/');
