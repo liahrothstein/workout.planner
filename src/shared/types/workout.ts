@@ -44,6 +44,7 @@ export interface CardioExercise {
 
 export interface Workout {
     trainingType: TrainingType | string,
+    workoutNumber: number | null,
     muscleGroups: MuscleGroup[],
     exercises: ExerciseWithAttmepts[],
     cardioExercises: CardioExercise,

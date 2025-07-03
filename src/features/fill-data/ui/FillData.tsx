@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Cascader, Input } from 'antd';
+import { Cascader, Input, InputNumber } from 'antd';
 
 import { AddExercise } from '@entities/add-exercise';
 import { Cardio } from '@entities/cardio';
@@ -23,6 +23,7 @@ export function FillData() {
     const notes: string = useAppSelector((state) => (state.notes));
     const dispatch = useAppDispatch();
 
+    const [workoutNumber, setWorkoutNumber] = useState<number | null>(null);
     const [trainingTypeArray, setTrainingTypeArray] = useState<TrainingType[] | undefined | null>(null);
 
     const { TextArea } = Input;
@@ -34,6 +35,7 @@ export function FillData() {
     useEffect(() => {
         dispatch(setWorkout({
             trainingType: trainingType,
+            workoutNumber: workoutNumber,
             muscleGroups: muscleGroups,
             exercises: exercises,
             cardioExercises: cardioExercises,
@@ -48,6 +50,12 @@ export function FillData() {
                 options={trainingTypeCascaderProps.options}
                 placeholder={trainingTypeCascaderProps.placeholder}
                 onChange={(type) => { setTrainingTypeArray(type) }} />
+            <InputNumber
+                className='workoutNumber'
+                placeholder='№'
+                min={1}
+                max={100}
+                onChange={(e) => { setWorkoutNumber(e) }} />
             <MuscleGroups />
             <Cardio />
             <TextArea

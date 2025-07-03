@@ -5,6 +5,7 @@ import type { Workout } from '../../types/workout';
 
 const initialState: Workout = {
     trainingType: 'Пусто',
+    workoutNumber: null,
     muscleGroups: [],
     exercises: [],
     cardioExercises: {
