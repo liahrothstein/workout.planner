@@ -1,20 +1,11 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 
+import { initWorkout } from '@constants/workout';
+
 import type { Workout } from '../../types/workout';
 
-const initialState: Workout = {
-    trainingType: 'Пусто',
-    workoutNumber: null,
-    muscleGroups: [],
-    exercises: [],
-    cardioExercises: {
-        name: null,
-        time: '',
-        rhythm: null
-    },
-    notes: ''
-};
+const initialState: Workout = initWorkout;
 
 export const workoutSlice = createSlice({
     name: 'workout',
