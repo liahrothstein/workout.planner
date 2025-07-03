@@ -23,7 +23,7 @@ export function PreliminaryExercise({ attempts, exercise, index, exercises }: Pr
     return (
         <Card
             title={titleCheck(exercise)}
-            extra={<Button onClick={() => { dispatch(editExercise(deleteExercise(index, exercises))) }} icon={<DeleteOutlined />} />}>
+            extra={<Button onClick={() => { dispatch(editExercise(deleteExercise(index, exercises))) }} icon={<DeleteOutlined />} color='danger' variant='filled' />}>
             <Table
                 columns={columns}
                 dataSource={generateDataSource(attempts)}

@@ -52,6 +52,8 @@ export function AddExercise() {
             ))}
             <Button
                 icon={<PlusOutlined />}
+                color='primary'
+                variant='solid'
                 onClick={() => { addExersice(exerciseArray, dispatch, exercise, times1, times2, times3, times4, times5, weight1, weight2, weight3, weight4, weight5) }}>Добавить упражнение</Button>
         </div>
     )
