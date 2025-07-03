@@ -1,4 +1,4 @@
-import type { Workout } from "../types/workout";
+import { MuscleGroup, type Workout } from "../types/workout";
 
 export const initWorkout: Workout = {
     trainingType: 'Пусто',
@@ -11,4 +11,13 @@ export const initWorkout: Workout = {
         rhythm: null
     },
     notes: ''
-}
+};
+
+export const muscleGroups: MuscleGroup[] = [
+    MuscleGroup.Shoulders,
+    MuscleGroup.Back,
+    MuscleGroup.Chest,
+    MuscleGroup.Biceps,
+    MuscleGroup.Legs,
+    MuscleGroup.Triceps
+]

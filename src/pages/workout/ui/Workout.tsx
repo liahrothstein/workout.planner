@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
+import { TrainingType, MuscleGroups, Cardio, Notes } from '@widgets/index';
+
 import { workoutParse } from '../model/workout';
 
 import type { Workout } from '../../../shared/types/workout';
@@ -15,6 +17,11 @@ export function Workout() {
     console.log(workout)
 
     return (
-        <div>Workout</div>
+        <div className='workout'>
+            <TrainingType workout={workout} />
+            <MuscleGroups workout={workout} />
+            <Cardio workout={workout} />
+            <Notes workout={workout} />
+        </div>
     )
 }
