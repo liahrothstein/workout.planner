@@ -1,17 +1,15 @@
-import type { Workout } from '../../../shared/types/workout';
-
 import './Notes.scss';
 
 interface NotesProps {
-    workout: Workout
+    notes: string
 };
 
-export function Notes({ workout }: NotesProps) {
+export function Notes({ notes }: NotesProps) {
 
     return (
         <div className='notes'>
             <p className="header">Заметки</p>
-            <p>{workout.notes}</p>
+            <p>{notes}</p>
         </div>
     )
 }

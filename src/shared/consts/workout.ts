@@ -13,7 +13,7 @@ export const initWorkout: Workout = {
     notes: ''
 };
 
-export const muscleGroups: MuscleGroup[] = [
+export const groups: MuscleGroup[] = [
     MuscleGroup.Shoulders,
     MuscleGroup.Back,
     MuscleGroup.Chest,

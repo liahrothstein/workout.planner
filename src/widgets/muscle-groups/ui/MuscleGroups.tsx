@@ -1,26 +1,26 @@
-import { muscleGroups } from '@constants/workout';
+import { groups } from '@constants/workout';
 
 import { groupCheck } from '../model/muscle-groups';
 
-import type { Workout } from '../../../shared/types/workout';
+import type { MuscleGroup } from '../../../shared/types/workout';
 
 import './MuscleGroups.scss';
 
 interface MuscleGroupsProps {
-    workout: Workout
+    muscleGroups: MuscleGroup[]
 };
 
-export function MuscleGroups({ workout }: MuscleGroupsProps) {
+export function MuscleGroups({ muscleGroups }: MuscleGroupsProps) {
 
     return (
         <div className='muscleGroups'>
-            {muscleGroups.map((group) => (
+            {groups.map((group) => (
                 <div className="group" key={group}>
                     <input
                         type="checkbox"
                         name={`${group}`}
                         disabled={true}
-                        checked={groupCheck(workout, group)} />
+                        checked={groupCheck(muscleGroups, group)} />
                     <label
                         htmlFor={`${group}`}
                         className="name">{group}</label>

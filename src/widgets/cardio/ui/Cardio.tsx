@@ -1,12 +1,12 @@
-import type { Workout } from '../../../shared/types/workout';
+import type { CardioExercise } from '../../../shared/types/workout';
 
 import './Cardio.scss';
 
 interface CardioProps {
-    workout: Workout
+    cardioExercises: CardioExercise
 };
 
-export function Cardio({ workout }: CardioProps) {
+export function Cardio({ cardioExercises }: CardioProps) {
 
     return (
         <div className='cardio'>
@@ -21,9 +21,9 @@ export function Cardio({ workout }: CardioProps) {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{workout.cardioExercises.name}</td>
-                        <td>{workout.cardioExercises.time}</td>
-                        <td>{workout.cardioExercises.rhythm}</td>
+                        <td>{cardioExercises.name}</td>
+                        <td>{cardioExercises.time}</td>
+                        <td>{cardioExercises.rhythm}</td>
                     </tr>
                 </tbody>
             </table>

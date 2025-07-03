@@ -14,15 +14,13 @@ export function Workout() {
 
     const [workout, setWorkout] = useState<Workout>(workoutParse(searchParams));
 
-    console.log(workout)
-
     return (
         <div className='workout'>
             <TrainingType workout={workout} />
-            <MuscleGroups workout={workout} />
+            <MuscleGroups muscleGroups={workout.muscleGroups} />
             <ExercisesTable exercises={workout.exercises} />
-            <Cardio workout={workout} />
-            <Notes workout={workout} />
+            <Cardio cardioExercises={workout.cardioExercises} />
+            <Notes notes={workout.notes} />
         </div>
     )
 }
