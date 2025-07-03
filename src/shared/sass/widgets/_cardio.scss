@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+div.cardio {
+    margin-top: 8px;
+
+    p.header {
+        padding-top: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+
+    table.exercise {
+        border-collapse: collapse;
+
+        thead tr th {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        tbody tr td {
+            border: 1px solid $tableBorderColor;
+            font-family: 'Eskal';
+            font-size: 24px;
+            font-weight: bold;
+            color: $cardioTimeAndRhytmColor;
+            text-align: center;
+
+            &:first-child {
+                width: 150px;
+                font-weight: normal;
+                color: $cardioExerciseColor;
+            }
+        }
+    }
+}

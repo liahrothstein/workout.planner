@@ -1,0 +1,16 @@
+div.muscleGroups {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+
+    div.group {
+        display: flex;
+        gap: 8px;
+
+        label.name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            text-transform: lowercase;
+        }
+    }
+}

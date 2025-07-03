@@ -2,7 +2,6 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { Layout } from 'antd';
 
-import { Head } from '@widgets/index';
 import { routes } from './routes';
 
 import { store } from '@store/store';
@@ -15,7 +14,6 @@ export default function App() {
     <Provider store={store}>
       <Layout>
         <BrowserRouter>
-          <Head />
           {routes}
         </BrowserRouter>
       </Layout>

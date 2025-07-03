@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+tr.tableRow td.exercise {
+    border: 1px solid $tableBorderColor;
+    font-family: 'Eskal';
+    font-size: 24px;
+    color: $exerciseNameColor;
+}

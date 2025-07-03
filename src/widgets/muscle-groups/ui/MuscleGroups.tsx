@@ -1,3 +1,5 @@
+import { Checkbox } from 'antd';
+
 import { groups } from '@constants/workout';
 
 import { groupCheck } from '../model/muscle-groups';
@@ -16,13 +18,12 @@ export function MuscleGroups({ muscleGroups }: MuscleGroupsProps) {
         <div className='muscleGroups'>
             {groups.map((group) => (
                 <div className="group" key={group}>
-                    <input
-                        type="checkbox"
-                        name={`${group}`}
+                    <Checkbox
+                        name={group}
                         disabled={true}
                         checked={groupCheck(muscleGroups, group)} />
                     <label
-                        htmlFor={`${group}`}
+                        htmlFor={group}
                         className="name">{group}</label>
                 </div>
             ))}

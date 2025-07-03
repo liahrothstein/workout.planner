@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+div.workoutWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    div.workout {
+        background-color: $workoutBackgroundColor;
+        padding: 40px;
+        box-shadow: 5px 5px 5px gray;
+        border-radius: 5px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+}

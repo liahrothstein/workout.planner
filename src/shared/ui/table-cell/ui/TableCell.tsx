@@ -11,6 +11,7 @@ export function TableCell({ times, weight }: TableCellProps) {
         <td className='tableCell'>
             <p className="times">{(times !== null) ? times : ''}</p>
             <p className="weight">{(weight !== null) ? weight : ''}</p>
+            <div className="void" />
             <div className="diagonal" />
         </td>
     )
