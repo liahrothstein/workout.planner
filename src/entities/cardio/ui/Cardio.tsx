@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Cascader, InputNumber, TimePicker } from 'antd';
+import { Cascader, InputNumber, TimePicker, Typography } from 'antd';
 
 import { useAppDispatch } from '@store/hooks';
 import { setCardio } from '../../../shared/lib/slices';
@@ -16,6 +16,8 @@ export function Cardio() {
     const [time, setTime] = useState<string>('');
     const [rhytm, setRhytm] = useState<number | null>(null);
 
+    const { Title } = Typography;
+
     useEffect(() => {
         dispatch(setCardio({
             name: ((cardioExercise === undefined) || (cardioExercise === null)) ? null : cardioExercise[0],
@@ -26,6 +28,7 @@ export function Cardio() {
 
     return (
         <div className="cardio">
+            <Title level={4} className='cardio'>Кардио упражнения</Title>
             <Cascader
                 className='cardioType'
                 options={cardioCascaderProps.options}

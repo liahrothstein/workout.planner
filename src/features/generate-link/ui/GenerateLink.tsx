@@ -31,6 +31,7 @@ export function GenerateLink() {
                 icon={<CopyOutlined />}
                 color='primary'
                 variant='solid'
+                disabled={link === ''}
                 onClick={() => { navigator.clipboard.writeText(link) }}>Скопировать</Button>
         </div>
     )

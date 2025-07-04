@@ -25,10 +25,11 @@ export function AddExercise() {
 
     const [exercise, setExercise] = useState<string[] | null | undefined>(null);
 
-    const { Text } = Typography;
+    const { Text, Title } = Typography;
 
     return (
         <div className="addExercise">
+            <Title level={4} className='addExercise'>Силовые упражнения</Title>
             <Cascader
                 options={exercisesCascaderProps.options}
                 placeholder={exercisesCascaderProps.placeholder}
@@ -57,6 +58,7 @@ export function AddExercise() {
                 icon={<PlusOutlined />}
                 color='primary'
                 variant='solid'
+                className='addExercise'
                 onClick={() => { addExersice(exerciseArray, dispatch, exercise, times1, times2, times3, times4, times5, weight1, weight2, weight3, weight4, weight5) }}>Добавить упражнение</Button>
         </div>
     )

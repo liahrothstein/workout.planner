@@ -8,7 +8,7 @@ import './Create.scss';
 export function Create() {
 
     return (
-        <Form>
+        <Form className='create'>
             <FillData />
             <GenerateLink />
         </Form>

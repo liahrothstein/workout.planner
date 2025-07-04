@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Checkbox } from 'antd';
+import { Checkbox, Typography } from 'antd';
 
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { setMuscleGroups } from '../../../shared/lib/slices';
@@ -27,6 +27,8 @@ export function MuscleGroups() {
   const [isLegs, setIsLegs] = useState<boolean>(false);
   const [isTriceps, setIsTriceps] = useState<boolean>(false);
 
+  const { Title } = Typography;
+
   useEffect(() => {
     dispatch(setMuscleGroups(setShoulders(isShoulders, muscleGroups)))
   }, [isShoulders]);
@@ -47,13 +49,16 @@ export function MuscleGroups() {
   }, [isTriceps]);
 
   return (
-    <div className="muscleGroups">
-      <Checkbox onChange={(e) => { setIsShoulders(e.target.checked) }}>{MuscleGroup.Shoulders}</Checkbox>
-      <Checkbox onChange={(e) => { setIsBack(e.target.checked) }}>{MuscleGroup.Back}</Checkbox>
-      <Checkbox onChange={(e) => { setIsChest(e.target.checked) }}>{MuscleGroup.Chest}</Checkbox>
-      <Checkbox onChange={(e) => { setIsBiceps(e.target.checked) }}>{MuscleGroup.Biceps}</Checkbox>
-      <Checkbox onChange={(e) => { setIsLegs(e.target.checked) }}>{MuscleGroup.Legs}</Checkbox>
-      <Checkbox onChange={(e) => { setIsTriceps(e.target.checked) }}>{MuscleGroup.Triceps}</Checkbox>
-    </div>
+    <>
+      <Title level={4} className='muscleGroups'>Группы мышц</Title>
+      <div className="muscleGroups">
+        <Checkbox onChange={(e) => { setIsShoulders(e.target.checked) }}>{MuscleGroup.Shoulders}</Checkbox>
+        <Checkbox onChange={(e) => { setIsBack(e.target.checked) }}>{MuscleGroup.Back}</Checkbox>
+        <Checkbox onChange={(e) => { setIsChest(e.target.checked) }}>{MuscleGroup.Chest}</Checkbox>
+        <Checkbox onChange={(e) => { setIsBiceps(e.target.checked) }}>{MuscleGroup.Biceps}</Checkbox>
+        <Checkbox onChange={(e) => { setIsLegs(e.target.checked) }}>{MuscleGroup.Legs}</Checkbox>
+        <Checkbox onChange={(e) => { setIsTriceps(e.target.checked) }}>{MuscleGroup.Triceps}</Checkbox>
+      </div>
+    </>
   )
 }
