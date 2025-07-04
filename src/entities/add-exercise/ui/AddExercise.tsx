@@ -3,7 +3,7 @@ import { Button, Cascader, InputNumber, Typography } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
 import { useAppDispatch, useAppSelector } from '@store/hooks';
-import { addExersice, exercisesCascaderProps, setTimes, setWeight, attempts } from '../model/add-exercise';
+import { addExersice, exercisesCascaderProps, setTimes, setWeight, attempts, timesValue } from '../model/add-exercise';
 
 import './AddExercise.scss';
 
@@ -39,8 +39,11 @@ export function AddExercise() {
                     <InputNumber
                         className='times'
                         min={1}
-                        max={50}
+                        max={100}
                         placeholder='Количество повторений'
+                        disabled={(timesValue(times1, times2, times3, times4, times5, num) === 100)}
+                        suffix={(timesValue(times1, times2, times3, times4, times5, num) === 100) && <Text keyboard>max</Text>}
+                        addonAfter={<Button danger onClick={() => { (timesValue(times1, times2, times3, times4, times5, num) !== 100) ? setTimes(num, setTimes1, setTimes2, setTimes3, setTimes4, setTimes5)(100) : setTimes(num, setTimes1, setTimes2, setTimes3, setTimes4, setTimes5)(null) }}>max</Button>}
                         onChange={(value) => { setTimes(num, setTimes1, setTimes2, setTimes3, setTimes4, setTimes5)(value) }} />
                     <InputNumber
                         className='weight'

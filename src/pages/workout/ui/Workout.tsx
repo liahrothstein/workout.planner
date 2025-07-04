@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import { TrainingType, MuscleGroups, Cardio, Notes, ExercisesTable } from '@widgets/index';
@@ -12,7 +11,7 @@ import './Workout.scss';
 export function Workout() {
     const [searchParams] = useSearchParams();
 
-    const [workout, setWorkout] = useState<Workout>(workoutParse(searchParams));
+    const workout: Workout = workoutParse(searchParams);
 
     return (
         <div className="workoutWrapper">

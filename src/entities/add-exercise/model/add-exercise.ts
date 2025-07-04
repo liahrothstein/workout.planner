@@ -105,7 +105,18 @@ export function addExersice(
     weight4: number | null,
     weight5: number | null
 ): void {
-    function checkNumber(number: number | null): number | null {
+    function checkNumberTimes(number: number | null): number | null | 'max' {
+        if ((number === 0) || (number === null)) {
+            return (null)
+        } else {
+            if (number === 100) {
+                return ('max')
+            } else {
+                return (number)
+            }
+        }
+    };
+    function checkNumberWeight(number: number | null): number | null {
         if (number) {
             return (number)
         } else {
@@ -116,28 +127,28 @@ export function addExersice(
     let attempts: Attempt[] = [
         {
             number: 1,
-            times: checkNumber(times1),
-            weight: checkNumber(weight1)
+            times: checkNumberTimes(times1),
+            weight: checkNumberWeight(weight1)
         },
         {
             number: 2,
-            times: checkNumber(times2),
-            weight: checkNumber(weight2)
+            times: checkNumberTimes(times2),
+            weight: checkNumberWeight(weight2)
         },
         {
             number: 3,
-            times: checkNumber(times3),
-            weight: checkNumber(weight3)
+            times: checkNumberTimes(times3),
+            weight: checkNumberWeight(weight3)
         },
         {
             number: 4,
-            times: checkNumber(times4),
-            weight: checkNumber(weight4)
+            times: checkNumberTimes(times4),
+            weight: checkNumberWeight(weight4)
         },
         {
             number: 5,
-            times: checkNumber(times5),
-            weight: checkNumber(weight5)
+            times: checkNumberTimes(times5),
+            weight: checkNumberWeight(weight5)
         }
     ];
 
@@ -147,4 +158,31 @@ export function addExersice(
     };
 
     dispatch(editExercise([...exerciseArray, exerciseWithAttempt]));
+};
+
+export function timesValue(
+    times1: number | null,
+    times2: number | null,
+    times3: number | null,
+    times4: number | null,
+    times5: number | null,
+    num: number
+): number | null {
+    switch (num) {
+        case 1:
+            return (times1);
+            break;
+        case 2:
+            return (times2);
+            break;
+        case 3:
+            return (times3);
+            break;
+        case 4:
+            return (times4);
+            break;
+        default:
+            return (times5);
+            break;
+    }
 }

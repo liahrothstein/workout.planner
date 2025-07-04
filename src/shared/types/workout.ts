@@ -27,7 +27,7 @@ export enum MuscleGroup {
 
 export interface Attempt {
     number: number,
-    times: number | null,
+    times: number | null | 'max',
     weight: number | null
 };
 
