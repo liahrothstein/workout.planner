@@ -20,8 +20,8 @@ export function Workout() {
                 <TrainingType workout={workout} />
                 <MuscleGroups muscleGroups={workout.muscleGroups} />
                 <ExercisesTable exercises={workout.exercises} />
-                {(workout.cardioExercises.name !== null) ? <Cardio cardioExercises={workout.cardioExercises} /> : ''}
-                <Notes notes={workout.notes} />
+                {(workout.cardioExercises.name !== null) && <Cardio cardioExercises={workout.cardioExercises} />}
+                {(workout.notes !== '') && <Notes notes={workout.notes} />}
             </div>
         </div>
     )
