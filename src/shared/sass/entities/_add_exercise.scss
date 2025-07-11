@@ -7,3 +7,17 @@ div.addExercise {
         margin: 10px 0 10px 0;
     }
 }
+
+div div.ant-select-dropdown div div.ant-cascader-menus {
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+
+        ul.ant-cascader-menu:last-child{
+            border-top: 5px #f5f5f5 solid;
+
+            li.ant-cascader-menu-item div.ant-cascader-menu-item-content {
+                white-space: wrap;
+            }
+        }
+    }
+}

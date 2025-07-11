@@ -33,6 +33,7 @@ export function AddExercise() {
         <div className="addExercise">
             <Title level={4} className='addExercise'>Силовые упражнения</Title>
             <Cascader
+            maxTagCount={2}
                 options={exercisesCascaderProps.options}
                 placeholder={exercisesCascaderProps.placeholder}
                 onChange={(value) => { setExercise(value) }} />

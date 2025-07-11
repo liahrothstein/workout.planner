@@ -1,8 +1,9 @@
 import { EyeOutlined } from '@ant-design/icons';
 import { Typography } from 'antd';
 
-import './Preview.scss';
 import { setClassName } from '@utils/set-class-name';
+
+import './Preview.scss';
 
 interface PreviewProps {
     exercise: string[] | null | undefined
