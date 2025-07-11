@@ -13,5 +13,13 @@ div.workoutWrapper {
         border-radius: 5px;
         overflow: auto;
         white-space: nowrap;
+        position: relative;
+
+        img.icon {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            width: 30px;
+        }
     }
 }
