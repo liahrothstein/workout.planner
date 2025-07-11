@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Button, Cascader, InputNumber, Typography } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
+import { Preview } from '@components/preview';
+
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { addExersice, exercisesCascaderProps, setTimes, setWeight, attempts, timesValue } from '../model/add-exercise';
 
@@ -54,6 +56,7 @@ export function AddExercise() {
                         onChange={(value) => { setWeight(num, setWeight1, setWeight2, setWeight3, setWeight4, setWeight5)(value) }} />
                 </div>
             ))}
+            <Preview exercise={exercise} />
             <Button
                 icon={<PlusOutlined />}
                 color='primary'
