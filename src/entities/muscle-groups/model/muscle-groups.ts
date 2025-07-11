@@ -20,9 +20,9 @@ export function setBack(isBack: boolean, muscleGroups: MuscleGroup[]): MuscleGro
         tempArray.push(MuscleGroup.Back)
         return (tempArray)
     } else {
-        let shouldersIndex: number = muscleGroups.indexOf(MuscleGroup.Back);
+        let backIndex: number = muscleGroups.indexOf(MuscleGroup.Back);
 
-        tempArray.splice(shouldersIndex, 1);
+        tempArray.splice(backIndex, 1);
         return (tempArray)
     };
 };
@@ -33,9 +33,9 @@ export function setChest(isChest: boolean, muscleGroups: MuscleGroup[]): MuscleG
         tempArray.push(MuscleGroup.Chest)
         return (tempArray)
     } else {
-        let shouldersIndex: number = muscleGroups.indexOf(MuscleGroup.Chest);
+        let chestIndex: number = muscleGroups.indexOf(MuscleGroup.Chest);
 
-        tempArray.splice(shouldersIndex, 1);
+        tempArray.splice(chestIndex, 1);
         return (tempArray)
     };
 };
@@ -46,9 +46,9 @@ export function setBiceps(isBiceps: boolean, muscleGroups: MuscleGroup[]): Muscl
         tempArray.push(MuscleGroup.Biceps)
         return (tempArray)
     } else {
-        let shouldersIndex: number = muscleGroups.indexOf(MuscleGroup.Biceps);
+        let bicepsIndex: number = muscleGroups.indexOf(MuscleGroup.Biceps);
 
-        tempArray.splice(shouldersIndex, 1);
+        tempArray.splice(bicepsIndex, 1);
         return (tempArray)
     };
 };
@@ -59,9 +59,9 @@ export function setLegs(isLegs: boolean, muscleGroups: MuscleGroup[]): MuscleGro
         tempArray.push(MuscleGroup.Legs)
         return (tempArray)
     } else {
-        let shouldersIndex: number = muscleGroups.indexOf(MuscleGroup.Legs);
+        let legsIndex: number = muscleGroups.indexOf(MuscleGroup.Legs);
 
-        tempArray.splice(shouldersIndex, 1);
+        tempArray.splice(legsIndex, 1);
         return (tempArray)
     };
 };
@@ -72,9 +72,22 @@ export function setTriceps(isTriceps: boolean, muscleGroups: MuscleGroup[]): Mus
         tempArray.push(MuscleGroup.Triceps)
         return (tempArray)
     } else {
-        let shouldersIndex: number = muscleGroups.indexOf(MuscleGroup.Triceps);
+        let tricepsIndex: number = muscleGroups.indexOf(MuscleGroup.Triceps);
 
-        tempArray.splice(shouldersIndex, 1);
+        tempArray.splice(tricepsIndex, 1);
+        return (tempArray)
+    };
+};
+export function setPress(isPress: boolean, muscleGroups: MuscleGroup[]): MuscleGroup[] {
+    let tempArray = new Array(...muscleGroups);
+
+    if (isPress) {
+        tempArray.push(MuscleGroup.Press)
+        return (tempArray)
+    } else {
+        let pressIndex: number = muscleGroups.indexOf(MuscleGroup.Press);
+
+        tempArray.splice(pressIndex, 1);
         return (tempArray)
     };
 };
