@@ -15,7 +15,7 @@ export function TrainingType({ workout }: TrainingTypeProps) {
                 <tbody>
                     <tr>
                         <td>
-                            <p className="name">{`${workout.trainingType} №${workout.workoutNumber}`}</p>
+                            <p className="name">{`${workout.trainingType} №${(workout.workoutNumber !== null) ? workout.workoutNumber : ''}`}</p>
                         </td>
                     </tr>
                 </tbody>

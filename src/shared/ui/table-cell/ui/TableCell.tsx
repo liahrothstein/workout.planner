@@ -1,7 +1,7 @@
 import './TableCell.scss';
 
 interface TableCellProps {
-    times: number | null,
+    times: number | null | 'max',
     weight: number | null
 };
 

@@ -22,7 +22,8 @@ export enum MuscleGroup {
     Back = 'Спина',
     Triceps = 'Трицепс',
     Chest = 'Грудь',
-    Biceps = 'Бицепс'
+    Biceps = 'Бицепс',
+    Press = 'Пресс'
 };
 
 export interface Attempt {
