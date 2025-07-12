@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Cascader, Input, InputNumber, Typography } from 'antd';
 
-import { AddExercise } from '@entities/add-exercise';
-import { Cardio } from '@entities/cardio';
-import { PreliminaryExercise } from '@entities/preliminary-exercise';
-import { MuscleGroups } from '@entities/muscle-groups';
+import { MuscleGroups, PreliminaryExercise, Cardio, AddExercise } from '../../../entities';
 
-import { useAppDispatch, useAppSelector } from '@store/hooks';
+import { useAppDispatch, useAppSelector } from '../../../app/store';
 import { ejectTrainingType, trainingTypeCascaderProps } from '../model/fill-data';
 import { editTrainingType, setNotes, setWorkout } from '../../../shared/lib/slices';
 

@@ -32,11 +32,6 @@ export interface Attempt {
     weight: number | null
 };
 
-interface Exercise {
-    name: string,
-    attempts: Attempt[]
-};
-
 export interface CardioExercise {
     name: CardioType | null,
     time: string,

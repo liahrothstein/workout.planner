@@ -9,7 +9,7 @@ export const muscleGroupsSlice = createSlice({
     name: 'muscleGroups',
     initialState,
     reducers: {
-        setMuscleGroups: (state, action: PayloadAction<MuscleGroup[]>) => {
+        setMuscleGroups: (__, action: PayloadAction<MuscleGroup[]>) => {
             return (action.payload)
         }
     }

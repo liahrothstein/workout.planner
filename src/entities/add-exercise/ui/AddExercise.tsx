@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Button, Cascader, InputNumber, Typography } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
-import { Preview } from '@components/preview';
+import { Preview } from '../../../shared/ui/preview';
 
-import { useAppDispatch, useAppSelector } from '@store/hooks';
+import { useAppDispatch, useAppSelector } from '../../../app/store';
 import { addExersice, exercisesCascaderProps, setTimes, setWeight, attempts, timesValue } from '../model/add-exercise';
 
 import './AddExercise.scss';
@@ -33,7 +33,7 @@ export function AddExercise() {
         <div className="addExercise">
             <Title level={4} className='addExercise'>Силовые упражнения</Title>
             <Cascader
-            maxTagCount={2}
+                maxTagCount={2}
                 options={exercisesCascaderProps.options}
                 placeholder={exercisesCascaderProps.placeholder}
                 onChange={(value) => { setExercise(value) }} />

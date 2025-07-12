@@ -1,7 +1,7 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 
-import { initWorkout } from '@constants/workout';
+import { initWorkout } from '../../consts/workout';
 
 import type { Workout } from '../../types/workout';
 

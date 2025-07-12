@@ -1,6 +1,6 @@
 import LZString from 'lz-string';
 
-import { workoutUrl } from '@constants/url';
+import { workoutUrl } from '../../../shared/consts/url';
 
 import type { Workout } from '../../../shared/types/workout';
 

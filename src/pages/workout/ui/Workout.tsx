@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 
-import { TrainingType, MuscleGroups, Cardio, Notes, ExercisesTable } from '@widgets/index';
+import { TrainingType, MuscleGroups, Cardio, Notes, ExercisesTable } from '../../../widgets';
 
 import { workoutParse } from '../model/workout';
 

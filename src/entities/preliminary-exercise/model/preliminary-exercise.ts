@@ -30,7 +30,7 @@ export const columns = [
 export function generateDataSource(attempts: Attempt[]) {
     let tempArray = new Array();
 
-    function checkNumber(number: number | null): string {
+    function checkNumber(number: number | null | 'max'): string {
         if (number === null) {
             return ('⎯')
         } else {

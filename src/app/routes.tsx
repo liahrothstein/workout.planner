@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Create, Workout } from '@pages/index'
+import { Create, Workout } from '../pages'
 
 import type { JSX } from "react";
 

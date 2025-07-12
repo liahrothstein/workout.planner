@@ -9,7 +9,7 @@ export const exerciseSilce = createSlice({
     name: 'exercise',
     initialState,
     reducers: {
-        editExercise: (state, action: PayloadAction<ExerciseWithAttmepts[]>) => {
+        editExercise: (__, action: PayloadAction<ExerciseWithAttmepts[]>) => {
             return (action.payload)
         }
     }

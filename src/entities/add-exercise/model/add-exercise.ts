@@ -1,9 +1,10 @@
-import { exercises } from '@constants/exercises';
+import { exercises } from '../../../shared/consts/exercises';
+import { editExercise } from '../../../shared/lib/slices';
+
 import type { SetTimes, SetWeight, ExerciseCascaderProps } from '../../../shared/types/cascader';
 import type { ExerciseArray, ExerciseWithAttmepts } from '../../../shared/types/exercise';
 import type { Attempt } from '../../../shared/types/workout';
 import type { Dispatch, ThunkDispatch, UnknownAction } from '@reduxjs/toolkit';
-import { editExercise } from '../../../shared/lib/slices';
 
 export const attempts: number[] = [1, 2, 3, 4, 5];
 

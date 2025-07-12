@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Cascader, InputNumber, TimePicker, Typography } from 'antd';
 
-import { useAppDispatch } from '@store/hooks';
+import { useAppDispatch } from '../../../app/store';
 import { setCardio } from '../../../shared/lib/slices';
 import { cardioCascaderProps, timeParse } from '../model/cardio';
 
