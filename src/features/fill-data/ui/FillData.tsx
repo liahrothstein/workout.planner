@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Cascader, Input, InputNumber } from 'antd';
+import { Cascader, Input, InputNumber, Typography } from 'antd';
 
 import { AddExercise } from '@entities/add-exercise';
 import { Cardio } from '@entities/cardio';
@@ -27,6 +27,7 @@ export function FillData() {
     const [trainingTypeArray, setTrainingTypeArray] = useState<TrainingType[] | undefined | null>(null);
 
     const { TextArea } = Input;
+    const { Title } = Typography;
 
     useEffect(() => {
         dispatch(editTrainingType(ejectTrainingType(trainingTypeArray)))
@@ -45,6 +46,7 @@ export function FillData() {
 
     return (
         <>
+            <Title level={2}>Создать тренировку</Title>
             <Cascader
                 className='trainingType'
                 options={trainingTypeCascaderProps.options}
