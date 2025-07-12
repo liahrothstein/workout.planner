@@ -1,1 +1,1 @@
-export const workoutUrl = new URL('http://localhost:3000/workout.planner/workout/');
+export const workoutUrl = new URL('https://liahrothstein.github.io/workout.planner/#/workout/');
