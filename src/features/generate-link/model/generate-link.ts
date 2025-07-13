@@ -1,7 +1,5 @@
 import LZString from 'lz-string';
 
-import { workoutUrl } from '../../../shared/consts/url';
-
 import type { Workout } from '../../../shared/types/workout';
 
 export function generateParams(workout: Workout): string {
@@ -15,8 +13,6 @@ export function checkChangesWorkoutData(workout: Workout, setLink: (link: string
     if (workout.exercises.length === 0) {
         setLink('');
     } else {
-        let url: URL = workoutUrl;
-        url.searchParams.set('workout', params);
-        setLink(url.href)
+        setLink(`https://liahrothstein.github.io/workout.planner/#/workout/?workout=${params}`)
     }
 };

@@ -6,8 +6,6 @@ import { workoutParse } from '../model/workout';
 
 import type { Workout } from '../../../shared/types/workout';
 
-import icon from '../../../../public/gord.onfit.icon.png';
-
 import './Workout.scss';
 
 export function Workout() {
@@ -23,7 +21,6 @@ export function Workout() {
                 <ExercisesTable exercises={workout.exercises} />
                 <Cardio cardioExercises={workout.cardioExercises} />
                 <Notes notes={workout.notes} />
-                <img src={icon} alt="icon" className="icon" />
             </div>
         </div>
     )

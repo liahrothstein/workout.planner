@@ -1,1 +1,0 @@
-export const workoutUrl = new URL('https://liahrothstein.github.io/workout.planner/workout/');

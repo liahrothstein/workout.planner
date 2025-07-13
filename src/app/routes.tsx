@@ -5,8 +5,8 @@ import type { JSX } from "react";
 
 export const routes: JSX.Element = (
     <Routes>
-        <Route path="/workout.planner/" element={<Navigate to='/workout.planner/create/' />} />
-        <Route path="/workout.planner/create/" element={<Create />} />
-        <Route path="/workout.planner/workout/" element={<Workout />} />
+        <Route path="/" element={<Navigate to='/create/' />} />
+        <Route path="/create/" element={<Create />} />
+        <Route path="/workout/" element={<Workout />} />
     </Routes>
 );
