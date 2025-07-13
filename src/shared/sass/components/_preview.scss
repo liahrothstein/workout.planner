@@ -1,0 +1,1043 @@
+div.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    max-width: 502px;
+    height: 302px;
+
+    span {
+        padding-left: 5px;
+        color: #bfbfbf;
+    }
+
+    img {
+
+        // BICEPS
+
+        &.biceps.alternateLiftingOfDumbbellsOnBiceps {
+            content: url('../../assets/images/exercises/biceps/alternateLiftingOfDumbbellsOnBiceps.gif');
+        }
+
+        &.biceps.bicepFlexionInTheCrossoverGrip {
+            content: url('../../assets/images/exercises/biceps/bicepFlexionInTheCrossoverGrip.gif');
+        }
+
+        &.biceps.bicepFlexionWithTheHandleInTheCrossover {
+            content: url('../../assets/images/exercises/biceps/bicepFlexionWithTheHandleInTheCrossover.gif');
+        }
+
+        &.biceps.bicepLiftInACrossover {
+            content: url('../../assets/images/exercises/biceps/bicepLiftInACrossover.gif');
+        }
+
+        &.biceps.bicepLiftingWhileSittingInTheTrainer {
+            content: url('../../assets/images/exercises/biceps/bicepLiftingWhileSittingInTheTrainer.gif');
+        }
+
+        &.biceps.bicepLiftSittingHammer {
+            content: url('../../assets/images/exercises/biceps/bicepLiftSittingHammer.gif');
+        }
+
+        &.biceps.concentratedFlexionOnBicepsWhileSitting {
+            content: url('../../assets/images/exercises/biceps/concentratedFlexionOnBicepsWhileSitting.gif');
+        }
+
+        &.biceps.flexionOnTheForearms {
+            content: url('../../assets/images/exercises/biceps/flexionOnTheForearms.gif');
+        }
+
+        &.biceps.flexionOnTheForearmsSitting {
+            content: url('../../assets/images/exercises/biceps/flexionOnTheForearmsSitting.gif');
+        }
+
+        &.biceps.flexionOnTheForearmsWhileSittingWithAPiercedGrip {
+            content: url('../../assets/images/exercises/biceps/flexionOnTheForearmsWhileSittingWithAPiercedGrip.gif');
+        }
+
+        &.biceps.forearmLiftsWithAThreadedGrip {
+            content: url('../../assets/images/exercises/biceps/forearmLiftsWithAThreadedGrip.gif');
+        }
+
+        &.biceps.hammerLiftsAlternately {
+            content: url('../../assets/images/exercises/biceps/hammerLiftsAlternately.gif');
+        }
+
+        &.biceps.liftingABarbellOnBiceps {
+            content: url('../../assets/images/exercises/biceps/liftingABarbellOnBiceps.gif');
+        }
+
+        &.biceps.liftingADumbbellOnABicepInAScottBenchWithANeutralGrip {
+            content: url('../../assets/images/exercises/biceps/liftingADumbbellOnABicepInAScottBenchWithANeutralGrip.gif');
+        }
+
+        &.biceps.liftingBarbellsOnBicepsOnAnInclinedBench {
+            content: url('../../assets/images/exercises/biceps/liftingBarbellsOnBicepsOnAnInclinedBench.gif');
+        }
+
+        &.biceps.liftingBicepsInTheTrainerWithAThreadedGrip {
+            content: url('../../assets/images/exercises/biceps/liftingBicepsInTheTrainerWithAThreadedGrip.gif');
+        }
+
+        &.biceps.liftingDumbbellOnBicepsInclinedBench {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellOnBicepsInclinedBench.gif');
+        }
+
+        &.biceps.liftingDumbbellOnBicepsInScottsBench {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellOnBicepsInScottsBench.gif');
+        }
+
+        &.biceps.liftingDumbbellOnBicepsOnAnInclinedBench {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellOnBicepsOnAnInclinedBench.gif');
+        }
+
+        &.biceps.liftingDumbbellOnBicepsWhileSittingOnScottsBench {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellOnBicepsWhileSittingOnScottsBench.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBiceps {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBiceps.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsHammer {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsHammer.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsHammerAlternateSitting {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsHammerAlternateSitting.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsHammerInclinedBench {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsHammerInclinedBench.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsInclinedBench {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsInclinedBench.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsIsACompetitiveOption {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsIsACompetitiveOption.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsWhileSittingAlternately {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsWhileSittingAlternately.gif');
+        }
+
+        &.biceps.liftingDumbbellsOnBicepsWithAStraightGrip {
+            content: url('../../assets/images/exercises/biceps/liftingDumbbellsOnBicepsWithAStraightGrip.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsInTheScottBenchEBar {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsInTheScottBenchEBar.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsInTheScottBenchWithAStraightBar {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsInTheScottBenchWithAStraightBar.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsIsACompetitiveOption {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsIsACompetitiveOption.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsWithAStraightBar {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsWithAStraightBar.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsWithAStraightGrip {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsWithAStraightGrip.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsWithAStraightGripEShapedBar {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsWithAStraightGripEShapedBar.gif');
+        }
+
+        &.biceps.liftingTheBarbellOnTheBicepsWithAWideGrip {
+            content: url('../../assets/images/exercises/biceps/liftingTheBarbellOnTheBicepsWithAWideGrip.gif');
+        }
+
+        &.biceps.liftingTheBicepsOfTheRopeHandleInTheCrossover {
+            content: url('../../assets/images/exercises/biceps/liftingTheBicepsOfTheRopeHandleInTheCrossover.gif');
+        }
+
+        &.biceps.liftingTheEShapedBarbellOnTheBicepsWhileSitting {
+            content: url('../../assets/images/exercises/biceps/liftingTheEShapedBarbellOnTheBicepsWhileSitting.gif');
+        }
+
+        &.biceps.spiderFlexionOnBiceps {
+            content: url('../../assets/images/exercises/biceps/spiderFlexionOnBiceps.gif');
+        }
+
+        &.biceps.spiderFlexionOnBicepsWithAPiercedGrip {
+            content: url('../../assets/images/exercises/biceps/spiderFlexionOnBicepsWithAPiercedGrip.gif');
+        }
+
+        &.biceps.zottmanBicepLift {
+            content: url('../../assets/images/exercises/biceps/zottmanBicepLift.gif');
+        }
+
+        // CHEST
+
+        &.chest.aPulloverWithDumbbellRestingOnABench {
+            content: url('../../assets/images/exercises/chest/aPulloverWithDumbbellRestingOnABench.gif');
+        }
+
+        &.chest.benchPress {
+            content: url('../../assets/images/exercises/chest/benchPress.gif');
+        }
+
+        &.chest.benchPressDownwardTilt {
+            content: url('../../assets/images/exercises/chest/benchPressDownwardTilt.gif');
+        }
+
+        &.chest.benchPressDumbbellsAlternatelyWithEachHand {
+            content: url('../../assets/images/exercises/chest/benchPressDumbbellsAlternatelyWithEachHand.gif');
+        }
+
+        &.chest.benchPressInSmith {
+            content: url('../../assets/images/exercises/chest/benchPressInSmith.gif');
+        }
+
+        &.chest.benchPressInSmithOnAHorizontalBench {
+            content: url('../../assets/images/exercises/chest/benchPressInSmithOnAHorizontalBench.gif');
+        }
+
+        &.chest.benchPressInTheHummerTrainer {
+            content: url('../../assets/images/exercises/chest/benchPressInTheHummerTrainer.gif');
+        }
+
+        &.chest.benchPressWhileLyingOnAnInclinedBench {
+            content: url('../../assets/images/exercises/chest/benchPressWhileLyingOnAnInclinedBench.gif');
+        }
+
+        &.chest.benchPressWithANarrowHandleInSmith {
+            content: url('../../assets/images/exercises/chest/benchPressWithANarrowHandleInSmith.gif');
+        }
+
+        &.chest.bringingHandsTogetherInACrossover {
+            content: url('../../assets/images/exercises/chest/bringingHandsTogetherInACrossover.gif');
+        }
+
+        &.chest.bringingTogetherInTheTrainer {
+            content: url('../../assets/images/exercises/chest/bringingTogetherInTheTrainer.gif');
+        }
+
+        &.chest.bringingYourHandsTogetherInFrontOfYouInACrossover {
+            content: url('../../assets/images/exercises/chest/bringingYourHandsTogetherInFrontOfYouInACrossover.gif');
+        }
+
+        &.chest.bringingYourHandsTogetherInTheTrainer {
+            content: url('../../assets/images/exercises/chest/bringingYourHandsTogetherInTheTrainer.gif');
+        }
+
+        &.chest.dumbbellsBenchPressInclinedBench {
+            content: url('../../assets/images/exercises/chest/dumbbellsBenchPressInclinedBench.gif');
+        }
+
+        &.chest.dumbbellsBenchPressLyingOnAHorizontalBench {
+            content: url('../../assets/images/exercises/chest/dumbbellsBenchPressLyingOnAHorizontalBench.gif');
+        }
+
+        &.chest.dumbbellsBenchPressWithNeutralGrip {
+            content: url('../../assets/images/exercises/chest/dumbbellsBenchPressWithNeutralGrip.gif');
+        }
+
+        &.chest.dumbbellsLiftingLyingOnAnInclinedBench {
+            content: url('../../assets/images/exercises/chest/dumbbellsLiftingLyingOnAnInclinedBench.gif');
+        }
+
+        &.chest.liftingDumbbellsWhileLyingOnAHorizontalBench {
+            content: url('../../assets/images/exercises/chest/liftingDumbbellsWhileLyingOnAHorizontalBench.gif');
+        }
+
+        &.chest.oneHandedDumbbellBenchPress {
+            content: url('../../assets/images/exercises/chest/oneHandedDumbbellBenchPress.gif');
+        }
+
+        &.chest.svendsStandingBenchPress {
+            content: url('../../assets/images/exercises/chest/svendsStandingBenchPress.gif');
+        }
+
+        &.chest.svendsStandingBenchPressClassic {
+            content: url('../../assets/images/exercises/chest/svendsStandingBenchPressClassic.gif');
+        }
+
+        &.chest.svendsStandingBenchPressWithDumbbell {
+            content: url('../../assets/images/exercises/chest/svendsStandingBenchPressWithDumbbell.gif');
+        }
+
+        // LEGS
+
+        &.legs.backLungesWithDumbbells {
+            content: url('../../assets/images/exercises/legs/backLungesWithDumbbells.gif');
+        }
+
+        &.legs.barbellLunges {
+            content: url('../../assets/images/exercises/legs/barbellLunges.gif');
+        }
+
+        &.legs.barbellSquat {
+            content: url('../../assets/images/exercises/legs/barbellSquat.gif');
+        }
+
+        &.legs.benchPressWithOneFootInTheTrainer {
+            content: url('../../assets/images/exercises/legs/benchPressWithOneFootInTheTrainer.gif');
+        }
+
+        &.legs.bendingTheLegInTheTrainer {
+            content: url('../../assets/images/exercises/legs/bendingTheLegInTheTrainer.gif');
+        }
+
+        &.legs.bendingTheLegsInTheTrainer {
+            content: url('../../assets/images/exercises/legs/bendingTheLegsInTheTrainer.gif');
+        }
+
+        &.legs.bendingYourLegsWhileLyingDownWithDumbbell {
+            content: url('../../assets/images/exercises/legs/bendingYourLegsWhileLyingDownWithDumbbell.gif');
+        }
+
+        &.legs.bringingTheFootIntoTheCrossover {
+            content: url('../../assets/images/exercises/legs/bringingTheFootIntoTheCrossover.gif');
+        }
+
+        &.legs.bringingYourLegsTogetherInTheTrainer {
+            content: url('../../assets/images/exercises/legs/bringingYourLegsTogetherInTheTrainer.gif');
+        }
+
+        &.legs.bulgarianLungesWithDumbbells {
+            content: url('../../assets/images/exercises/legs/bulgarianLungesWithDumbbells.gif');
+        }
+
+        &.legs.burpee {
+            content: url('../../assets/images/exercises/legs/burpee.gif');
+        }
+
+        &.legs.buttockBridgeFromBenchWithoutWeight {
+            content: url('../../assets/images/exercises/legs/buttockBridgeFromBenchWithoutWeight.gif');
+        }
+
+        &.legs.dumbbellsLunges {
+            content: url('../../assets/images/exercises/legs/dumbbellsLunges.gif');
+        }
+
+        &.legs.gakkSquats {
+            content: url('../../assets/images/exercises/legs/gakkSquats.gif');
+        }
+
+        &.legs.gettingOnYourToesInSmith {
+            content: url('../../assets/images/exercises/legs/gettingOnYourToesInSmith.gif');
+        }
+
+        &.legs.gettingUpOnYourToesWhileSittingInTheTrainer {
+            content: url('../../assets/images/exercises/legs/gettingUpOnYourToesWhileSittingInTheTrainer.gif');
+        }
+
+        &.legs.gluteBridgeWithBarbell {
+            content: url('../../assets/images/exercises/legs/gluteBridgeWithBarbell.gif');
+        }
+
+        &.legs.gutenMorgenStanding {
+            content: url('../../assets/images/exercises/legs/gutenMorgenStanding.gif');
+        }
+
+        &.legs.kneeExtensionToTheSideWhileLyingDownWithAnElasticBand {
+            content: url('../../assets/images/exercises/legs/kneeExtensionToTheSideWhileLyingDownWithAnElasticBand.gif');
+        }
+
+        &.legs.lateralPacing {
+            content: url('../../assets/images/exercises/legs/lateralPacing.gif');
+        }
+
+        &.legs.legExtensionInTheTrainer {
+            content: url('../../assets/images/exercises/legs/legExtensionInTheTrainer.gif');
+        }
+
+        &.legs.legPressInTheTrainerNarrow {
+            content: url('../../assets/images/exercises/legs/legPressInTheTrainerNarrow.gif');
+        }
+
+        &.legs.legPressInTheTrainerNew {
+            content: url('../../assets/images/exercises/legs/legPressInTheTrainerNew.gif');
+        }
+
+        &.legs.legPressInTheTrainerWide {
+            content: url('../../assets/images/exercises/legs/legPressInTheTrainerWide.gif');
+        }
+
+        &.legs.legSpreadingInTheTrainer {
+            content: url('../../assets/images/exercises/legs/legSpreadingInTheTrainer.gif');
+        }
+
+        &.legs.lungesFromTheRise {
+            content: url('../../assets/images/exercises/legs/lungesFromTheRise.gif');
+        }
+
+        &.legs.lungesFromTheSpot {
+            content: url('../../assets/images/exercises/legs/lungesFromTheSpot.gif');
+        }
+
+        &.legs.lungesWithDumbbellsInPlace {
+            content: url('../../assets/images/exercises/legs/lungesWithDumbbellsInPlace.gif');
+        }
+
+        &.legs.movingTheLegToTheSideInACrossover {
+            content: url('../../assets/images/exercises/legs/movingTheLegToTheSideInACrossover.gif');
+        }
+
+        &.legs.movingTheLegToTheSideWhileLyingDownWithAnElasticBand {
+            content: url('../../assets/images/exercises/legs/movingTheLegToTheSideWhileLyingDownWithAnElasticBand.gif');
+        }
+
+        &.legs.pacingWithDumbbells {
+            content: url('../../assets/images/exercises/legs/pacingWithDumbbells.gif');
+        }
+
+        &.legs.pullingTheLegBackInTheCrossover {
+            content: url('../../assets/images/exercises/legs/pullingTheLegBackInTheCrossover.gif');
+        }
+
+        &.legs.pullingTheLegBackWhileStandingOnAllFours {
+            content: url('../../assets/images/exercises/legs/pullingTheLegBackWhileStandingOnAllFours.gif');
+        }
+
+        &.legs.sideLungeWithWeights {
+            content: url('../../assets/images/exercises/legs/sideLungeWithWeights.gif');
+        }
+
+        &.legs.smithLunges {
+            content: url('../../assets/images/exercises/legs/smithLunges.gif');
+        }
+
+        &.legs.squats {
+            content: url('../../assets/images/exercises/legs/squats.gif');
+        }
+
+        &.legs.squatsWithWeightsOnOutstretchedArms {
+            content: url('../../assets/images/exercises/legs/squatsWithWeightsOnOutstretchedArms.gif');
+        }
+
+        &.legs.squattingInSmith {
+            content: url('../../assets/images/exercises/legs/squattingInSmith.gif');
+        }
+
+        &.legs.squattingWithDumbbellsOnABench {
+            content: url('../../assets/images/exercises/legs/squattingWithDumbbellsOnABench.gif');
+        }
+
+        &.legs.squatWithDumbbell {
+            content: url('../../assets/images/exercises/legs/squatWithDumbbell.gif');
+        }
+
+        &.legs.squatWithDumbbells {
+            content: url('../../assets/images/exercises/legs/squatWithDumbbells.gif');
+        }
+
+        &.legs.squatWithDumbbellsOnShoulders {
+            content: url('../../assets/images/exercises/legs/squatWithDumbbellsOnShoulders.gif');
+        }
+
+        &.legs.standingOnYourToes {
+            content: url('../../assets/images/exercises/legs/standingOnYourToes.gif');
+        }
+
+        &.legs.standingOnYourToesWhileSitting {
+            content: url('../../assets/images/exercises/legs/standingOnYourToesWhileSitting.gif');
+        }
+
+        &.legs.standingOnYourToesWithDumbbells {
+            content: url('../../assets/images/exercises/legs/standingOnYourToesWithDumbbells.gif');
+        }
+
+        &.legs.stretchingOneLegInTheTrainer {
+            content: url('../../assets/images/exercises/legs/stretchingOneLegInTheTrainer.gif');
+        }
+
+        &.legs.trastersWithDumbbells {
+            content: url('../../assets/images/exercises/legs/trastersWithDumbbells.gif');
+        }
+
+        &.legs.walkingWithDumbbells {
+            content: url('../../assets/images/exercises/legs/walkingWithDumbbells.gif');
+        }
+
+        // SHOULDERS
+
+        &.shoulders.alternateDumbbellsBenchPress {
+            content: url('../../assets/images/exercises/shoulders/alternateDumbbellsBenchPress.gif');
+        }
+
+        &.shoulders.armyBenchPress {
+            content: url('../../assets/images/exercises/shoulders/armyBenchPress.gif');
+        }
+
+        &.shoulders.armyBenchPressInSmith {
+            content: url('../../assets/images/exercises/shoulders/armyBenchPressInSmith.gif');
+        }
+
+        &.shoulders.armyBenchPressNarrowGrip {
+            content: url('../../assets/images/exercises/shoulders/armyBenchPressNarrowGrip.gif');
+        }
+
+        &.shoulders.armyBenchPressWithAWideGrip {
+            content: url('../../assets/images/exercises/shoulders/armyBenchPressWithAWideGrip.gif');
+        }
+
+        &.shoulders.arnoldsBenchPress {
+            content: url('../../assets/images/exercises/shoulders/arnoldsBenchPress.gif');
+        }
+
+        &.shoulders.barbellPullToTheChinEShapedBar {
+            content: url('../../assets/images/exercises/shoulders/barbellPullToTheChinEShapedBar.gif');
+        }
+
+        &.shoulders.barbellPullToTheChinInSmith {
+            content: url('../../assets/images/exercises/shoulders/barbellPullToTheChinInSmith.gif');
+        }
+
+        &.shoulders.benchPressFromBehindTheHeadSitting {
+            content: url('../../assets/images/exercises/shoulders/benchPressFromBehindTheHeadSitting.gif');
+        }
+
+        &.shoulders.benchPressInTheHummerTrainer {
+            content: url('../../assets/images/exercises/shoulders/benchPressInTheHummerTrainer.gif');
+        }
+
+        &.shoulders.benchPressInTheTrainerWhileSitting {
+            content: url('../../assets/images/exercises/shoulders/benchPressInTheTrainerWhileSitting.gif');
+        }
+
+        &.shoulders.chinPullInACrossover {
+            content: url('../../assets/images/exercises/shoulders/chinPullInACrossover.gif');
+        }
+
+        &.shoulders.dumbbellBenchPress {
+            content: url('../../assets/images/exercises/shoulders/dumbbellBenchPress.gif');
+        }
+
+        &.shoulders.dumbbellBenchPressWithDilution {
+            content: url('../../assets/images/exercises/shoulders/dumbbellBenchPressWithDilution.gif');
+        }
+
+        &.shoulders.dumbbellBenchPressWithNeutralGripInclinedBench {
+            content: url('../../assets/images/exercises/shoulders/dumbbellBenchPressWithNeutralGripInclinedBench.gif');
+        }
+
+        &.shoulders.dumbbellDeadliftShoulders {
+            content: url('../../assets/images/exercises/shoulders/dumbbellDeadliftShoulders.gif');
+        }
+
+        &.shoulders.dumbbellsBenchPressWithANeutralGrip {
+            content: url('../../assets/images/exercises/shoulders/dumbbellsBenchPressWithANeutralGrip.gif');
+        }
+
+        &.shoulders.headBenchPress {
+            content: url('../../assets/images/exercises/shoulders/headBenchPress.gif');
+        }
+
+        &.shoulders.liftingADumbbellInFrontOfYou {
+            content: url('../../assets/images/exercises/shoulders/liftingADumbbellInFrontOfYou.gif');
+        }
+
+        &.shoulders.liftingArmsWithDumbbellsInFrontOfYouWhileSitting {
+            content: url('../../assets/images/exercises/shoulders/liftingArmsWithDumbbellsInFrontOfYouWhileSitting.gif');
+        }
+
+        &.shoulders.liftingDumbbellsInFrontOfYou {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsInFrontOfYou.gif');
+        }
+
+        &.shoulders.liftingDumbbellsInFrontOfYouAlternately {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsInFrontOfYouAlternately.gif');
+        }
+
+        &.shoulders.liftingDumbbellsInFrontOfYouWhileLyingOnAnInclinedBench {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsInFrontOfYouWhileLyingOnAnInclinedBench.gif');
+        }
+
+        &.shoulders.liftingDumbbellsInFrontOfYouWithASupinatedGrip {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsInFrontOfYouWithASupinatedGrip.gif');
+        }
+
+        &.shoulders.liftingDumbbellsToTheChin {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsToTheChin.gif');
+        }
+
+        &.shoulders.liftingDumbbellsToTheSidesWhileSittingWithTheBodyRaised {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsToTheSidesWhileSittingWithTheBodyRaised.gif');
+        }
+
+        &.shoulders.liftingDumbbellsToTheSidesWhileStanding {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsToTheSidesWhileStanding.gif');
+        }
+
+        &.shoulders.liftingDumbbellsWhileLyingDownWithASupineGrip {
+            content: url('../../assets/images/exercises/shoulders/liftingDumbbellsWhileLyingDownWithASupineGrip.gif');
+        }
+
+        &.shoulders.liftingTheBarbellInFrontOfYou {
+            content: url('../../assets/images/exercises/shoulders/liftingTheBarbellInFrontOfYou.gif');
+        }
+
+        &.shoulders.liftingTheDumbbellToTheSide {
+            content: url('../../assets/images/exercises/shoulders/liftingTheDumbbellToTheSide.gif');
+        }
+
+        &.shoulders.liftingTheShoulderToTheSideWithDumbbell {
+            content: url('../../assets/images/exercises/shoulders/liftingTheShoulderToTheSideWithDumbbell.gif');
+        }
+
+        &.shoulders.liftingWeightPlatesInFrontOfYou {
+            content: url('../../assets/images/exercises/shoulders/liftingWeightPlatesInFrontOfYou.gif');
+        }
+
+        &.shoulders.liftingYourArmsWithDumbbellsInFrontOfYou {
+            content: url('../../assets/images/exercises/shoulders/liftingYourArmsWithDumbbellsInFrontOfYou.gif');
+        }
+
+        &.shoulders.movingYourHandToTheSideInACrossover {
+            content: url('../../assets/images/exercises/shoulders/movingYourHandToTheSideInACrossover.gif');
+        }
+
+        &.shoulders.overheadDumbbellPressStanding {
+            content: url('../../assets/images/exercises/shoulders/overheadDumbbellPressStanding.gif');
+        }
+
+        &.shoulders.raisingYourArmsInFrontOfYouInACrossoverWithANarrowGrip {
+            content: url('../../assets/images/exercises/shoulders/raisingYourArmsInFrontOfYouInACrossoverWithANarrowGrip.gif');
+        }
+
+        &.shoulders.raisingYourHandInFrontOfYouInACrossover {
+            content: url('../../assets/images/exercises/shoulders/raisingYourHandInFrontOfYouInACrossover.gif');
+        }
+
+        &.shoulders.rotatingTheBrushesWithTheDiscInFrontOfYou {
+            content: url('../../assets/images/exercises/shoulders/rotatingTheBrushesWithTheDiscInFrontOfYou.gif');
+        }
+
+        &.shoulders.shoulderShrugLifts {
+            content: url('../../assets/images/exercises/shoulders/shoulderShrugLifts.gif');
+        }
+
+        &.shoulders.spreadingDumbbellsToTheSidesInATilt {
+            content: url('../../assets/images/exercises/shoulders/spreadingDumbbellsToTheSidesInATilt.gif');
+        }
+
+        &.shoulders.spreadingYourArmsInACrossover {
+            content: url('../../assets/images/exercises/shoulders/spreadingYourArmsInACrossover.gif');
+        }
+
+        &.shoulders.standingDumbbellPress {
+            content: url('../../assets/images/exercises/shoulders/standingDumbbellPress.gif');
+        }
+
+        // PRESS
+
+        &.press.benchPressup {
+            content: url('../../assets/images/exercises/press/benchPressup.gif');
+        }
+
+        &.press.bodyBendsWithDumbbell {
+            content: url('../../assets/images/exercises/press/bodyBendsWithDumbbell.gif');
+        }
+
+        &.press.bodyRotationsWhileSitting {
+            content: url('../../assets/images/exercises/press/bodyRotationsWhileSitting.gif');
+        }
+
+        &.press.bodyRotationsWithWeights {
+            content: url('../../assets/images/exercises/press/bodyRotationsWithWeights.gif');
+        }
+
+        &.press.bodyTiltsToTheSideInTheCrossover {
+            content: url('../../assets/images/exercises/press/bodyTiltsToTheSideInTheCrossover.gif');
+        }
+
+        &.press.bodyTurnsWhileSittingWithHandsBehindHead {
+            content: url('../../assets/images/exercises/press/bodyTurnsWhileSittingWithHandsBehindHead.gif');
+        }
+
+        &.press.crunches {
+            content: url('../../assets/images/exercises/press/crunches.gif');
+        }
+
+        &.press.crunchesOnTheBench {
+            content: url('../../assets/images/exercises/press/crunchesOnTheBench.gif');
+        }
+
+        &.press.deviationOfThePelvisToTheSideInTheTemple {
+            content: url('../../assets/images/exercises/press/deviationOfThePelvisToTheSideInTheTemple.gif');
+        }
+
+        &.press.legLiftAtTheTempleCrossbar {
+            content: url('../../assets/images/exercises/press/legLiftAtTheTempleCrossbar.gif');
+        }
+
+        &.press.legLiftingWhileLyingDown {
+            content: url('../../assets/images/exercises/press/legLiftingWhileLyingDown.gif');
+        }
+
+        &.press.legLiftingWhileLyingOnAnInclinedBench {
+            content: url('../../assets/images/exercises/press/legLiftingWhileLyingOnAnInclinedBench.gif');
+        }
+
+        &.press.legLiftsAtTheTemple {
+            content: url('../../assets/images/exercises/press/legLiftsAtTheTemple.gif');
+        }
+
+        &.press.legLiftWithBendingAtTheTemple {
+            content: url('../../assets/images/exercises/press/legLiftWithBendingAtTheTemple.gif');
+        }
+
+        &.press.liftingTheBodyWhileLyingOnItsSide {
+            content: url('../../assets/images/exercises/press/liftingTheBodyWhileLyingOnItsSide.gif');
+        }
+
+        &.press.liftingThePelvisWhileLyingOnYourSideWithAnEmphasisOnTheElbow {
+            content: url('../../assets/images/exercises/press/liftingThePelvisWhileLyingOnYourSideWithAnEmphasisOnTheElbow.gif');
+        }
+
+        &.press.prayer {
+            content: url('../../assets/images/exercises/press/prayer.gif');
+        }
+
+        &.press.pressRoller {
+            content: url('../../assets/images/exercises/press/pressRoller.gif');
+        }
+
+        &.press.rotationOfTheLegsInTheTemple {
+            content: url('../../assets/images/exercises/press/rotationOfTheLegsInTheTemple.gif');
+        }
+
+        &.press.rotationsOfTheBodyWithAFingerboard {
+            content: url('../../assets/images/exercises/press/rotationsOfTheBodyWithAFingerboard.gif');
+        }
+
+        &.press.scissors {
+            content: url('../../assets/images/exercises/press/scissors.gif');
+        }
+
+        &.press.seatupOnTheBench {
+            content: url('../../assets/images/exercises/press/seatupOnTheBench.gif');
+        }
+
+        &.press.shoulderAlternateTouchBar {
+            content: url('../../assets/images/exercises/press/shoulderAlternateTouchBar.gif');
+        }
+
+        &.press.straightLegLiftsAtTheTemple {
+            content: url('../../assets/images/exercises/press/straightLegLiftsAtTheTemple.gif');
+        }
+
+        &.press.theBar {
+            content: url('../../assets/images/exercises/press/theBar.gif');
+        }
+
+        &.press.theBarWithTheFootPointingToTheSide {
+            content: url('../../assets/images/exercises/press/theBarWithTheFootPointingToTheSide.gif');
+        }
+
+        &.press.twistingWithWeighting {
+            content: url('../../assets/images/exercises/press/twistingWithWeighting.gif');
+        }
+
+        // BACK
+
+        &.back.barbellPullInTilt {
+            content: url('../../assets/images/exercises/back/barbellPullInTilt.gif');
+        }
+
+        &.back.barbellPullToTheBeltOnAnInclinedBench {
+            content: url('../../assets/images/exercises/back/barbellPullToTheBeltOnAnInclinedBench.gif');
+        }
+
+        &.back.barbellScars {
+            content: url('../../assets/images/exercises/back/barbellScars.gif');
+        }
+
+        &.back.beltPullInACrossoverWithANarrowGrip {
+            content: url('../../assets/images/exercises/back/beltPullInACrossoverWithANarrowGrip.gif');
+        }
+
+        &.back.beltPullInSmith {
+            content: url('../../assets/images/exercises/back/beltPullInSmith.gif');
+        }
+
+        &.back.bendingDumbbellsDeadliftSupinatedGrip {
+            content: url('../../assets/images/exercises/back/bendingDumbbellsDeadliftSupinatedGrip.gif');
+        }
+
+        &.back.deadlift {
+            content: url('../../assets/images/exercises/back/deadlift.gif');
+        }
+
+        &.back.deadliftOnStraightLegs {
+            content: url('../../assets/images/exercises/back/deadliftOnStraightLegs.gif');
+        }
+
+        &.back.dumbbellPullToTheBelt {
+            content: url('../../assets/images/exercises/back/dumbbellPullToTheBelt.gif');
+        }
+
+        &.back.dumbbellsDeadliftInATiltToTheWaist {
+            content: url('../../assets/images/exercises/back/dumbbellsDeadliftInATiltToTheWaist.gif');
+        }
+
+        &.back.dumbbellsDeadliftOnAnInclinedBench {
+            content: url('../../assets/images/exercises/back/dumbbellsDeadliftOnAnInclinedBench.gif');
+        }
+
+        &.back.dumbbellsDeadliftToTheBodyInThePlank {
+            content: url('../../assets/images/exercises/back/dumbbellsDeadliftToTheBodyInThePlank.gif');
+        }
+
+        &.back.dumbbellsDeadliftToTheWaistIncline {
+            content: url('../../assets/images/exercises/back/dumbbellsDeadliftToTheWaistIncline.gif');
+        }
+
+        &.back.horizontalBlockPullWideHandle {
+            content: url('../../assets/images/exercises/back/horizontalBlockPullWideHandle.gif');
+        }
+
+        &.back.horizontalBlockPullWithBodyTiltRopeHandle {
+            content: url('../../assets/images/exercises/back/horizontalBlockPullWithBodyTiltRopeHandle.gif');
+        }
+
+        &.back.horizontalBlockThrustNarrowHandle {
+            content: url('../../assets/images/exercises/back/horizontalBlockThrustNarrowHandle.gif');
+        }
+
+        &.back.horizontalBlockThrustWithANarrowGrip {
+            content: url('../../assets/images/exercises/back/horizontalBlockThrustWithANarrowGrip.gif');
+        }
+
+        &.back.hyperextension {
+            content: url('../../assets/images/exercises/back/hyperextension.gif');
+        }
+
+        &.back.pulloverInACrossover {
+            content: url('../../assets/images/exercises/back/pulloverInACrossover.gif');
+        }
+
+        &.back.pulloverInTheCrossoverHasAWideHandle {
+            content: url('../../assets/images/exercises/back/pulloverInTheCrossoverHasAWideHandle.gif');
+        }
+
+        &.back.pullTheDumbbellTowardsTheBeltFromTheStop {
+            content: url('../../assets/images/exercises/back/pullTheDumbbellTowardsTheBeltFromTheStop.gif');
+        }
+
+        &.back.pullUpsAreClassic {
+            content: url('../../assets/images/exercises/back/pullUpsAreClassic.gif');
+        }
+
+        &.back.pullUpsWithASupinatedGrip {
+            content: url('../../assets/images/exercises/back/pullUpsWithASupinatedGrip.gif');
+        }
+
+        &.back.pullUpsWithWeights {
+            content: url('../../assets/images/exercises/back/pullUpsWithWeights.gif');
+        }
+
+        &.back.romanianDumbbellDeadlift {
+            content: url('../../assets/images/exercises/back/romanianDumbbellDeadlift.gif');
+        }
+
+        &.back.romanianThrust {
+            content: url('../../assets/images/exercises/back/romanianThrust.gif');
+        }
+
+        &.back.scarsWithDumbbellsWhileSitting {
+            content: url('../../assets/images/exercises/back/scarsWithDumbbellsWhileSitting.gif');
+        }
+
+        &.back.scarsWithDumbbellsWhileSittingWithEmphasisOnABench {
+            content: url('../../assets/images/exercises/back/scarsWithDumbbellsWhileSittingWithEmphasisOnABench.gif');
+        }
+
+        &.back.scarsWithDumbbellsWhileStanding {
+            content: url('../../assets/images/exercises/back/scarsWithDumbbellsWhileStanding.gif');
+        }
+
+        &.back.spreadingDumbbellsToTheSidesWhileLyingOnAnInclinedBench {
+            content: url('../../assets/images/exercises/back/spreadingDumbbellsToTheSidesWhileLyingOnAnInclinedBench.gif');
+        }
+
+        &.back.TBarDeadliftInTheTrainer {
+            content: url('../../assets/images/exercises/back/TBarDeadliftInTheTrainer.gif');
+        }
+
+        &.back.theScarsInSmith {
+            content: url('../../assets/images/exercises/back/theScarsInSmith.gif');
+        }
+
+        &.back.theThrustOfTheBarIsTiltedParallelToTheFloor {
+            content: url('../../assets/images/exercises/back/theThrustOfTheBarIsTiltedParallelToTheFloor.gif');
+        }
+
+        &.back.theThrustOfTheVerticalBlockIsWide {
+            content: url('../../assets/images/exercises/back/theThrustOfTheVerticalBlockIsWide.gif');
+        }
+
+        &.back.thrustOfTheHorizontalBlockInTheCrossover {
+            content: url('../../assets/images/exercises/back/thrustOfTheHorizontalBlockInTheCrossover.gif');
+        }
+
+        &.back.TNeckThrust {
+            content: url('../../assets/images/exercises/back/TNeckThrust.gif');
+        }
+
+        &.back.tractionOfTheHorizontalBlockOfOneHandle {
+            content: url('../../assets/images/exercises/back/tractionOfTheHorizontalBlockOfOneHandle.gif');
+        }
+
+        &.back.tractionOfTheHorizontalBlockWithARopeHandle {
+            content: url('../../assets/images/exercises/back/tractionOfTheHorizontalBlockWithARopeHandle.gif');
+        }
+
+        &.back.tractionOfTheVerticalBlockWithASupinatedGrip {
+            content: url('../../assets/images/exercises/back/tractionOfTheVerticalBlockWithASupinatedGrip.gif');
+        }
+
+        &.back.tractionToTheBodyInTheCrossoverRopeHandle {
+            content: url('../../assets/images/exercises/back/tractionToTheBodyInTheCrossoverRopeHandle.gif');
+        }
+
+        &.back.verticalBlockHeadPull {
+            content: url('../../assets/images/exercises/back/verticalBlockHeadPull.gif');
+        }
+
+        &.back.verticalBlockPullWithOneHandle {
+            content: url('../../assets/images/exercises/back/verticalBlockPullWithOneHandle.gif');
+        }
+
+        &.back.verticalBlockThrust {
+            content: url('../../assets/images/exercises/back/verticalBlockThrust.gif');
+        }
+
+        &.back.verticalBlockThrustNarrowHandle {
+            content: url('../../assets/images/exercises/back/verticalBlockThrustNarrowHandle.gif');
+        }
+
+        &.back.verticalBlockThrustWithNarrowThreadedGrip {
+            content: url('../../assets/images/exercises/back/verticalBlockThrustWithNarrowThreadedGrip.gif');
+        }
+
+        // TRICEPS
+
+        &.triceps.armExtensionWithDumbbellFromBehindTheHeadWhileStanding {
+            content: url('../../assets/images/exercises/triceps/armExtensionWithDumbbellFromBehindTheHeadWhileStanding.gif');
+        }
+
+        &.triceps.benchPressInSmithNarrow {
+            content: url('../../assets/images/exercises/triceps/benchPressInSmithNarrow.gif');
+        }
+
+        &.triceps.benchPressWithANarrowGrip {
+            content: url('../../assets/images/exercises/triceps/benchPressWithANarrowGrip.gif');
+        }
+
+        &.triceps.benchPressWithANarrowGripEShapedNeck {
+            content: url('../../assets/images/exercises/triceps/benchPressWithANarrowGripEShapedNeck.gif');
+        }
+
+        &.triceps.extendingTheArmsFromBehindTheHeadInACrossover {
+            content: url('../../assets/images/exercises/triceps/extendingTheArmsFromBehindTheHeadInACrossover.gif');
+        }
+
+        &.triceps.extensionOfArmsInACrossoverInATilt {
+            content: url('../../assets/images/exercises/triceps/extensionOfArmsInACrossoverInATilt.gif');
+        }
+
+        &.triceps.extensionOfArmsInACrossoverRopeGrip {
+            content: url('../../assets/images/exercises/triceps/extensionOfArmsInACrossoverRopeGrip.gif');
+        }
+
+        &.triceps.extensionOfTheArmFromBehindTheHeadWithOneDumbbellWhileSitting {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmFromBehindTheHeadWithOneDumbbellWhileSitting.gif');
+        }
+
+        &.triceps.extensionOfTheArmsFromBehindTheHeadInACrossoverRopeGrip {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmsFromBehindTheHeadInACrossoverRopeGrip.gif');
+        }
+
+        &.triceps.extensionOfTheArmsInACrossoverSupinatedGrip {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmsInACrossoverSupinatedGrip.gif');
+        }
+
+        &.triceps.extensionOfTheArmsInTheCrossoverTheHandleIsNarrow {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmsInTheCrossoverTheHandleIsNarrow.gif');
+        }
+
+        &.triceps.extensionOfTheArmsInTheCrossoverWithTheHandle {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmsInTheCrossoverWithTheHandle.gif');
+        }
+
+        &.triceps.extensionOfTheArmsOnTheCrossoverBlockHandle {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmsOnTheCrossoverBlockHandle.gif');
+        }
+
+        &.triceps.extensionOfTheArmsOnTheHandleBlock {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmsOnTheHandleBlock.gif');
+        }
+
+        &.triceps.extensionOfTheArmWithDumbbellFromBehindTheHead {
+            content: url('../../assets/images/exercises/triceps/extensionOfTheArmWithDumbbellFromBehindTheHead.gif');
+        }
+
+        &.triceps.frenchBenchPress {
+            content: url('../../assets/images/exercises/triceps/frenchBenchPress.gif');
+        }
+
+        &.triceps.frenchBenchPressWithDumbbells {
+            content: url('../../assets/images/exercises/triceps/frenchBenchPressWithDumbbells.gif');
+        }
+
+        &.triceps.frenchEBarBenchPress {
+            content: url('../../assets/images/exercises/triceps/frenchEBarBenchPress.gif');
+        }
+
+        &.triceps.frenchStraightBenchPress {
+            content: url('../../assets/images/exercises/triceps/frenchStraightBenchPress.gif');
+        }
+
+        &.triceps.pullingTheArmBackInTheCrossover {
+            content: url('../../assets/images/exercises/triceps/pullingTheArmBackInTheCrossover.gif');
+        }
+
+        &.triceps.pullingTheArmBackInTheCrossoverWithTheHandle {
+            content: url('../../assets/images/exercises/triceps/pullingTheArmBackInTheCrossoverWithTheHandle.gif');
+        }
+
+        &.triceps.pullingTheDumbbellBack {
+            content: url('../../assets/images/exercises/triceps/pullingTheDumbbellBack.gif');
+        }
+
+        &.triceps.pullingTheDumbbellsBackInATilt {
+            content: url('../../assets/images/exercises/triceps/pullingTheDumbbellsBackInATilt.gif');
+        }
+
+        &.triceps.stretchingArmsWithDumbbellFromBehindTheHead {
+            content: url('../../assets/images/exercises/triceps/stretchingArmsWithDumbbellFromBehindTheHead.gif');
+        }
+
+        &.triceps.stretchingArmsWithDumbbellsFromBehindTheHeadWhileSitting {
+            content: url('../../assets/images/exercises/triceps/stretchingArmsWithDumbbellsFromBehindTheHeadWhileSitting.gif');
+        }
+
+        &.triceps.stretchingOfArmsWithDumbbellsFromBehindTheHeadLyingDown {
+            content: url('../../assets/images/exercises/triceps/stretchingOfArmsWithDumbbellsFromBehindTheHeadLyingDown.gif');
+        }
+
+        &.triceps.stretchingTheArmsWithDumbbellFromBehindTheHeadWhileLyingDown {
+            content: url('../../assets/images/exercises/triceps/stretchingTheArmsWithDumbbellFromBehindTheHeadWhileLyingDown.gif');
+        }
+
+        &.triceps.tatePressWithOneDumbbellProne {
+            content: url('../../assets/images/exercises/triceps/tatePressWithOneDumbbellProne.gif');
+        }
+
+        &.triceps.theTatePress {
+            content: url('../../assets/images/exercises/triceps/theTatePress.gif');
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export { GenerateLink } from './ui/GenerateLink';

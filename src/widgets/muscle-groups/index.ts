@@ -1,0 +1,1 @@
+export { MuscleGroups } from './ui/MuscleGroups';

@@ -1,0 +1,27 @@
+div.exercisesTable {
+    margin-top: 8px;
+
+    table {
+        position: relative;
+        border-collapse: collapse;
+
+        &::after {
+            content: url('../../assets/icons/logo22x22.png');
+            position: absolute;
+            right: 0;
+            top: -70px;
+        }
+
+        thead tr th {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+            font-style: italic;
+            font-weight: normal;
+
+            &:first-child {
+                font-size: 12pt;
+            }
+        }
+    }
+}

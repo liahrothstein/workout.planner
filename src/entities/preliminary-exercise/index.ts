@@ -1,0 +1,1 @@
+export { PreliminaryExercise } from './ui/PreliminaryExercise';
