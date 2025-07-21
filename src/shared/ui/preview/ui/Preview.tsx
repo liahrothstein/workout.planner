@@ -1,7 +1,7 @@
 import { EyeOutlined } from '@ant-design/icons';
 import { Typography } from 'antd';
 
-import { setClassName } from '../../../lib/utils/set-class-name';
+import { setClassName } from '@utils/set-class-name';
 
 import './Preview.scss';
 

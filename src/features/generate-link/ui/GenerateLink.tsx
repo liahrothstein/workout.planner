@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button, Input, Typography } from 'antd';
 import { CopyOutlined } from '@ant-design/icons';
 
-import { useAppSelector } from '../../../app/store';
+import { useAppSelector } from '@store/hooks';
 import { checkChangesWorkoutData, generateParams } from '../model/generate-link';
 
 import type { Workout } from '../../../shared/types/workout';

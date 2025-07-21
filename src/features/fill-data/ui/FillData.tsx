@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Cascader, Input, InputNumber, Typography } from 'antd';
 
-import { MuscleGroups, PreliminaryExercise, Cardio, AddExercise } from '../../../entities';
+import { MuscleGroups, PreliminaryExercise, Cardio, AddExercise } from '@entities/index';
 
-import { useAppDispatch, useAppSelector } from '../../../app/store';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { ejectTrainingType, trainingTypeCascaderProps } from '../model/fill-data';
-import { editTrainingType, setNotes, setWorkout } from '../../../shared/lib/slices';
+import { editTrainingType, setNotes, setWorkout } from '@slices/index';
 
 import type { CardioExercise, MuscleGroup, TrainingType } from '../../../shared/types/workout';
 import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';

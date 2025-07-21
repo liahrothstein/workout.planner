@@ -1,8 +1,8 @@
 import { Button, Card, Table } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
 
-import { useAppDispatch } from '../../../app/store';
-import { editExercise } from '../../../shared/lib/slices';
+import { useAppDispatch } from '@store/hooks';
+import { editExercise } from '@slices/exercise-slice';
 import { columns, deleteExercise, generateDataSource, titleCheck } from '../model/preliminary-exercise';
 
 import type { Attempt } from '../../../shared/types/workout';

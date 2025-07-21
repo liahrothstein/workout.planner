@@ -1,6 +1,6 @@
 import { Checkbox } from 'antd';
 
-import { groups } from '../../../shared/consts/workout';
+import { groups } from '@constants/workout';
 
 import { groupCheck } from '../model/muscle-groups';
 

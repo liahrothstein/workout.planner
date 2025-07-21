@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import { cardioSlice, exerciseSilce, muscleGroupsSlice, notesSlice, trainingTypeSlice, workoutSlice } from '../../shared/lib/slices/index';
+import { cardioSlice, exerciseSilce, muscleGroupsSlice, notesSlice, trainingTypeSlice, workoutSlice } from '@slices/index';
 
 const rootReducer = combineReducers({
     exercise: exerciseSilce.reducer,

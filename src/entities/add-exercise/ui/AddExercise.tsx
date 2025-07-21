@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Button, Cascader, InputNumber, Typography } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 
-import { Preview } from '../../../shared/ui/preview';
+import { Preview } from '@components/preview';
 
-import { useAppDispatch, useAppSelector } from '../../../app/store';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { addExersice, exercisesCascaderProps, setTimes, setWeight, attempts, timesValue } from '../model/add-exercise';
 
 import './AddExercise.scss';

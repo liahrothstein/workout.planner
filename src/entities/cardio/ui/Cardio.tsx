@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Cascader, InputNumber, TimePicker, Typography } from 'antd';
 
-import { useAppDispatch } from '../../../app/store';
-import { setCardio } from '../../../shared/lib/slices';
+import { useAppDispatch } from '@store/hooks';
+import { setCardio } from '@slices/cardio-slice';
 import { cardioCascaderProps, timeParse } from '../model/cardio';
 
 import type { CardioType } from '../../../shared/types/workout';

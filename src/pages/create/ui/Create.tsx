@@ -1,6 +1,6 @@
 import { Form } from 'antd';
 
-import { FillData, GenerateLink } from '../../../features';
+import { FillData, GenerateLink } from '@features/index';
 
 import './Create.scss';
 
