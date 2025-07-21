@@ -1,6 +1,6 @@
-import { TableCell } from '../../../shared/ui/table-cell';
+import { TableCell } from '@components/table-cell';
 
-import { setClassName } from '../../../shared/lib/utils/set-class-name';
+import { setClassName } from '@utils/set-class-name';
 
 import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
 

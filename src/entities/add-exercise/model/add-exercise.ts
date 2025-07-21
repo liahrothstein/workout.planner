@@ -1,5 +1,5 @@
-import { exercises } from '../../../shared/consts/exercises';
-import { editExercise } from '../../../shared/lib/slices';
+import { exercises } from '@constants/exercises';
+import { editExercise } from '@slices/exercise-slice';
 
 import type { SetTimes, SetWeight, ExerciseCascaderProps } from '../../../shared/types/cascader';
 import type { ExerciseArray, ExerciseWithAttmepts } from '../../../shared/types/exercise';

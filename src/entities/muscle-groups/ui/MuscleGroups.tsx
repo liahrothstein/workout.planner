@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Checkbox, Typography } from 'antd';
 
-import { useAppDispatch, useAppSelector } from '../../../app/store';
-import { setMuscleGroups } from '../../../shared/lib/slices';
+import { useAppDispatch, useAppSelector } from '@store/hooks';
+import { setMuscleGroups } from '@slices/muscle-groups-slice';
 import {
   setBack,
   setShoulders,

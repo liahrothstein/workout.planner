@@ -1,4 +1,4 @@
-import { TableRow } from '../../../entities/table-row';
+import { TableRow } from '@entities/table-row';
 
 import { attempts } from '../model/exercises-table';
 

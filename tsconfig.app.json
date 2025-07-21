@@ -30,6 +30,7 @@
       "@pages/*": ["./src/pages/*"],
       "@types/*": ["./src/shared/types/*"],
       "@utils/*": ["./src/shared/lib/utils/*"],
+      "@slices/*": ["./src/shared/lib/slices/*"],
       "@entities/*": ["./src/entities/*"],
       "@features/*": ["./src/features/*"],
       "@widgets/*": ["./src/widgets/*"],
