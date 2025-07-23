@@ -45,7 +45,7 @@ export function setPressClassName(exercise: string): string {
         case 'Подъем корпуса лежа на боку':
             return ('press liftingTheBodyWhileLyingOnItsSide');
             break;
-        case 'Подъем таза лежа на боку с упором на локоть':
+        case 'Боковая планка':
             return ('press liftingThePelvisWhileLyingOnYourSideWithAnEmphasisOnTheElbow');
             break;
         case 'Молитва':
@@ -77,6 +77,63 @@ export function setPressClassName(exercise: string): string {
             break;
         case 'Планка с отведением ноги в сторону':
             return ('press theBarWithTheFootPointingToTheSide');
+            break;
+        case 'Альпинист на скамейке':
+            return ('press aClimberOnABench');
+            break;
+        case 'Складка со сгибанием ног к животу на горизонтальной скамье':
+            return ('press aFoldWithTheLegsBentTowardsTheStomachOnAHorizontalBench');
+            break;
+        case 'Наклоны корпуса на гиперэкстензии':
+            return ('press bodyTiltsOnHyperextension');
+            break;
+        case 'Классическая складка с подтяжкой':
+            return ('press classicCreaseWithSuspender');
+            break;
+        case 'Кранчи на вытянутых руках':
+            return ('press crunchesAtArmsLength');
+            break;
+        case 'Кранчи с поднятыми ногами':
+            return ('press crunchesWithRaisedLegs');
+            break;
+        case 'Кранчи с поднятыми ногами и отягощением на выпрямленных руках Ситап':
+            return ('press crunchesWithRaisedLegsAndWeightsOnStraightenedArmsSitup');
+            break;
+        case 'Кранчи с утяжелением':
+            return ('press crunchesWithWeighting');
+            break;
+        case 'Динамическая боковая планка с отягощением':
+            return ('press dynamicSideBarWithWeights');
+            break;
+        case 'Боковые наклоны лежа':
+            return ('press lateralInclinesWhileLyingDown');
+            break;
+        case 'Подъем ног лёжа на горизонтальной скамье':
+            return ('press legLiftWhileLyingOnAHorizontalBench');
+            break;
+        case 'Складка с подтягиванием ног':
+            return ('press legTighteningCrease');
+            break;
+        case 'Подъем корпуса на фитболе':
+            return ('press liftingTheBodyOnAFitball');
+            break;
+        case 'Подъем ног к корпусу с утяжелением складка':
+            return ('press liftingTheLegsToTheBodyWithAWeightedFold');
+            break;
+        case 'Косые скручивания колено локоть велосипед':
+            return ('press obliqueTwistingKneeElbowBicycle');
+            break;
+        case 'Косые скручивания колено локоть с лентой велосипед':
+            return ('press obliqueTwistingKneeElbowWithTapeBike');
+            break;
+        case 'Русский твист с утяжелением':
+            return ('press russianTwistWithWeighting');
+            break;
+        case 'Супермен':
+            return ('press superman');
+            break;
+        case 'Касание пятки с подъемом ног':
+            return ('press touchingTheHeelWithLiftingOfTheLegs');
             break;
         default:
             return ('press twistingWithWeighting');

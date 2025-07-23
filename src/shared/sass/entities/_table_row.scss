@@ -744,6 +744,82 @@ tr.tableRow td.exercise {
         content: url('../../assets/images/exercises/press/twistingWithWeighting.gif');
     }
 
+    &.press.aClimberOnABench:hover::before {
+        content: url('../../assets/images/exercises/press/aClimberOnABench.gif');
+    }
+
+    &.press.aFoldWithTheLegsBentTowardsTheStomachOnAHorizontalBench:hover::before {
+        content: url('../../assets/images/exercises/press/aFoldWithTheLegsBentTowardsTheStomachOnAHorizontalBench.gif');
+    }
+
+    &.press.bodyTiltsOnHyperextension:hover::before {
+        content: url('../../assets/images/exercises/press/bodyTiltsOnHyperextension.gif');
+    }
+
+    &.press.classicCreaseWithSuspender:hover::before {
+        content: url('../../assets/images/exercises/press/classicCreaseWithSuspender.gif');
+    }
+
+    &.press.crunchesAtArmsLength:hover::before {
+        content: url('../../assets/images/exercises/press/crunchesAtArmsLength.gif');
+    }
+
+    &.press.crunchesWithRaisedLegs:hover::before {
+        content: url('../../assets/images/exercises/press/crunchesWithRaisedLegs.gif');
+    }
+
+    &.press.crunchesWithRaisedLegsAndWeightsOnStraightenedArmsSitup:hover::before {
+        content: url('../../assets/images/exercises/press/crunchesWithRaisedLegsAndWeightsOnStraightenedArmsSitup.gif');
+    }
+
+    &.press.crunchesWithWeighting:hover::before {
+        content: url('../../assets/images/exercises/press/crunchesWithWeighting.gif');
+    }
+
+    &.press.dynamicSideBarWithWeights:hover::before {
+        content: url('../../assets/images/exercises/press/dynamicSideBarWithWeights.gif');
+    }
+
+    &.press.lateralInclinesWhileLyingDown:hover::before {
+        content: url('../../assets/images/exercises/press/lateralInclinesWhileLyingDown.gif');
+    }
+
+    &.press.legLiftWhileLyingOnAHorizontalBench:hover::before {
+        content: url('../../assets/images/exercises/press/legLiftWhileLyingOnAHorizontalBench.gif');
+    }
+
+    &.press.legTighteningCrease:hover::before {
+        content: url('../../assets/images/exercises/press/legTighteningCrease.gif');
+    }
+
+    &.press.liftingTheBodyOnAFitball:hover::before {
+        content: url('../../assets/images/exercises/press/liftingTheBodyOnAFitball.gif');
+    }
+
+    &.press.liftingTheLegsToTheBodyWithAWeightedFold:hover::before {
+        content: url('../../assets/images/exercises/press/liftingTheLegsToTheBodyWithAWeightedFold.gif');
+    }
+
+    &.press.obliqueTwistingKneeElbowBicycle:hover::before {
+        content: url('../../assets/images/exercises/press/obliqueTwistingKneeElbowBicycle.gif');
+    }
+
+    &.press.obliqueTwistingKneeElbowWithTapeBike:hover::before {
+        content: url('../../assets/images/exercises/press/obliqueTwistingKneeElbowWithTapeBike.gif');
+    }
+
+    &.press.russianTwistWithWeighting:hover::before {
+        content: url('../../assets/images/exercises/press/russianTwistWithWeighting.gif');
+    }
+
+    &.press.superman:hover::before {
+        content: url('../../assets/images/exercises/press/superman.gif');
+    }
+
+    &.press.touchingTheHeelWithLiftingOfTheLegs:hover::before {
+        content: url('../../assets/images/exercises/press/touchingTheHeelWithLiftingOfTheLegs.gif');
+    }
+
     // BACK
 
     &.back.barbellPullInTilt:hover::before {
