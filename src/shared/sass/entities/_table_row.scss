@@ -48,22 +48,6 @@ tr.tableRow td.exercise {
         content: url('../../assets/images/exercises/biceps/concentratedFlexionOnBicepsWhileSitting.gif');
     }
 
-    &.biceps.flexionOnTheForearms:hover::before {
-        content: url('../../assets/images/exercises/biceps/flexionOnTheForearms.gif');
-    }
-
-    &.biceps.flexionOnTheForearmsSitting:hover::before {
-        content: url('../../assets/images/exercises/biceps/flexionOnTheForearmsSitting.gif');
-    }
-
-    &.biceps.flexionOnTheForearmsWhileSittingWithAPiercedGrip:hover::before {
-        content: url('../../assets/images/exercises/biceps/flexionOnTheForearmsWhileSittingWithAPiercedGrip.gif');
-    }
-
-    &.biceps.forearmLiftsWithAThreadedGrip:hover::before {
-        content: url('../../assets/images/exercises/biceps/forearmLiftsWithAThreadedGrip.gif');
-    }
-
     &.biceps.hammerLiftsAlternately:hover::before {
         content: url('../../assets/images/exercises/biceps/hammerLiftsAlternately.gif');
     }
@@ -1118,5 +1102,23 @@ tr.tableRow td.exercise {
 
     &.triceps.theTatePress:hover::before {
         content: url('../../assets/images/exercises/triceps/theTatePress.gif');
+    }
+
+    // FOREARMS
+
+    &.forearms.flexionOnTheForearms:hover::before {
+        content: url('../../assets/images/exercises/forearms/flexionOnTheForearms.gif');
+    }
+
+    &.forearms.flexionOnTheForearmsSitting:hover::before {
+        content: url('../../assets/images/exercises/forearms/flexionOnTheForearmsSitting.gif');
+    }
+
+    &.forearms.flexionOnTheForearmsWhileSittingWithAPiercedGrip:hover::before {
+        content: url('../../assets/images/exercises/forearms/flexionOnTheForearmsWhileSittingWithAPiercedGrip.gif');
+    }
+
+    &.forearms.forearmLiftsWithAThreadedGrip:hover::before {
+        content: url('../../assets/images/exercises/forearms/forearmLiftsWithAThreadedGrip.gif');
     }
 }
