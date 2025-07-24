@@ -310,6 +310,50 @@ tr.tableRow td.exercise {
         content: url('../../assets/images/exercises/chest/svendsStandingBenchPressWithDumbbell.gif');
     }
 
+    &.chest.benchPressFromABar:hover::before {
+        content: url('../../assets/images/exercises/chest/benchPressFromABar.gif');
+    }
+
+    &.chest.benchPressWithTape:hover::before {
+        content: url('../../assets/images/exercises/chest/benchPressWithTape.gif');
+    }
+
+    &.chest.bendingOneArmToTheSideInACrossover:hover::before {
+        content: url('../../assets/images/exercises/chest/bendingOneArmToTheSideInACrossover.gif');
+    }
+
+    &.chest.bringingTheHandInFrontOfYouInACrossoverFromTheUpperBlock:hover::before {
+        content: url('../../assets/images/exercises/chest/bringingTheHandInFrontOfYouInACrossoverFromTheUpperBlock.gif');
+    }
+
+    &.chest.bringingYourHandsTogetherInACrossoverWhileLyingDownFromTheLowerBlock:hover::before {
+        content: url('../../assets/images/exercises/chest/bringingYourHandsTogetherInACrossoverWhileLyingDownFromTheLowerBlock.gif');
+    }
+
+    &.chest.bringingYourHandsTogetherWithDumbbellsWhileLyingOnAnInclinedBenchWithASupinatedGrip:hover::before {
+        content: url('../../assets/images/exercises/chest/bringingYourHandsTogetherWithDumbbellsWhileLyingOnAnInclinedBenchWithASupinatedGrip.gif');
+    }
+
+    &.chest.chestPressWhileStandingInACrossover:hover::before {
+        content: url('../../assets/images/exercises/chest/chestPressWhileStandingInACrossover.gif');
+    }
+
+    &.chest.dumbbellBenchPressLyingOnAHorizontalBenchWithASupinatedGrip:hover::before {
+        content: url('../../assets/images/exercises/chest/dumbbellBenchPressLyingOnAHorizontalBenchWithASupinatedGrip.gif');
+    }
+
+    &.chest.dumbbellBenchPressLyingOnAnInclinedBenchWithANeutralGrip:hover::before {
+        content: url('../../assets/images/exercises/chest/dumbbellBenchPressLyingOnAnInclinedBenchWithANeutralGrip.gif');
+    }
+
+    &.chest.fistPushUps:hover::before {
+        content: url('../../assets/images/exercises/chest/fistPushUps.gif');
+    }
+
+    &.chest.rotatingDumbbellsToTheSidesWhileLyingDown:hover::before {
+        content: url('../../assets/images/exercises/chest/rotatingDumbbellsToTheSidesWhileLyingDown.gif');
+    }
+
     // LEGS
 
     &.legs.backLungesWithDumbbells:hover::before {
