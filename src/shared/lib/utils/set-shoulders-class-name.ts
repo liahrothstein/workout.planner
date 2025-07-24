@@ -123,6 +123,24 @@ export function setShouldersClassName(exercise: string,): string {
         case 'Разведение рук в кроссовере':
             return ('shoulders spreadingYourArmsInACrossover');
             break;
+        case 'Протяжка в кроссовере':
+            return ('shoulders drawingInACrossover');
+            break;
+        case 'Отведение рук с гантелями в стороны сидя, в наклоне':
+            return ('shoulders liftingArmsWithDumbbellsToTheSidesWhileSittingInATilt');
+            break;
+        case 'Отведение руки с гантелей в стороны, лёжа на скамье':
+            return ('shoulders liftingTheArmFromTheDumbbellsToTheSidesWhileLyingOnTheBench');
+            break;
+        case 'Тяга каната лежа в кроссовере':
+            return ('shoulders ropePullWhileLyingInACrossover');
+            break;
+        case 'Тяга канатной рукоятки стоя к лицу, в кроссовере с верхнего блока':
+            return ('shoulders tractionOfTheRopeHandleStandingToTheFaceInACrossoverFromTheUpperBlock');
+            break;
+        case 'Тяга к корпусу канатной рукоятки в кроссовере верхнего блока':
+            return ('shoulders tractionToTheBodyOfTheRopeHandleInTheCrossoverOfTheUpperBlock');
+            break;
         default:
             return ('shoulders standingDumbbellPress');
             break;

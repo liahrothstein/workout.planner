@@ -782,6 +782,30 @@ tr.tableRow td.exercise {
         content: url('../../assets/images/exercises/shoulders/standingDumbbellPress.gif');
     }
 
+    &.shoulders.drawingInACrossover:hover::before {
+        content: url('../../assets/images/exercises/shoulders/drawingInACrossover.gif');
+    }
+
+    &.shoulders.liftingArmsWithDumbbellsToTheSidesWhileSittingInATilt:hover::before {
+        content: url('../../assets/images/exercises/shoulders/liftingArmsWithDumbbellsToTheSidesWhileSittingInATilt.gif');
+    }
+
+    &.shoulders.liftingTheArmFromTheDumbbellsToTheSidesWhileLyingOnTheBench:hover::before {
+        content: url('../../assets/images/exercises/shoulders/liftingTheArmFromTheDumbbellsToTheSidesWhileLyingOnTheBench.gif');
+    }
+
+    &.shoulders.ropePullWhileLyingInACrossover:hover::before {
+        content: url('../../assets/images/exercises/shoulders/ropePullWhileLyingInACrossover.gif');
+    }
+
+    &.shoulders.tractionOfTheRopeHandleStandingToTheFaceInACrossoverFromTheUpperBlock:hover::before {
+        content: url('../../assets/images/exercises/shoulders/tractionOfTheRopeHandleStandingToTheFaceInACrossoverFromTheUpperBlock.gif');
+    }
+
+    &.shoulders.tractionToTheBodyOfTheRopeHandleInTheCrossoverOfTheUpperBlock:hover::before {
+        content: url('../../assets/images/exercises/shoulders/tractionToTheBodyOfTheRopeHandleInTheCrossoverOfTheUpperBlock.gif');
+    }
+
     // PRESS
 
     &.press.benchPressup:hover::before {
