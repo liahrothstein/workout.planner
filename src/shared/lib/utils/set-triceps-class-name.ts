@@ -84,6 +84,21 @@ export function setTricepsClassName(exercise: string): string {
         case 'Жим Тейта одной гантелей (лёжа)':
             return ('triceps tatePressWithOneDumbbellProne');
             break;
+        case 'Разгибание рук в кроссовере с канатной рукояткой, с верхнего блока':
+            return ('triceps armExtensionInACrossoverWithARopeHandleFromTheUpperBlock');
+            break;
+        case 'Разгибание руки в кроссовере одной канатной рукояткой с верхнего блока':
+            return ('triceps extensionOfTheArmInTheCrossoverWithOneRopeHandleFromTheUpperBlock');
+            break;
+        case 'Французский жим лёжа на наклонной скамье узким хватом':
+            return ('triceps frenchBenchPressOnAnInclinedBenchWithANarrowGrip');
+            break;
+        case 'Французский жим лёжа одной гантелей':
+            return ('triceps frenchBenchPressWithOneDumbbell');
+            break;
+        case 'Обратные отжимания от скамьи':
+            return ('triceps reversePushUpsFromTheBench');
+            break;
         default:
             return ('triceps theTatePress');
             break;

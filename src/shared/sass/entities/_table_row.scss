@@ -1380,6 +1380,26 @@ tr.tableRow td.exercise {
         content: url('../../assets/images/exercises/triceps/theTatePress.gif');
     }
 
+    &.triceps.armExtensionInACrossoverWithARopeHandleFromTheUpperBlock:hover::before {
+        content: url('../../assets/images/exercises/triceps/armExtensionInACrossoverWithARopeHandleFromTheUpperBlock.gif');
+    }
+
+    &.triceps.extensionOfTheArmInTheCrossoverWithOneRopeHandleFromTheUpperBlock:hover::before {
+        content: url('../../assets/images/exercises/triceps/extensionOfTheArmInTheCrossoverWithOneRopeHandleFromTheUpperBlock.gif');
+    }
+
+    &.triceps.frenchBenchPressOnAnInclinedBenchWithANarrowGrip:hover::before {
+        content: url('../../assets/images/exercises/triceps/frenchBenchPressOnAnInclinedBenchWithANarrowGrip.gif');
+    }
+
+    &.triceps.frenchBenchPressWithOneDumbbell:hover::before {
+        content: url('../../assets/images/exercises/triceps/frenchBenchPressWithOneDumbbell.gif');
+    }
+
+    &.triceps.reversePushUpsFromTheBench:hover::before {
+        content: url('../../assets/images/exercises/triceps/reversePushUpsFromTheBench.gif');
+    }
+
     // FOREARMS
 
     &.forearms.flexionOnTheForearms:hover::before {
