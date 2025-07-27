@@ -10,7 +10,8 @@ export const initWorkout: Workout = {
         time: '',
         rhythm: null
     },
-    notes: ''
+    notes: '',
+    warmUp: []
 };
 
 export const groups: MuscleGroup[] = [

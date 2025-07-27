@@ -19,7 +19,7 @@ function exercisesChildren(array: string[]): any {
 };
 
 function exerciseArray(array: ExerciseArray[]) {
-    let tempArray: any = [];
+    let tempArray: any = new Array();
 
     array.forEach((element) => {
         tempArray.push({

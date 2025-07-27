@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Cascader, Input, InputNumber, Typography } from 'antd';
 
-import { MuscleGroups, PreliminaryExercise, Cardio, AddExercise } from '@entities/index';
+import { MuscleGroups, PreliminaryExercise, Cardio, AddExercise, WarmUp, PreliminaryWarmUp } from '@entities/index';
 
 import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { ejectTrainingType, trainingTypeCascaderProps } from '../model/fill-data';
@@ -18,6 +18,7 @@ export function FillData() {
     const exercises: ExerciseWithAttmepts[] = useAppSelector((state) => (state.exercise));
     const cardioExercises: CardioExercise = useAppSelector((state) => (state.cardio));
     const notes: string = useAppSelector((state) => (state.notes));
+    const warmUp = useAppSelector((state) => (state.warmUp));
     const dispatch = useAppDispatch();
 
     const [workoutNumber, setWorkoutNumber] = useState<number | null>(null);
@@ -37,9 +38,10 @@ export function FillData() {
             muscleGroups: muscleGroups,
             exercises: exercises,
             cardioExercises: cardioExercises,
-            notes: notes
+            notes: notes,
+            warmUp: warmUp
         }))
-    }, [trainingType, muscleGroups, exercises, cardioExercises, notes]);
+    }, [trainingType, muscleGroups, exercises, cardioExercises, notes, warmUp]);
 
     return (
         <>
@@ -62,8 +64,19 @@ export function FillData() {
                 rows={4}
                 placeholder='Заметки'
                 onChange={(e) => { dispatch(setNotes(e.target.value)) }} />
+            <WarmUp />
             <AddExercise />
             <div className="preliminaryExercises">
+                {(warmUp.length !== 0) && <Title level={4}>Разминка</Title>}
+                {warmUp.map((element, index, array) => (
+                    <PreliminaryWarmUp
+                        key={index + 5}
+                        index={index}
+                        warmUp={element}
+                        array={array} />
+                ))}
+
+                {(exercises.length !== 0) && <Title level={4}>Основные упражнения</Title>}
                 {exercises.map((exercise, index, exercises) => (
                     <PreliminaryExercise
                         key={index + 5}

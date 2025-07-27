@@ -1,0 +1,10 @@
+div.warmUp {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    button.warmUp {
+        width: 200px;
+        margin: 10px 0 10px 0;
+    }
+}

@@ -1,0 +1,76 @@
+div.warmUpPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    max-width: 322px;
+    height: 322px;
+
+    span {
+        padding-left: 5px;
+        color: #bfbfbf;
+    }
+
+    img {
+        &.warmUp.bodyTiltsToTheSides {
+            content: url('../../assets/images/warm-up/bodyTiltsToTheSides.gif');
+        }
+
+        &.warmUp.bodyTurnsFromSideToSide {
+            content: url('../../assets/images/warm-up/bodyTurnsFromSideToSide.gif');
+        }
+
+        &.warmUp.bodyTurnsToTheSides {
+            content: url('../../assets/images/warm-up/bodyTurnsToTheSides.gif');
+        }
+
+        &.warmUp.breedingAndBringingHandsTogether {
+            content: url('../../assets/images/warm-up/breedingAndBringingHandsTogether.gif');
+        }
+
+        &.warmUp.bringingYourHandsTogetherInFrontOfYou {
+            content: url('../../assets/images/warm-up/bringingYourHandsTogetherInFrontOfYou.gif');
+        }
+
+        &.warmUp.circularHandRotations {
+            content: url('../../assets/images/warm-up/circularHandRotations.gif');
+        }
+
+        &.warmUp.elbowRotationsForward {
+            content: url('../../assets/images/warm-up/elbowRotationsForward.gif');
+        }
+
+        &.warmUp.flexionOfArmsAndFlexionOfHands {
+            content: url('../../assets/images/warm-up/flexionOfArmsAndFlexionOfHands.gif');
+        }
+
+        &.warmUp.flexionOfTheArmsOnTheUpperBack {
+            content: url('../../assets/images/warm-up/flexionOfTheArmsOnTheUpperBack.gif');
+        }
+
+        &.warmUp.hipLiftsAndHandRotations {
+            content: url('../../assets/images/warm-up/hipLiftsAndHandRotations.gif');
+        }
+
+        &.warmUp.keepingYourElbowsInFrontOfYou {
+            content: url('../../assets/images/warm-up/keepingYourElbowsInFrontOfYou.gif');
+        }
+
+        &.warmUp.millToStraightLegs {
+            content: url('../../assets/images/warm-up/millToStraightLegs.gif');
+        }
+
+        &.warmUp.millWithoutExtensionOfTheBody {
+            content: url('../../assets/images/warm-up/millWithoutExtensionOfTheBody.gif');
+        }
+
+        &.warmUp.semicircularHeadRotations {
+            content: url('../../assets/images/warm-up/semicircularHeadRotations.gif');
+        }
+
+        &.warmUp.tiltingTheBodyWithTheHandToTheSides {
+            content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
+        }
+    }
+}

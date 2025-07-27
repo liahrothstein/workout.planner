@@ -43,5 +43,15 @@ export interface CardioCascaderProps {
     placeholder: string
 }
 
+export interface WarmUpOption {
+    value: string,
+    label: string
+}
+
+export interface WarmUpCascaderProps {
+    options: WarmUpOption[],
+    placeholder: string
+}
+
 export type SetTimes = Dispatch<SetStateAction<number | null>>;
 export type SetWeight = Dispatch<SetStateAction<number | null>>;

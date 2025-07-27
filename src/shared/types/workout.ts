@@ -39,11 +39,18 @@ export interface CardioExercise {
     rhythm: number | null
 };
 
+export interface WarmUp {
+    exercise: string[] | null | undefined,
+    attempts: number | null,
+    times: number | null
+};
+
 export interface Workout {
     trainingType: TrainingType | string,
     workoutNumber: number | null,
     muscleGroups: MuscleGroup[],
     exercises: ExerciseWithAttmepts[],
     cardioExercises: CardioExercise,
-    notes: string
+    notes: string,
+    warmUp: WarmUp[]
 }

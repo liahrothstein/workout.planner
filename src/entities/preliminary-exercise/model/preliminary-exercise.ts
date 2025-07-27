@@ -1,14 +1,6 @@
 import type { ExerciseWithAttmepts } from "../../../shared/types/exercise";
 import type { Attempt } from "../../../shared/types/workout";
 
-export function titleCheck(exercise: string[] | null | undefined): string {
-    if (exercise) {
-        return (exercise[1])
-    } else {
-        return ('Пусто')
-    }
-};
-
 export const columns = [
     {
         title: 'Подходы',

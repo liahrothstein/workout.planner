@@ -3,7 +3,8 @@ import { DeleteOutlined } from '@ant-design/icons';
 
 import { useAppDispatch } from '@store/hooks';
 import { editExercise } from '@slices/exercise-slice';
-import { columns, deleteExercise, generateDataSource, titleCheck } from '../model/preliminary-exercise';
+import { columns, deleteExercise, generateDataSource } from '../model/preliminary-exercise';
+import { titleExerciseCheck } from '@utils/title-exercise-check';
 
 import type { Attempt } from '../../../shared/types/workout';
 import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
@@ -22,7 +23,7 @@ export function PreliminaryExercise({ attempts, exercise, index, exercises }: Pr
 
     return (
         <Card
-            title={titleCheck(exercise)}
+            title={titleExerciseCheck(exercise)}
             extra={<Button onClick={() => { dispatch(editExercise(deleteExercise(index, exercises))) }} icon={<DeleteOutlined />} color='danger' variant='filled' />}>
             <Table
                 columns={columns}

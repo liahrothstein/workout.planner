@@ -31,7 +31,7 @@ export function AddExercise() {
 
     return (
         <div className="addExercise">
-            <Title level={4} className='addExercise'>Силовые упражнения</Title>
+            <Title level={4} className='addExercise'>Основные упражнения</Title>
             <Cascader
                 maxTagCount={2}
                 options={exercisesCascaderProps.options}
