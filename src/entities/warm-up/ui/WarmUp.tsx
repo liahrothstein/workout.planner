@@ -45,7 +45,7 @@ export function WarmUp() {
             <WarmUpPreview exercise={exercise} />
             <Button
                 icon={<PlusOutlined />}
-                color='purple'
+                color='geekblue'
                 variant='solid'
                 onClick={() => { dispatch(setWarmUp([...warmUp, { exercise: exercise, attempts: attempts, times: times }])) }}
                 className='warmUp'>Добавить упражнение</Button>

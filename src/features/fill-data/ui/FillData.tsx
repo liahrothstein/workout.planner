@@ -9,7 +9,8 @@ import {
     WarmUp,
     PreliminaryWarmUp,
     Stretching,
-    PreliminaryStretching
+    PreliminaryStretching,
+    PreliminaryCardio
 } from '@entities/index';
 
 import { useAppDispatch, useAppSelector } from '@store/hooks';
@@ -25,7 +26,7 @@ export function FillData() {
     const trainingType: TrainingType | string = useAppSelector((state) => (state.trainingType));
     const muscleGroups: MuscleGroup[] = useAppSelector((state) => (state.muscleGroups));
     const exercises: ExerciseWithAttmepts[] = useAppSelector((state) => (state.exercise));
-    const cardioExercises: CardioExercise = useAppSelector((state) => (state.cardio));
+    const cardioExercises: CardioExercise[] = useAppSelector((state) => (state.cardio));
     const notes: string = useAppSelector((state) => (state.notes));
     const warmUp = useAppSelector((state) => (state.warmUp));
     const stretching = useAppSelector((state) => (state.stretching));
@@ -79,6 +80,15 @@ export function FillData() {
                 placeholder='Заметки'
                 onChange={(e) => { dispatch(setNotes(e.target.value)) }} />
             <div className="preliminaryExercises">
+                {(cardioExercises.length !== 0) && <Title level={4}>Кардио упражнения</Title>}
+                {cardioExercises.map((element, index, array) => (
+                    <PreliminaryCardio
+                        key={index + 4}
+                        index={index}
+                        cardio={element}
+                        array={array} />
+                ))}
+
                 {(warmUp.length !== 0) && <Title level={4}>Разминка</Title>}
                 {warmUp.map((element, index, array) => (
                     <PreliminaryWarmUp

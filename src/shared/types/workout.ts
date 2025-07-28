@@ -56,7 +56,7 @@ export interface Workout {
     workoutNumber: number | null,
     muscleGroups: MuscleGroup[],
     exercises: ExerciseWithAttmepts[],
-    cardioExercises: CardioExercise,
+    cardioExercises: CardioExercise[],
     notes: string,
     warmUp: WarmUp[],
     stretching: Stretching[]

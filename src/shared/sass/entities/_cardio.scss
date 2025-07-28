@@ -1,0 +1,10 @@
+div.cardio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    button.cardio {
+        width: 200px;
+        margin: 10px 0 10px 0;
+    }
+}

@@ -5,11 +5,7 @@ export const initWorkout: Workout = {
     workoutNumber: null,
     muscleGroups: [],
     exercises: [],
-    cardioExercises: {
-        name: null,
-        time: '',
-        rhythm: null
-    },
+    cardioExercises: [],
     notes: '',
     warmUp: [],
     stretching: []

@@ -1,5 +1,6 @@
 export { AddExercise } from './add-exercise';
 export { Cardio } from './cardio';
+export { PreliminaryCardio } from './preliminary-cardio';
 export { PreliminaryExercise } from './preliminary-exercise';
 export { MuscleGroups } from './muscle-groups';
 export { TableRow } from './table-row';
