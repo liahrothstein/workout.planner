@@ -11,7 +11,8 @@ export const initWorkout: Workout = {
         rhythm: null
     },
     notes: '',
-    warmUp: []
+    warmUp: [],
+    stretching: []
 };
 
 export const groups: MuscleGroup[] = [

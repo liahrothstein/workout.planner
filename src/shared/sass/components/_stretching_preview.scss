@@ -1,0 +1,216 @@
+div.stretchingPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    max-width: 502px;
+    height: 302px;
+
+    span {
+        padding-left: 5px;
+        color: #bfbfbf;
+    }
+
+    img {
+        &.stretching.alternateLiftingOfTheUpperChest {
+            content: url('../../assets/images/stretching/alternateLiftingOfTheUpperChest.gif');
+        }
+
+        &.stretching.breastStretching {
+            content: url('../../assets/images/stretching/breastStretching.gif');
+        }
+
+        &.stretching.bringingHandsTogether {
+            content: url('../../assets/images/stretching/bringingHandsTogether.gif');
+        }
+
+        &.stretching.bringingYourHandsTogetherInFrontOfYou {
+            content: url('../../assets/images/stretching/bringingYourHandsTogetherInFrontOfYou.gif');
+        }
+
+        &.stretching.bringingYourHandsTogetherInPrayer {
+            content: url('../../assets/images/stretching/bringingYourHandsTogetherInPrayer.gif');
+        }
+
+        &.stretching.chestForwardArmsBehindToHold {
+            content: url('../../assets/images/stretching/chestForwardArmsBehindToHold.gif');
+        }
+
+        &.stretching.crissCross {
+            content: url('../../assets/images/stretching/crissCross.gif');
+        }
+
+        &.stretching.crossingHands {
+            content: url('../../assets/images/stretching/crossingHands.gif');
+        }
+
+        &.stretching.diagonalHandExtensions {
+            content: url('../../assets/images/stretching/diagonalHandExtensions.gif');
+        }
+
+        &.stretching.doubleHandCrossover {
+            content: url('../../assets/images/stretching/doubleHandCrossover.gif');
+        }
+
+        &.stretching.dynamicChestStretching {
+            content: url('../../assets/images/stretching/dynamicChestStretching.gif');
+        }
+
+        &.stretching.forearmStretchingOption1 {
+            content: url('../../assets/images/stretching/forearmStretchingOption1.gif');
+        }
+
+        &.stretching.forearmStretchingOption2 {
+            content: url('../../assets/images/stretching/forearmStretchingOption2.gif');
+        }
+
+        &.stretching.forearmStretchingOption3 {
+            content: url('../../assets/images/stretching/forearmStretchingOption3.gif');
+        }
+
+        &.stretching.forearmStretchingOption4 {
+            content: url('../../assets/images/stretching/forearmStretchingOption4.gif');
+        }
+
+        &.stretching.forearmStretchingOption5 {
+            content: url('../../assets/images/stretching/forearmStretchingOption5.gif');
+        }
+
+        &.stretching.forearmStretchingOption6 {
+            content: url('../../assets/images/stretching/forearmStretchingOption6.gif');
+        }
+
+        &.stretching.handRotation {
+            content: url('../../assets/images/stretching/handRotation.gif');
+        }
+
+        &.stretching.informationStandingInATriangle {
+            content: url('../../assets/images/stretching/informationStandingInATriangle.gif');
+        }
+
+        &.stretching.legStretchingIsOption1 {
+            content: url('../../assets/images/stretching/legStretchingIsOption1.gif');
+        }
+
+        &.stretching.legStretchingIsOption2 {
+            content: url('../../assets/images/stretching/legStretchingIsOption2.gif');
+        }
+
+        &.stretching.legStretchingIsOption3 {
+            content: url('../../assets/images/stretching/legStretchingIsOption3.gif');
+        }
+
+        &.stretching.legStretchingIsOption4 {
+            content: url('../../assets/images/stretching/legStretchingIsOption4.gif');
+        }
+
+        &.stretching.legStretchingIsOption5 {
+            content: url('../../assets/images/stretching/legStretchingIsOption5.gif');
+        }
+
+        &.stretching.legStretchingIsOption6 {
+            content: url('../../assets/images/stretching/legStretchingIsOption6.gif');
+        }
+
+        &.stretching.legStretchingIsOption7 {
+            content: url('../../assets/images/stretching/legStretchingIsOption7.gif');
+        }
+
+        &.stretching.legStretchingIsOption8 {
+            content: url('../../assets/images/stretching/legStretchingIsOption8.gif');
+        }
+
+        &.stretching.legStretchingIsOption9 {
+            content: url('../../assets/images/stretching/legStretchingIsOption9.gif');
+        }
+
+        &.stretching.legStretchingIsOption10 {
+            content: url('../../assets/images/stretching/legStretchingIsOption10.gif');
+        }
+
+        &.stretching.legStretchingIsOption11 {
+            content: url('../../assets/images/stretching/legStretchingIsOption11.gif');
+        }
+
+        &.stretching.legStretchingIsOption12 {
+            content: url('../../assets/images/stretching/legStretchingIsOption12.gif');
+        }
+
+        &.stretching.legStretchingIsOption13 {
+            content: url('../../assets/images/stretching/legStretchingIsOption13.gif');
+        }
+
+        &.stretching.legStretchingIsOption14 {
+            content: url('../../assets/images/stretching/legStretchingIsOption14.gif');
+        }
+
+        &.stretching.prayer {
+            content: url('../../assets/images/stretching/prayer.gif');
+        }
+
+        &.stretching.standingTopGripAndFrontGrip {
+            content: url('../../assets/images/stretching/standingTopGripAndFrontGrip.gif');
+        }
+
+        &.stretching.standingTriangleDilution {
+            content: url('../../assets/images/stretching/standingTriangleDilution.gif');
+        }
+
+        &.stretching.stretchingAgainstTheWall {
+            content: url('../../assets/images/stretching/stretchingAgainstTheWall.gif');
+        }
+
+        &.stretching.stretchingOfTheChestAndAnteriorDeltoidMuscles {
+            content: url('../../assets/images/stretching/stretchingOfTheChestAndAnteriorDeltoidMuscles.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption1 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption1.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption2 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption2.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption3 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption3.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption4 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption4.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption5 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption5.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption6 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption6.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption7 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption7.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption8 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption8.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption9 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption9.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption10 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption10.gif');
+        }
+
+        &.stretching.stretchingYourBackIsOption11 {
+            content: url('../../assets/images/stretching/stretchingYourBackIsOption11.gif');
+        }
+
+        &.stretching.svendsBenchPress {
+            content: url('../../assets/images/stretching/svendsBenchPress.gif');
+        }
+    }
+}

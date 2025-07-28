@@ -5,3 +5,5 @@ export { MuscleGroups } from './muscle-groups';
 export { TableRow } from './table-row';
 export { WarmUp } from './warm-up';
 export { PreliminaryWarmUp } from './preliminary-warm-up';
+export { Stretching } from './stretching';
+export { PreliminaryStretching } from './preliminary-stretching';

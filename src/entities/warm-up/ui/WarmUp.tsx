@@ -23,23 +23,25 @@ export function WarmUp() {
     return (
         <div className='warmUp'>
             <Title level={4}>Разминка</Title>
-            <Cascader
-                options={warmUpCascaderProps.options}
-                placeholder={warmUpCascaderProps.placeholder}
-                onChange={(e) => { setExercise(e) }}
-                className='warmUpType' />
-            <InputNumber
-                min={1}
-                max={100}
-                placeholder='Подходы'
-                onChange={(e) => { setAttempts(e) }}
-                className='attempts' />
-            <InputNumber
-                min={1}
-                max={100}
-                placeholder='Повторения'
-                onChange={(e) => { setTimes(e) }}
-                className='times' />
+            <div>
+                <Cascader
+                    options={warmUpCascaderProps.options}
+                    placeholder={warmUpCascaderProps.placeholder}
+                    onChange={(e) => { setExercise(e) }}
+                    className='warmUpType' />
+                <InputNumber
+                    min={1}
+                    max={100}
+                    placeholder='Подходы'
+                    onChange={(e) => { setAttempts(e) }}
+                    className='attempts' />
+                <InputNumber
+                    min={1}
+                    max={100}
+                    placeholder='Повторения'
+                    onChange={(e) => { setTimes(e) }}
+                    className='times' />
+            </div>
             <WarmUpPreview exercise={exercise} />
             <Button
                 icon={<PlusOutlined />}

@@ -60,7 +60,7 @@ export function AddExercise() {
             <Preview exercise={exercise} />
             <Button
                 icon={<PlusOutlined />}
-                color='primary'
+                color='geekblue'
                 variant='solid'
                 className='addExercise'
                 onClick={() => { addExersice(exerciseArray, dispatch, exercise, times1, times2, times3, times4, times5, weight1, weight2, weight3, weight4, weight5) }}>Добавить упражнение</Button>

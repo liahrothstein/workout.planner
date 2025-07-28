@@ -45,6 +45,12 @@ export interface WarmUp {
     times: number | null
 };
 
+export interface Stretching {
+    exercise: string[] | null | undefined,
+    attempts: number | null,
+    times: number | null
+};
+
 export interface Workout {
     trainingType: TrainingType | string,
     workoutNumber: number | null,
@@ -52,5 +58,6 @@ export interface Workout {
     exercises: ExerciseWithAttmepts[],
     cardioExercises: CardioExercise,
     notes: string,
-    warmUp: WarmUp[]
+    warmUp: WarmUp[],
+    stretching: Stretching[]
 }

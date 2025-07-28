@@ -53,5 +53,15 @@ export interface WarmUpCascaderProps {
     placeholder: string
 }
 
+export interface StretchingOption {
+    value: string,
+    label: string
+}
+
+export interface StretchingCascaderProps {
+    options: StretchingOption[],
+    placeholder: string
+}
+
 export type SetTimes = Dispatch<SetStateAction<number | null>>;
 export type SetWeight = Dispatch<SetStateAction<number | null>>;
