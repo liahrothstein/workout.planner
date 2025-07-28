@@ -2,6 +2,7 @@ div.cardio {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    border-bottom: 2px solid black;
 
     button.cardio {
         width: 200px;
