@@ -4,3 +4,4 @@ export { Cardio } from './cardio';
 export { Notes } from './notes';
 export { ExercisesTable } from './exercises-table';
 export { WarmUp } from './warm-up';
+export { Stretching } from './stretching';

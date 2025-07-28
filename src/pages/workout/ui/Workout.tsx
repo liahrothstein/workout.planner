@@ -5,7 +5,8 @@ import {
     MuscleGroups,
     Cardio, Notes,
     ExercisesTable,
-    WarmUp
+    WarmUp,
+    Stretching
 } from '@widgets/index';
 
 import { workoutParse } from '../model/workout';
@@ -18,7 +19,6 @@ export function Workout() {
     const [searchParams] = useSearchParams();
 
     const workout: Workout = workoutParse(searchParams);
-    console.log(workout)
 
     return (
         <div className="workoutWrapper">
@@ -27,6 +27,7 @@ export function Workout() {
                 <MuscleGroups muscleGroups={workout.muscleGroups} />
                 {(workout.warmUp.length !== 0) && <WarmUp warmUp={workout.warmUp} />}
                 <ExercisesTable exercises={workout.exercises} />
+                {(workout.stretching.length !== 0) && <Stretching stretching={workout.stretching} />}
                 <Cardio cardioExercises={workout.cardioExercises} />
                 <Notes notes={workout.notes} />
             </div>
