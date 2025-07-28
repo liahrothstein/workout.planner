@@ -10,7 +10,8 @@ import {
   setChest,
   setLegs,
   setTriceps,
-  setPress
+  setPress,
+  setForearms
 } from '../model/muscle-groups';
 
 import { MuscleGroup } from '../../../shared/types/workout';
@@ -28,6 +29,7 @@ export function MuscleGroups() {
   const [isLegs, setIsLegs] = useState<boolean>(false);
   const [isTriceps, setIsTriceps] = useState<boolean>(false);
   const [isPress, setIsPress] = useState<boolean>(false);
+  const [isForearms, setIsForearms] = useState<boolean>(false);
 
   const { Title } = Typography;
 
@@ -52,6 +54,9 @@ export function MuscleGroups() {
   useEffect(() => {
     dispatch(setMuscleGroups(setPress(isPress, muscleGroups)))
   }, [isPress]);
+  useEffect(() => {
+    dispatch(setMuscleGroups(setForearms(isForearms, muscleGroups)))
+  }, [isForearms]);
 
   return (
     <>
@@ -64,6 +69,7 @@ export function MuscleGroups() {
         <Checkbox onChange={(e) => { setIsLegs(e.target.checked) }}>{MuscleGroup.Legs}</Checkbox>
         <Checkbox onChange={(e) => { setIsTriceps(e.target.checked) }}>{MuscleGroup.Triceps}</Checkbox>
         <Checkbox onChange={(e) => { setIsPress(e.target.checked) }}>{MuscleGroup.Press}</Checkbox>
+        <Checkbox onChange={(e) => { setIsForearms(e.target.checked) }}>{MuscleGroup.Forearms}</Checkbox>
       </div>
     </>
   )

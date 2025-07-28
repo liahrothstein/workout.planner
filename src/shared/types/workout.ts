@@ -23,7 +23,8 @@ export enum MuscleGroup {
     Triceps = 'Трицепс',
     Chest = 'Грудь',
     Biceps = 'Бицепс',
-    Press = 'Пресс'
+    Press = 'Пресс',
+    Forearms = 'Предплечья'
 };
 
 export interface Attempt {
@@ -38,11 +39,25 @@ export interface CardioExercise {
     rhythm: number | null
 };
 
+export interface WarmUp {
+    exercise: string[] | null | undefined,
+    attempts: number | null,
+    times: number | null
+};
+
+export interface Stretching {
+    exercise: string[] | null | undefined,
+    attempts: number | null,
+    times: number | null
+};
+
 export interface Workout {
     trainingType: TrainingType | string,
     workoutNumber: number | null,
     muscleGroups: MuscleGroup[],
     exercises: ExerciseWithAttmepts[],
-    cardioExercises: CardioExercise,
-    notes: string
+    cardioExercises: CardioExercise[],
+    notes: string,
+    warmUp: WarmUp[],
+    stretching: Stretching[]
 }

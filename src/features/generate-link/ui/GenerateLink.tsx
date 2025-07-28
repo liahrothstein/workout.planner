@@ -29,7 +29,7 @@ export function GenerateLink() {
                 value={link} />
             <Button
                 icon={<CopyOutlined />}
-                color='primary'
+                color='yellow'
                 variant='solid'
                 disabled={link === ''}
                 onClick={() => { navigator.clipboard.writeText(link) }}>Скопировать</Button>

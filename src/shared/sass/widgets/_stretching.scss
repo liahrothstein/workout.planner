@@ -1,0 +1,256 @@
+@use '../abstracts' as *;
+
+div.stretchingTable {
+    margin-top: 8px;
+
+    p.header {
+        padding-top: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+
+    table {
+        border-collapse: collapse;
+
+        thead tr th {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        tbody tr td {
+            border: 1px solid $tableBorderColor;
+            font-family: 'Eskal';
+            font-size: 24px;
+            font-weight: bold;
+            color: $stretchingAttemptsAndTimes;
+            text-align: center;
+            height: 39px;
+
+            &:first-child {
+                width: 150px;
+                font-weight: normal;
+                color: $stretchingExerciseColor;
+                text-align: left;
+            }
+
+            &.exercise {
+                position: relative;
+                cursor: help;
+
+                &::before {
+                    position: absolute;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px 5px gray;
+                    top: -115px;
+                    left: 190px;
+                    background-color: white;
+                    z-index: 4;
+                }
+
+                &.stretching.alternateLiftingOfTheUpperChest:hover::before {
+                    content: url('../../assets/images/stretching/alternateLiftingOfTheUpperChest.gif');
+                }
+
+                &.stretching.breastStretching:hover::before {
+                    content: url('../../assets/images/stretching/breastStretching.gif');
+                }
+
+                &.stretching.bringingHandsTogether:hover::before {
+                    content: url('../../assets/images/stretching/bringingHandsTogether.gif');
+                }
+
+                &.stretching.bringingYourHandsTogetherInFrontOfYou:hover::before {
+                    content: url('../../assets/images/stretching/bringingYourHandsTogetherInFrontOfYou.gif');
+                }
+
+                &.stretching.bringingYourHandsTogetherInPrayer:hover::before {
+                    content: url('../../assets/images/stretching/bringingYourHandsTogetherInPrayer.gif');
+                }
+
+                &.stretching.chestForwardArmsBehindToHold:hover::before {
+                    content: url('../../assets/images/stretching/chestForwardArmsBehindToHold.gif');
+                }
+
+                &.stretching.crissCross:hover::before {
+                    content: url('../../assets/images/stretching/crissCross.gif');
+                }
+
+                &.stretching.crossingHands:hover::before {
+                    content: url('../../assets/images/stretching/crossingHands.gif');
+                }
+
+                &.stretching.diagonalHandExtensions:hover::before {
+                    content: url('../../assets/images/stretching/diagonalHandExtensions.gif');
+                }
+
+                &.stretching.doubleHandCrossover:hover::before {
+                    content: url('../../assets/images/stretching/doubleHandCrossover.gif');
+                }
+
+                &.stretching.dynamicChestStretching:hover::before {
+                    content: url('../../assets/images/stretching/dynamicChestStretching.gif');
+                }
+
+                &.stretching.forearmStretchingOption1:hover::before {
+                    content: url('../../assets/images/stretching/forearmStretchingOption1.gif');
+                }
+
+                &.stretching.forearmStretchingOption2:hover::before {
+                    content: url('../../assets/images/stretching/forearmStretchingOption2.gif');
+                }
+
+                &.stretching.forearmStretchingOption3:hover::before {
+                    content: url('../../assets/images/stretching/forearmStretchingOption3.gif');
+                }
+
+                &.stretching.forearmStretchingOption4:hover::before {
+                    content: url('../../assets/images/stretching/forearmStretchingOption4.gif');
+                }
+
+                &.stretching.forearmStretchingOption5:hover::before {
+                    content: url('../../assets/images/stretching/forearmStretchingOption5.gif');
+                }
+
+                &.stretching.forearmStretchingOption6:hover::before {
+                    content: url('../../assets/images/stretching/forearmStretchingOption6.gif');
+                }
+
+                &.stretching.handRotation:hover::before {
+                    content: url('../../assets/images/stretching/handRotation.gif');
+                }
+
+                &.stretching.informationStandingInATriangle:hover::before {
+                    content: url('../../assets/images/stretching/informationStandingInATriangle.gif');
+                }
+
+                &.stretching.legStretchingIsOption1:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption1.gif');
+                }
+
+                &.stretching.legStretchingIsOption2:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption2.gif');
+                }
+
+                &.stretching.legStretchingIsOption3:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption3.gif');
+                }
+
+                &.stretching.legStretchingIsOption4:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption4.gif');
+                }
+
+                &.stretching.legStretchingIsOption5:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption5.gif');
+                }
+
+                &.stretching.legStretchingIsOption6:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption6.gif');
+                }
+
+                &.stretching.legStretchingIsOption7:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption7.gif');
+                }
+
+                &.stretching.legStretchingIsOption8:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption8.gif');
+                }
+
+                &.stretching.legStretchingIsOption9:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption9.gif');
+                }
+
+                &.stretching.legStretchingIsOption10:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption10.gif');
+                }
+
+                &.stretching.legStretchingIsOption11:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption11.gif');
+                }
+
+                &.stretching.legStretchingIsOption12:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption12.gif');
+                }
+
+                &.stretching.legStretchingIsOption13:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption13.gif');
+                }
+
+                &.stretching.legStretchingIsOption14:hover::before {
+                    content: url('../../assets/images/stretching/legStretchingIsOption14.gif');
+                }
+
+                &.stretching.prayer:hover::before {
+                    content: url('../../assets/images/stretching/prayer.gif');
+                }
+
+                &.stretching.standingTopGripAndFrontGrip:hover::before {
+                    content: url('../../assets/images/stretching/standingTopGripAndFrontGrip.gif');
+                }
+
+                &.stretching.standingTriangleDilution:hover::before {
+                    content: url('../../assets/images/stretching/standingTriangleDilution.gif');
+                }
+
+                &.stretching.stretchingAgainstTheWall:hover::before {
+                    content: url('../../assets/images/stretching/stretchingAgainstTheWall.gif');
+                }
+
+                &.stretching.stretchingOfTheChestAndAnteriorDeltoidMuscles:hover::before {
+                    content: url('../../assets/images/stretching/stretchingOfTheChestAndAnteriorDeltoidMuscles.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption1:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption1.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption2:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption2.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption3:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption3.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption4:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption4.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption5:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption5.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption6:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption6.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption7:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption7.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption8:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption8.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption9:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption9.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption10:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption10.gif');
+                }
+
+                &.stretching.stretchingYourBackIsOption11:hover::before {
+                    content: url('../../assets/images/stretching/stretchingYourBackIsOption11.gif');
+                }
+
+                &.stretching.svendsBenchPress:hover::before {
+                    content: url('../../assets/images/stretching/svendsBenchPress.gif');
+                }
+            }
+        }
+    }
+}

@@ -141,6 +141,54 @@ export function setLegsClassName(exercise: string): string {
         case 'Трастеры с гантелями':
             return ('legs trastersWithDumbbells');
             break;
+        case 'Сгибание лёжа в кроссовере, с нижнего блока':
+            return ('legs bendingDownInACrossoverFromTheLowerBlock');
+            break;
+        case 'Сгибание ноги стоя с лентой':
+            return ('legs bendingTheLegWhileStandingWithARibbon');
+            break;
+        case 'Болгарские выпады от скамьи':
+            return ('legs bulgarianLungesFromTheBench');
+            break;
+        case 'Казачьи приседания':
+            return ('legs cossackSquats');
+            break;
+        case 'Сгибание на икры в кроссовере':
+            return ('legs flexingOnTheCalvesInACrossover');
+            break;
+        case 'Приседания с выпрыгиванием':
+            return ('legs jumpSquats');
+            break;
+        case 'Подъем на носки в Смите каждой отдельно':
+            return ('legs liftingOnYourToesInSmithSeparately');
+            break;
+        case 'Мини-приседания с прыжком':
+            return ('legs miniJumpSquats');
+            break;
+        case 'Приседания с гантелями и боковым движением':
+            return ('legs squatsWithDumbbellsAndLateralMovement');
+            break;
+        case 'Приседание с маятниковой ногой в сторону':
+            return ('legs squattingWithAPendulumLegToTheSide');
+            break;
+        case 'Подъем на носки в тренажёре для жима ногами':
+            return ('legs standingOnYourToesInALegPressMachine');
+            break;
+        case 'Подъем на носки в Гакк тренажёре':
+            return ('legs standingOnYourToesInTheGakkSimulator');
+            break;
+        case 'Подъем на носки сидя в Смите':
+            return ('legs standingOnYourToesWhileSittingInTheSmith');
+            break;
+        case 'Свинг с гантелей':
+            return ('legs swingWithDumbbells');
+            break;
+        case 'Стульчик':
+            return ('legs theHighChair');
+            break;
+        case 'Свинг с утяжелением':
+            return ('legs weightedSwing');
+            break;
         default:
             return ('legs walkingWithDumbbells');
             break;

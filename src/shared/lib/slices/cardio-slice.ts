@@ -3,17 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import type { CardioExercise } from '../../types/workout';
 
-const initialState: CardioExercise = {
-    name: null,
-    time: '',
-    rhythm: null
-};
+const initialState = new Array();
 
 export const cardioSlice = createSlice({
     name: 'cardio',
     initialState,
     reducers: {
-        setCardio: (_, action: PayloadAction<CardioExercise>) => {
+        setCardio: (_, action: PayloadAction<CardioExercise[]>) => {
             return (action.payload)
         }
     }

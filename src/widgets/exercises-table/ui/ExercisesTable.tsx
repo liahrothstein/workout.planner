@@ -14,6 +14,7 @@ export function ExercisesTable({ exercises }: ExercisesTableProps) {
 
     return (
         <div className='exercisesTable'>
+            <p className="header">Основные упражнения</p>
             <table>
                 <thead>
                     <tr>

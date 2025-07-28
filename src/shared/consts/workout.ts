@@ -5,12 +5,10 @@ export const initWorkout: Workout = {
     workoutNumber: null,
     muscleGroups: [],
     exercises: [],
-    cardioExercises: {
-        name: null,
-        time: '',
-        rhythm: null
-    },
-    notes: ''
+    cardioExercises: [],
+    notes: '',
+    warmUp: [],
+    stretching: []
 };
 
 export const groups: MuscleGroup[] = [
@@ -20,5 +18,6 @@ export const groups: MuscleGroup[] = [
     MuscleGroup.Biceps,
     MuscleGroup.Legs,
     MuscleGroup.Triceps,
-    MuscleGroup.Press
+    MuscleGroup.Press,
+    MuscleGroup.Forearms
 ]

@@ -117,6 +117,48 @@ export function setBicepsClassName(exercise: string): string {
         case 'Паучьи сгибания на бицепс пронированным хватом':
             return ('biceps spiderFlexionOnBicepsWithAPiercedGrip');
             break;
+        case 'Сгибание рук с гантелями в наклоне':
+            return ('biceps bendingArmsWithDumbbellsInATilt');
+            break;
+        case 'Сгибание руки с гантелей на бицепс с опорой на наклонную скамью':
+            return ('biceps bendingTheArmFromDumbbellToBicepsWithSupportOnAnInclinedBench');
+            break;
+        case 'Сгибание рук со штангой на бицепс обратным хватом с упором на наклонную скамью':
+            return ('biceps bendingTheArmsWithABarbellOnTheBicepsWithAReverseGripWithAnEmphasisOnAnInclinedBench');
+            break;
+        case 'Сгибание на бицепс сидя с Е грифом':
+            return ('biceps bicepFlexionWhileSittingWithAnENeck');
+            break;
+        case 'Концентрированное сгибание рук на бицепс в кроссовере':
+            return ('biceps concentratedFlexionOfTheArmsOnTheBicepsInACrossover');
+            break;
+        case 'Упражнение 21 с грифом':
+            return ('biceps exercise21WithAFingerboard');
+            break;
+        case 'Упражнение 21 с гантелями':
+            return ('biceps exercise21WithDumbbells');
+            break;
+        case 'Сгибание руки на бицепс в тренажёре':
+            return ('biceps flexingTheArmOnTheBicepsInTheSimulator');
+            break;
+        case 'Сгибание рук на бицепс в кроссовере сидя':
+            return ('biceps flexingTheArmsOnTheBicepsInASittingCrossover');
+            break;
+        case 'Сгибание рук с гантелями на бицепс высокие подъемы':
+            return ('biceps flexionOfArmsWithDumbbellsOnBicepsHighLifts');
+            break;
+        case 'Сгибание рук с гантелями на бицепс Строгий':
+            return ('biceps flexionOfArmsWithDumbbellsOnBicepsIsStrict');
+            break;
+        case 'Сгибание рук с гантелями на бицепс на фитболе':
+            return ('biceps flexionOfArmsWithDumbbellsOnBicepsOnAFitball');
+            break;
+        case 'Сгибание рук с гантелями на бицепс Зоттмана в скамье Скотта':
+            return ('biceps flexionOfArmsWithDumbbellsOnZottmansBicepsInScottsBench');
+            break;
+        case 'Сгибание рук со штангой на бицепс Строгий':
+            return ('biceps flexionOfTheArmsWithABarbellOnTheBicepsIsStrict');
+            break;
         default:
             return ('biceps zottmanBicepLift');
             break;

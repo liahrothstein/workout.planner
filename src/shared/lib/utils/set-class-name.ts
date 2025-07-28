@@ -1,10 +1,13 @@
-import { setShouldersClassName } from "./set-shoulders-class-name";
-import { setLegsClassName } from "./set-legs-class-name";
-import { setBackClassName } from "./set-back-class-name";
-import { setTricepsClassName } from "./set-triceps-class-name";
-import { setChestClassName } from "./set-chest-class-name";
-import { setPressClassName } from "./set-press-class-name";
-import { setBicepsClassName } from "./set-biceps-class-name";
+import {
+    setShouldersClassName,
+    setBackClassName,
+    setBicepsClassName,
+    setChestClassName,
+    setLegsClassName,
+    setPressClassName,
+    setTricepsClassName,
+    setForearmsClassName
+} from "./index";
 
 import { MuscleGroup } from "../../types/workout";
 
@@ -27,6 +30,9 @@ export function setClassName(exercise: string, muscleGroup: string): string {
             break;
         case MuscleGroup.Press:
             return (setPressClassName(exercise));
+            break;
+        case MuscleGroup.Forearms:
+            return (setForearmsClassName(exercise));
             break;
         default:
             return (setBicepsClassName(exercise));

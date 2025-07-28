@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-div.cardio {
+div.cardioTable {
     margin-top: 8px;
 
     p.header {
@@ -34,6 +34,7 @@ div.cardio {
                 width: 150px;
                 font-weight: normal;
                 color: $cardioExerciseColor;
+                text-align: left;
             }
         }
     }

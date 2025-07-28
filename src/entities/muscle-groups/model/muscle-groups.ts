@@ -91,3 +91,16 @@ export function setPress(isPress: boolean, muscleGroups: MuscleGroup[]): MuscleG
         return (tempArray)
     };
 };
+export function setForearms(isForearms: boolean, muscleGroups: MuscleGroup[]): MuscleGroup[] {
+    let tempArray = new Array(...muscleGroups);
+
+    if (isForearms) {
+        tempArray.push(MuscleGroup.Forearms)
+        return (tempArray)
+    } else {
+        let forearmsIndex: number = muscleGroups.indexOf(MuscleGroup.Forearms);
+
+        tempArray.splice(forearmsIndex, 1);
+        return (tempArray)
+    };
+};

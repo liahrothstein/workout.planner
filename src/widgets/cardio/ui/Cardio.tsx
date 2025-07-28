@@ -3,13 +3,13 @@ import type { CardioExercise } from '../../../shared/types/workout';
 import './Cardio.scss';
 
 interface CardioProps {
-    cardioExercises: CardioExercise
+    cardioExercises: CardioExercise[]
 };
 
 export function Cardio({ cardioExercises }: CardioProps) {
 
     return (
-        <div className='cardio'>
+        <div className='cardioTable'>
             <p className="header">Кардио тренировка</p>
             <table className="exercise">
                 <thead>
@@ -20,11 +20,18 @@ export function Cardio({ cardioExercises }: CardioProps) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>{cardioExercises.name}</td>
-                        <td>{cardioExercises.time}</td>
-                        <td>{cardioExercises.rhythm}</td>
-                    </tr>
+                    {(cardioExercises.length === 0) && <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>}
+                    {cardioExercises.map((cardio) => (
+                        <tr key={cardio.name}>
+                            <td>{cardio.name}</td>
+                            <td>{cardio.time}</td>
+                            <td>{cardio.rhythm}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
