@@ -1,0 +1,115 @@
+@use '../abstracts' as *;
+
+div.warmUpTable {
+    margin-top: 8px;
+
+    p.header {
+        padding-top: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12pt;
+    }
+
+    table {
+        border-collapse: collapse;
+
+        thead tr th {
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12pt;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        tbody tr td {
+            border: 1px solid $tableBorderColor;
+            font-family: 'Eskal';
+            font-size: 24px;
+            font-weight: bold;
+            color: $warmUpAttemptsAndTimes;
+            text-align: center;
+            height: 39px;
+
+            &:first-child {
+                width: 150px;
+                font-weight: normal;
+                color: $warmUpExerciseColor;
+            }
+
+            &.exercise {
+                position: relative;
+                cursor: help;
+
+                &::before {
+                    position: absolute;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px 5px gray;
+                    top: -115px;
+                    left: 190px;
+                    background-color: white;
+                    z-index: 4;
+                }
+
+                &.warmUp.bodyTiltsToTheSides:hover::before {
+                    content: url('../../assets/images/warm-up/bodyTiltsToTheSides.gif');
+                }
+
+                &.warmUp.bodyTurnsFromSideToSide:hover::before {
+                    content: url('../../assets/images/warm-up/bodyTurnsFromSideToSide.gif');
+                }
+
+                &.warmUp.bodyTurnsToTheSides:hover::before {
+                    content: url('../../assets/images/warm-up/bodyTurnsToTheSides.gif');
+                }
+
+                &.warmUp.breedingAndBringingHandsTogether:hover::before {
+                    content: url('../../assets/images/warm-up/breedingAndBringingHandsTogether.gif');
+                }
+
+                &.warmUp.bringingYourHandsTogetherInFrontOfYou:hover::before {
+                    content: url('../../assets/images/warm-up/bringingYourHandsTogetherInFrontOfYou.gif');
+                }
+
+                &.warmUp.circularHandRotations:hover::before {
+                    content: url('../../assets/images/warm-up/circularHandRotations.gif');
+                }
+
+                &.warmUp.elbowRotationsForward:hover::before {
+                    content: url('../../assets/images/warm-up/elbowRotationsForward.gif');
+                }
+
+                &.warmUp.flexionOfArmsAndFlexionOfHands:hover::before {
+                    content: url('../../assets/images/warm-up/flexionOfArmsAndFlexionOfHands.gif');
+                }
+
+                &.warmUp.flexionOfTheArmsOnTheUpperBack:hover::before {
+                    content: url('../../assets/images/warm-up/flexionOfTheArmsOnTheUpperBack.gif');
+                }
+
+                &.warmUp.hipLiftsAndHandRotations:hover::before {
+                    content: url('../../assets/images/warm-up/hipLiftsAndHandRotations.gif');
+                }
+
+                &.warmUp.keepingYourElbowsInFrontOfYou:hover::before {
+                    content: url('../../assets/images/warm-up/keepingYourElbowsInFrontOfYou.gif');
+                }
+
+                &.warmUp.millToStraightLegs:hover::before {
+                    content: url('../../assets/images/warm-up/millToStraightLegs.gif');
+                }
+
+                &.warmUp.millWithoutExtensionOfTheBody:hover::before {
+                    content: url('../../assets/images/warm-up/millWithoutExtensionOfTheBody.gif');
+                }
+
+                &.warmUp.semicircularHeadRotations:hover::before {
+                    content: url('../../assets/images/warm-up/semicircularHeadRotations.gif');
+                }
+
+                &.warmUp.tiltingTheBodyWithTheHandToTheSides:hover::before {
+                    content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
+                }
+            }
+        }
+    }
+}
