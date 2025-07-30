@@ -612,6 +612,22 @@ tr.tableRow td.exercise {
         content: url('../../assets/images/exercises/legs/weightedSwing.gif');
     }
 
+    &.legs.buttockBridgeLyingDown:hover::before {
+        content: url('../../assets/images/exercises/legs/buttockBridgeLyingDown.gif');
+    }
+
+    &.legs.lungesWithDumbbellsOnTheShoulders:hover::before {
+        content: url('../../assets/images/exercises/legs/lungesWithDumbbellsOnTheShoulders.gif');
+    }
+
+    &.legs.sumoSquatsWithDumbbell:hover::before {
+        content: url('../../assets/images/exercises/legs/sumoSquatsWithDumbbell.gif');
+    }
+
+    &.legs.sumoSquatsWithDumbbells:hover::before {
+        content: url('../../assets/images/exercises/legs/sumoSquatsWithDumbbells.gif');
+    }
+
     // SHOULDERS
 
     &.shoulders.alternateDumbbellsBenchPress:hover::before {

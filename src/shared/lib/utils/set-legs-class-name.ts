@@ -189,6 +189,18 @@ export function setLegsClassName(exercise: string): string {
         case 'Свинг с утяжелением':
             return ('legs weightedSwing');
             break;
+        case 'Ягодичный мостик лёжа':
+            return ('legs buttockBridgeLyingDown');
+            break;
+        case 'Выпады с гантелями на плечах':
+            return ('legs lungesWithDumbbellsOnTheShoulders');
+            break;
+        case 'Сумо-приседания с гантелей':
+            return ('legs sumoSquatsWithDumbbell');
+            break;
+        case 'Сумо-приседания с гантелями':
+            return ('legs sumoSquatsWithDumbbells');
+            break;
         default:
             return ('legs walkingWithDumbbells');
             break;
