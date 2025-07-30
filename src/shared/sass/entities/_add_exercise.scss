@@ -4,6 +4,12 @@ div.addExercise {
     gap: 8px;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+    
+    div.titleWithButton {
+        margin-top: 8px;
+        display: flex;
+        gap: 5px;
+    }
 
     button.addExercise {
         width: 200px;

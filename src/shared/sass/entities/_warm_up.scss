@@ -1,7 +1,13 @@
 div.warmUp {
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    div.titleWithButton {
+        display: flex;
+        gap: 5px;
+    }
 
     button.warmUp {
         width: 200px;
