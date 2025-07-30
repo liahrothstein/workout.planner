@@ -43,6 +43,7 @@ export function Cardio() {
             </div>
             <Button
                 icon={<PlusOutlined />}
+                disabled={!cardioExercise}
                 color='purple'
                 variant='solid'
                 onClick={() => { dispatch(setCardio([...cardio, { name: cardioExercise, time: time, rhythm: rhytm }])) }}

@@ -60,6 +60,7 @@ export function AddExercise() {
             <Preview exercise={exercise} />
             <Button
                 icon={<PlusOutlined />}
+                disabled={!exercise}
                 color='blue'
                 variant='solid'
                 className='addExercise'

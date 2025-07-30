@@ -45,6 +45,7 @@ export function Stretching() {
             <StretchingPreview exercise={exercise} />
             <Button
                 icon={<PlusOutlined />}
+                disabled={!exercise}
                 color='green'
                 variant='solid'
                 onClick={() => { dispatch(setStretching([...stretching, { exercise: exercise, attempts: attempts, times: times }])) }}
