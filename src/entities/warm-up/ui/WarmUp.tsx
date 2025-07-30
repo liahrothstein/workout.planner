@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Cascader, InputNumber, Typography } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
+import { CaretDownOutlined, CaretRightOutlined, PlusOutlined } from '@ant-design/icons';
 
 import { WarmUpPreview } from '@components/warm-up-preview';
 
@@ -17,38 +17,49 @@ export function WarmUp() {
     const [exercise, setExercise] = useState<string[] | null | undefined>(null);
     const [attempts, setAttempts] = useState<number | null>(null);
     const [times, setTimes] = useState<number | null>(null);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const { Title } = Typography;
 
     return (
         <div className='warmUp'>
-            <Title level={4}>Разминка</Title>
-            <div>
-                <Cascader
-                    options={warmUpCascaderProps.options}
-                    placeholder={warmUpCascaderProps.placeholder}
-                    onChange={(e) => { setExercise(e) }}
-                    className='warmUpType' />
-                <InputNumber
-                    min={1}
-                    max={100}
-                    placeholder='Подходы'
-                    onChange={(e) => { setAttempts(e) }}
-                    className='attempts' />
-                <InputNumber
-                    min={1}
-                    max={100}
-                    placeholder='Повторения'
-                    onChange={(e) => { setTimes(e) }}
-                    className='times' />
+            <div className="titleWithButton">
+                <Button
+                    icon={(isOpen) ? <CaretDownOutlined /> : <CaretRightOutlined />}
+                    onClick={() => { setIsOpen(!isOpen) }} />
+                <Title level={4} className='warmUp'>Разминка</Title>
             </div>
-            <WarmUpPreview exercise={exercise} />
-            <Button
-                icon={<PlusOutlined />}
-                color='geekblue'
-                variant='solid'
-                onClick={() => { dispatch(setWarmUp([...warmUp, { exercise: exercise, attempts: attempts, times: times }])) }}
-                className='warmUp'>Добавить упражнение</Button>
+            {(isOpen) &&
+                <>
+                    <div>
+                        <Cascader
+                            options={warmUpCascaderProps.options}
+                            placeholder={warmUpCascaderProps.placeholder}
+                            onChange={(e) => { setExercise(e) }}
+                            className='warmUpType' />
+                        <InputNumber
+                            min={1}
+                            max={100}
+                            placeholder='Подходы'
+                            onChange={(e) => { setAttempts(e) }}
+                            className='attempts' />
+                        <InputNumber
+                            min={1}
+                            max={100}
+                            placeholder='Повторения'
+                            onChange={(e) => { setTimes(e) }}
+                            className='times' />
+                    </div>
+                    <WarmUpPreview exercise={exercise} />
+                    <Button
+                        icon={<PlusOutlined />}
+                        disabled={!exercise}
+                        color='geekblue'
+                        variant='solid'
+                        onClick={() => { dispatch(setWarmUp([...warmUp, { exercise: exercise, attempts: attempts, times: times }])) }}
+                        className='warmUp'>Добавить упражнение</Button>
+                </>
+            }
         </div>
     )
 }
