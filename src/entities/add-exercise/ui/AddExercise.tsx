@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Cascader, InputNumber, Typography } from 'antd';
-import { CaretDownOutlined, CaretRightOutlined, PlusOutlined } from '@ant-design/icons';
+import { DownOutlined, PlusOutlined, RightOutlined } from '@ant-design/icons';
 
 import { Preview } from '@components/preview';
 
@@ -34,7 +34,9 @@ export function AddExercise() {
         <div className="addExercise">
             <div className="titleWithButton">
                 <Button
-                    icon={(isOpen) ? <CaretDownOutlined /> : <CaretRightOutlined />}
+                    icon={(isOpen) ? <DownOutlined /> : <RightOutlined />}
+                    variant='text'
+                    color='default'
                     onClick={() => { setIsOpen(!isOpen) }} />
                 <Title level={4} className='addExercise'>Основные упражнения</Title>
             </div>

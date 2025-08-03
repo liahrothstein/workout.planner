@@ -1,19 +1,19 @@
 div.addExercise {
+    margin-top: 8px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
     
     div.titleWithButton {
-        margin-top: 8px;
         display: flex;
         gap: 5px;
     }
 
     button.addExercise {
         width: 200px;
-        margin: 10px 0 10px 0;
     }
 }
 
