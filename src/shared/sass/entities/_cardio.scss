@@ -1,9 +1,11 @@
 div.cardio {
+    padding: 8px;
     margin-top: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-bottom: 2px solid black;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
 
     div.titleWithButton {
         display: flex;
@@ -12,6 +14,5 @@ div.cardio {
 
     button.cardio {
         width: 200px;
-        margin: 10px 0 10px 0;
     }
 }

@@ -57,7 +57,7 @@ export function FillData() {
 
     return (
         <>
-            <Title level={2}>Сформировать тренировку</Title>
+            <Title level={2}>Составить тренировку</Title>
             <Cascader
                 className='trainingType'
                 options={trainingTypeCascaderProps.options}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Cascader, InputNumber, Typography } from 'antd';
-import { CaretDownOutlined, CaretRightOutlined, PlusOutlined } from '@ant-design/icons';
+import { DownOutlined, PlusOutlined, RightOutlined } from '@ant-design/icons';
 
 import { WarmUpPreview } from '@components/warm-up-preview';
 
@@ -25,7 +25,9 @@ export function WarmUp() {
         <div className='warmUp'>
             <div className="titleWithButton">
                 <Button
-                    icon={(isOpen) ? <CaretDownOutlined /> : <CaretRightOutlined />}
+                    icon={(isOpen) ? <DownOutlined /> : <RightOutlined />}
+                    variant='text'
+                    color='default'
                     onClick={() => { setIsOpen(!isOpen) }} />
                 <Title level={4} className='warmUp'>Разминка</Title>
             </div>
