@@ -1,9 +1,9 @@
 import { exercises } from '@constants/exercises';
 import { editExercise } from '@slices/exercise-slice';
+import { CascaderOption, Attempt } from '@utils/index';
 
-import type { SetTimes, SetWeight, ExerciseCascaderProps } from '../../../shared/types/cascader';
+import type { SetTimes, SetWeight, CascaderProps } from '../../../shared/types/cascader';
 import type { ExerciseArray, ExerciseWithAttmepts } from '../../../shared/types/exercise';
-import type { Attempt } from '../../../shared/types/workout';
 import type { Dispatch, ThunkDispatch, UnknownAction } from '@reduxjs/toolkit';
 
 export const attempts: number[] = [1, 2, 3, 4, 5];
@@ -12,7 +12,7 @@ function exercisesChildren(array: string[]): any {
     let tempArray: any = [];
 
     array.forEach((element) => {
-        tempArray.push({ value: element, label: element })
+        tempArray.push(new CascaderOption(element, element))
     });
 
     return (tempArray)
@@ -22,11 +22,7 @@ function exerciseArray(array: ExerciseArray[]) {
     let tempArray: any = new Array();
 
     array.forEach((element) => {
-        tempArray.push({
-            value: element.muscleGroup,
-            label: element.muscleGroup,
-            children: exercisesChildren(element.names)
-        })
+        tempArray.push(new CascaderOption(element.muscleGroup, element.muscleGroup, exercisesChildren(element.names)))
     });
 
     return (tempArray)
@@ -34,7 +30,7 @@ function exerciseArray(array: ExerciseArray[]) {
 
 const exercisesOptions: any[] = exerciseArray(exercises);
 
-export const exercisesCascaderProps: ExerciseCascaderProps = {
+export const exercisesCascaderProps: CascaderProps = {
     options: exercisesOptions,
     placeholder: 'Упражнение'
 };
@@ -106,51 +102,12 @@ export function addExersice(
     weight4: number | null,
     weight5: number | null
 ): void {
-    function checkNumberTimes(number: number | null): number | null | 'max' {
-        if ((number === 0) || (number === null)) {
-            return (null)
-        } else {
-            if (number === 100) {
-                return ('max')
-            } else {
-                return (number)
-            }
-        }
-    };
-    function checkNumberWeight(number: number | null): number | null {
-        if (number) {
-            return (number)
-        } else {
-            return (null)
-        }
-    };
-
     let attempts: Attempt[] = [
-        {
-            number: 1,
-            times: checkNumberTimes(times1),
-            weight: checkNumberWeight(weight1)
-        },
-        {
-            number: 2,
-            times: checkNumberTimes(times2),
-            weight: checkNumberWeight(weight2)
-        },
-        {
-            number: 3,
-            times: checkNumberTimes(times3),
-            weight: checkNumberWeight(weight3)
-        },
-        {
-            number: 4,
-            times: checkNumberTimes(times4),
-            weight: checkNumberWeight(weight4)
-        },
-        {
-            number: 5,
-            times: checkNumberTimes(times5),
-            weight: checkNumberWeight(weight5)
-        }
+        new Attempt(1, times1, weight1),
+        new Attempt(2, times2, weight2),
+        new Attempt(3, times3, weight3),
+        new Attempt(4, times4, weight4),
+        new Attempt(5, times5, weight5)
     ];
 
     let exerciseWithAttempt: ExerciseWithAttmepts = {

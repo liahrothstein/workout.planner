@@ -17,7 +17,12 @@ export function setupStore() {
     return (
         configureStore({
             reducer: rootReducer,
-            middleware: (getDefaultMiddleware) => (getDefaultMiddleware())
+            middleware: (getDefaultMiddleware) => (getDefaultMiddleware({
+                serializableCheck: {
+                    ignoredActions: ['exercise/editExercise', 'workout/setWorkout'],
+                    ignoredPaths: ['exercise', 'workout.exercises']
+                }
+            }))
         })
     )
 };

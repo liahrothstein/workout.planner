@@ -3,7 +3,7 @@ import { DeleteOutlined } from '@ant-design/icons';
 
 import { useAppDispatch } from '@store/hooks';
 import { setCardio } from '@slices/cardio-slice';
-import { columns, deleteCardioExercise, generateDataSource } from '../model/preliminary-cardio';
+import { columns, deleteCardioExercise } from '../model/preliminary-cardio';
 
 import type { CardioExercise } from '../../../shared/types/workout';
 
@@ -24,7 +24,7 @@ export function PreliminaryCardio({ cardio, index, array }: PreliminaryCardioPro
             extra={<Button onClick={() => { dispatch(setCardio(deleteCardioExercise(index, array))) }} icon={<DeleteOutlined />} color='danger' variant='filled' />}>
             <Table
                 columns={columns}
-                dataSource={generateDataSource(cardio, index)}
+                dataSource={[{ key: `${index}`, time: cardio.time, rhytm: cardio.rhythm }]}
                 pagination={false}
                 size='small' />
         </Card>

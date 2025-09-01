@@ -4,9 +4,8 @@ import { DeleteOutlined } from '@ant-design/icons';
 import { useAppDispatch } from '@store/hooks';
 import { editExercise } from '@slices/exercise-slice';
 import { columns, deleteExercise, generateDataSource } from '../model/preliminary-exercise';
-import { titleExerciseCheck } from '@utils/title-exercise-check';
+import { titleExerciseCheck, Attempt } from '@utils/index';
 
-import type { Attempt } from '../../../shared/types/workout';
 import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
 
 import './PreliminaryExercise.scss';

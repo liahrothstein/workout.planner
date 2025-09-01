@@ -27,12 +27,6 @@ export enum MuscleGroup {
     Forearms = 'Предплечья'
 };
 
-export interface Attempt {
-    number: number,
-    times: number | null | 'max',
-    weight: number | null
-};
-
 export interface CardioExercise {
     name: CardioType | null,
     time: string,
