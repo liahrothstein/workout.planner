@@ -9,7 +9,7 @@ div.workoutWrapper {
     div.workout {
         background-color: $workoutBackgroundColor;
         padding: 40px;
-        box-shadow: 5px 5px 5px gray;
+        box-shadow: 5px 5px 5px $workoutShadowColor;
         border-radius: 5px;
         overflow: auto;
         white-space: nowrap;

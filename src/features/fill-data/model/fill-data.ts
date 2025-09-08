@@ -1,46 +1,24 @@
-import { TrainingType } from "../../../shared/types/workout";
-import type {
-    TrainingTypeOption,
-    TrainingTypeCascaderProps
-} from "../../../shared/types/cascader";
+import { CascaderOption } from "@utils/cascader-option";
 
-const trainingTypeOptions: TrainingTypeOption[] = [
-    {
-        value: TrainingType.Glycolytic,
-        label: TrainingType.Glycolytic
-    },
-    {
-        value: TrainingType.Circular,
-        label: TrainingType.Circular
-    },
-    {
-        value: TrainingType.Negative,
-        label: TrainingType.Negative
-    },
-    {
-        value: TrainingType.Positive,
-        label: TrainingType.Positive
-    },
-    {
-        value: TrainingType.Power,
-        label: TrainingType.Power
-    },
-    {
-        value: TrainingType.Split,
-        label: TrainingType.Split
-    },
-    {
-        value: TrainingType.Tempo,
-        label: TrainingType.Tempo
-    }
+import { TrainingType } from "../../../shared/types/workout";
+import type { CascaderProps } from "../../../shared/types/cascader";
+
+const trainingTypeOptions: CascaderOption[] = [
+    new CascaderOption(TrainingType.Glycolytic, TrainingType.Glycolytic),
+    new CascaderOption(TrainingType.Circular, TrainingType.Circular),
+    new CascaderOption(TrainingType.Negative, TrainingType.Negative),
+    new CascaderOption(TrainingType.Positive, TrainingType.Positive),
+    new CascaderOption(TrainingType.Power, TrainingType.Power),
+    new CascaderOption(TrainingType.Split, TrainingType.Split),
+    new CascaderOption(TrainingType.Tempo, TrainingType.Tempo)
 ];
 
-export const trainingTypeCascaderProps: TrainingTypeCascaderProps = {
+export const trainingTypeCascaderProps: CascaderProps = {
     options: trainingTypeOptions,
     placeholder: 'Вид тренировки'
 };
 
-export function ejectTrainingType(trainingType: TrainingType[] | undefined | null): TrainingType | string {
+export function ejectTrainingType(trainingType: string[] | undefined | null): TrainingType | string {
     if ((trainingType === null) || (trainingType === undefined)) {
         return ('Пусто')
     } else {

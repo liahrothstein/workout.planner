@@ -13,8 +13,7 @@ import {
   setPress,
   setForearms
 } from '../model/muscle-groups';
-
-import { MuscleGroup } from '../../../shared/types/workout';
+import { muscleGroupCheckboxes } from '@constants/muscle-groups';
 
 import './MuscleGroups.scss';
 
@@ -62,14 +61,9 @@ export function MuscleGroups() {
     <>
       <Title level={4} className='muscleGroups'>Группы мышц</Title>
       <div className="muscleGroups">
-        <Checkbox onChange={(e) => { setIsShoulders(e.target.checked) }}>{MuscleGroup.Shoulders}</Checkbox>
-        <Checkbox onChange={(e) => { setIsBack(e.target.checked) }}>{MuscleGroup.Back}</Checkbox>
-        <Checkbox onChange={(e) => { setIsChest(e.target.checked) }}>{MuscleGroup.Chest}</Checkbox>
-        <Checkbox onChange={(e) => { setIsBiceps(e.target.checked) }}>{MuscleGroup.Biceps}</Checkbox>
-        <Checkbox onChange={(e) => { setIsLegs(e.target.checked) }}>{MuscleGroup.Legs}</Checkbox>
-        <Checkbox onChange={(e) => { setIsTriceps(e.target.checked) }}>{MuscleGroup.Triceps}</Checkbox>
-        <Checkbox onChange={(e) => { setIsPress(e.target.checked) }}>{MuscleGroup.Press}</Checkbox>
-        <Checkbox onChange={(e) => { setIsForearms(e.target.checked) }}>{MuscleGroup.Forearms}</Checkbox>
+        {muscleGroupCheckboxes(setIsShoulders, setIsBack, setIsChest, setIsBiceps, setIsLegs, setIsTriceps, setIsPress, setIsForearms).map((msclGrp) => (
+          <Checkbox key={msclGrp.muscleGroup} onChange={(e) => { msclGrp.dispatch(e.target.checked) }}>{msclGrp.muscleGroup}</Checkbox>
+        ))}
       </div>
     </>
   )

@@ -33,7 +33,7 @@ export function FillData() {
     const dispatch = useAppDispatch();
 
     const [workoutNumber, setWorkoutNumber] = useState<number | null>(null);
-    const [trainingTypeArray, setTrainingTypeArray] = useState<TrainingType[] | undefined | null>(null);
+    const [trainingTypeArray, setTrainingTypeArray] = useState<string[] | undefined | null>(null);
 
     const { TextArea } = Input;
     const { Title } = Typography;

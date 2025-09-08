@@ -1,65 +1,8 @@
 import type { Dispatch, SetStateAction } from 'react';
-import { CardioType, MuscleGroup, TrainingType } from './workout';
+import type { CascaderOption } from '@utils/cascader-option';
 
-export interface ExerciseSecondLevelOption {
-    value: string;
-    label: string;
-}
-
-export interface ExerciseFirstLevelOption {
-    value: MuscleGroup;
-    label: MuscleGroup;
-    children?: ExerciseSecondLevelOption[];
-}
-
-export interface ExerciseOption {
-    value: string;
-    label: string;
-    children?: ExerciseOption[];
-}
-
-export interface TrainingTypeOption {
-    value: TrainingType;
-    label: TrainingType;
-    children?: TrainingTypeOption[];
-}
-
-export interface ExerciseCascaderProps {
-    options: ExerciseOption[],
-    placeholder: string
-}
-
-export interface TrainingTypeCascaderProps {
-    options: TrainingTypeOption[],
-    placeholder: string
-}
-
-export interface CardioOption {
-    value: CardioType;
-    label: CardioType;
-}
-export interface CardioCascaderProps {
-    options: CardioOption[],
-    placeholder: string
-}
-
-export interface WarmUpOption {
-    value: string,
-    label: string
-}
-
-export interface WarmUpCascaderProps {
-    options: WarmUpOption[],
-    placeholder: string
-}
-
-export interface StretchingOption {
-    value: string,
-    label: string
-}
-
-export interface StretchingCascaderProps {
-    options: StretchingOption[],
+export interface CascaderProps {
+    options: CascaderOption[],
     placeholder: string
 }
 

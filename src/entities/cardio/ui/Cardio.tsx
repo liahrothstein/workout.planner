@@ -6,15 +6,13 @@ import { useAppDispatch, useAppSelector } from '@store/hooks';
 import { setCardio } from '@slices/cardio-slice';
 import { cardioCascaderProps, timeParse } from '../model/cardio';
 
-import type { CardioType } from '../../../shared/types/workout';
-
 import './Cardio.scss';
 
 export function Cardio() {
     const dispatch = useAppDispatch();
     const cardio = useAppSelector((state) => (state.cardio));
 
-    const [cardioExercise, setCardioExercise] = useState<CardioType[] | null | undefined>(null);
+    const [cardioExercise, setCardioExercise] = useState<string[] | null | undefined>(null);
     const [time, setTime] = useState<string>('');
     const [rhytm, setRhytm] = useState<number | null>(null);
     const [isOpen, setIsOpen] = useState<boolean>(false);

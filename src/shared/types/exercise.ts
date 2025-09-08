@@ -1,4 +1,5 @@
-import type { Attempt, MuscleGroup } from "./workout";
+import type { Attempt } from "../lib/utils/attempt";
+import type { MuscleGroup } from "./workout";
 
 export interface ExerciseArray {
     muscleGroup: MuscleGroup,

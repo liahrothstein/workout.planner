@@ -1,10 +1,10 @@
 import { Button, Card, Table } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
 
-import { titleExerciseCheck } from '@utils/title-exercise-check';
-import { columns, deleteWarmUp, generateDataSource } from '../model/preliminary-warm-up';
+import { columns, deleteWarmUp } from '../model/preliminary-warm-up';
 import { useAppDispatch } from '@store/hooks';
 import { setWarmUp } from '@slices/warm-up-slice';
+import { titleExerciseCheck, TableData, checkNumber } from '@utils/index';
 
 import type { WarmUp } from '../../../shared/types/workout';
 
@@ -25,7 +25,7 @@ export function PreliminaryWarmUp({ warmUp, index, array }: PreliminaryWarmUpPro
             extra={<Button onClick={() => { dispatch(setWarmUp(deleteWarmUp(index, array))) }} icon={<DeleteOutlined />} color='danger' variant='filled' />}>
             <Table
                 columns={columns}
-                dataSource={generateDataSource(warmUp, index)}
+                dataSource={[new TableData(`${index}`, checkNumber(warmUp.attempts), checkNumber(warmUp.times))]}
                 pagination={false}
                 size='small' />
         </Card>
