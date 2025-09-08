@@ -10,11 +10,11 @@ tr.tableRow td.exercise {
 
     &::before {
         position: absolute;
-        border: 1px solid black;
-        box-shadow: 5px 5px 5px gray;
+        border: 1px solid $tipBorderColor;
+        box-shadow: 5px 5px 5px $tipShadowColor;
         top: -115px;
         left: 190px;
-        background-color: white;
+        background-color: $tipBackgroundColor;
         z-index: 4;
     }
 

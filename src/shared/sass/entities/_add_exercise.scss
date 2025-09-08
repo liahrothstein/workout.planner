@@ -1,12 +1,14 @@
+@use '../abstracts' as *;
+
 div.addExercise {
     margin-top: 8px;
     padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid $exerciseFormBorderColor;
     border-radius: 8px;
-    
+
     div.titleWithButton {
         display: flex;
         gap: 5px;
@@ -22,7 +24,7 @@ div div.ant-select-dropdown div div.ant-cascader-menus {
         flex-wrap: wrap;
 
         ul.ant-cascader-menu:last-child {
-            border-top: 5px #f5f5f5 solid;
+            border-top: 5px $antCascaderMenuBorderColor solid;
 
             li.ant-cascader-menu-item div.ant-cascader-menu-item-content {
                 white-space: wrap;
