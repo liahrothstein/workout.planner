@@ -1,69 +1,57 @@
-# React + TypeScript + Vite
+# 🏋️‍♂️ Workout Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современное веб-приложение для составления планов тренировок, построенное по архитектуре **Feature-Sliced Design (FSD)**. Проект позволяет гибко настраивать программы занятий, включая разминку, силовые упражнения и растяжку.
 
-Currently, two official plugins are available:
+## 🚀 Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Архитектура FSD**: Четкое разделение ответственности между слоями (`app`, `pages`, `widgets`, `features`, `entities`, `shared`), что упрощает поддержку кода.
+* **Модульный подход**: Отдельные блоки для разминки (warm-up), кардио, основных упражнений и растяжки (stretching).
+* **Обмен тренировками**: Генерация компактных ссылок для передачи планов (используется шифрование `crypto-js` и сжатие `lz-string`).
+* **Типизация**: 100% покрытие **TypeScript** для предотвращения ошибок на этапе разработки.
+* **UI-библиотека**: Интерфейс построен на базе компонентов **Ant Design**.
 
-## Expanding the ESLint configuration
+## 🛠 Технологический стек
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Core**: React 19, TypeScript
+* **State Management**: Redux Toolkit (`@reduxjs/toolkit`)
+* **Styling**: SCSS, Ant Design (`antd`)
+* **Routing**: React Router DOM 7
+* **Build Tool**: Vite
+* **Utilities**: Crypto-JS, LZ-string
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Структура проекта (FSD)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+* `src/app/` — конфигурация Store, роутинг и глобальные стили.
+* `src/pages/` — основные экраны (Создание тренировки, Просмотр тренировки).
+* `src/widgets/` — крупные блоки, собирающие логику из фич и сущностей.
+* `src/features/` — бизнес-логика (генерация ссылок, заполнение данных).
+* `src/entities/` — модели данных (упражнения, группы мышц, категории).
+* `src/shared/` — утилиты, общие компоненты, константы и типы.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Установка и запуск
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Клонируйте репозиторий**:
+    ```bash
+    git clone https://github.com/liahrothstein/workout.planner.git
+    cd workout.planner
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  **Установите зависимости**:
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Запустите сервер разработки**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Сборка проекта**:
+    ```bash
+    npm run build
+    ```
+
+## 🌐 Деплой
+
+Приложение настроено и работает с помощью **GitHub Pages**.
+Результат доступен по адресу: https://liahrothstein.github.io/workout.planner/#/create/
