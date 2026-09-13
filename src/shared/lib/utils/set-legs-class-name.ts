@@ -42,12 +42,6 @@ export function setLegsClassName(exercise: string): string {
         case 'Гакк приседания':
             return ('legs gakkSquats');
             break;
-        case 'Подъем на носки в Смите':
-            return ('legs gettingOnYourToesInSmith');
-            break;
-        case 'Подъем на носки сидя в тренажёре':
-            return ('legs gettingUpOnYourToesWhileSittingInTheTrainer');
-            break;
         case 'Ягодичный мостик со штангой':
             return ('legs gluteBridgeWithBarbell');
             break;
@@ -126,15 +120,6 @@ export function setLegsClassName(exercise: string): string {
         case 'Приседание с гантелями на плечах':
             return ('legs squatWithDumbbellsOnShoulders');
             break;
-        case 'Подъем на носки стоя':
-            return ('legs standingOnYourToes');
-            break;
-        case 'Подъем на носки сидя':
-            return ('legs standingOnYourToesWhileSitting');
-            break;
-        case 'Подъем на носки стоя с гантелями':
-            return ('legs standingOnYourToesWithDumbbells');
-            break;
         case 'Разгибание одной ноги в тренажёре':
             return ('legs stretchingOneLegInTheTrainer');
             break;
@@ -159,9 +144,6 @@ export function setLegsClassName(exercise: string): string {
         case 'Приседания с выпрыгиванием':
             return ('legs jumpSquats');
             break;
-        case 'Подъем на носки в Смите каждой отдельно':
-            return ('legs liftingOnYourToesInSmithSeparately');
-            break;
         case 'Мини-приседания с прыжком':
             return ('legs miniJumpSquats');
             break;
@@ -170,15 +152,6 @@ export function setLegsClassName(exercise: string): string {
             break;
         case 'Приседание с маятниковой ногой в сторону':
             return ('legs squattingWithAPendulumLegToTheSide');
-            break;
-        case 'Подъем на носки в тренажёре для жима ногами':
-            return ('legs standingOnYourToesInALegPressMachine');
-            break;
-        case 'Подъем на носки в Гакк тренажёре':
-            return ('legs standingOnYourToesInTheGakkSimulator');
-            break;
-        case 'Подъем на носки сидя в Смите':
-            return ('legs standingOnYourToesWhileSittingInTheSmith');
             break;
         case 'Свинг с гантелей':
             return ('legs swingWithDumbbells');
@@ -200,6 +173,90 @@ export function setLegsClassName(exercise: string): string {
             break;
         case 'Сумо-приседания с гантелями':
             return ('legs sumoSquatsWithDumbbells');
+            break;
+        case 'Болгарские выпады с гантелью с опорой на стойку':
+            return ('legs rackSupportedDumbbellBulgarianSplitSquat');
+            break;
+        case 'Жим одной ногой в тренажёре (новый)':
+            return ('legs singleLegMachinePressNew');
+            break;
+        case 'Журавлик':
+            return ('legs singleLegRomanianDeadlift');
+            break;
+        case 'Зашагивания на платформу в кроссовере':
+            return ('legs cableStepUps');
+            break;
+        case 'Лэндмайн':
+            return ('legs landmine');
+            break;
+        case 'Наклоны Гуд морнинг в гакке':
+            return ('legs hackMachineGoodMorning');
+            break;
+        case 'Обратные приседания в Гакк-тренажере (глубокие)':
+            return ('legs deepReverseHackSquat');
+            break;
+        case 'Отведение ноги в сторону с нижнего блока':
+            return ('legs lowCableLegAbduction');
+            break;
+        case 'Отведение ноги назад с нижнего блока (с упором на скамью)':
+            return ('legs benchSupportedLowCableHipExtension');
+            break;
+        case 'Подъёмы корпуса на тренажёре GHD':
+            return ('legs ghdSitUps');
+            break;
+        case 'Приведение бедра':
+            return ('legs hipAdduction');
+            break;
+        case 'Приседание с гантелей вариант 2':
+            return ('legs dumbbellSquatVariationTwo');
+            break;
+        case 'Приседание с гантелей вариант 3':
+            return ('legs dumbbellSquatVariationThree');
+            break;
+        case 'Приседания Гоблет с нижнего блока':
+            return ('legs lowCableGobletSquat');
+            break;
+        case 'Приседания с удержанием блина на вытянутых руках':
+            return ('legs plateHoldSquat');
+            break;
+        case 'Разгибание ноги сидя в кроссовере':
+            return ('legs seatedCableLegExtension');
+            break;
+        case 'Разгибание со сведением ног':
+            return ('legs legExtensionWithAdduction');
+            break;
+        case 'Румынская тяга с гантелями':
+            return ('legs dumbbellRomanianDeadlift');
+            break;
+        case 'Румынская тяга с нижнего блока на платформе':
+            return ('legs lowCablePlatformRomanianDeadlift');
+            break;
+        case 'Сгибание ног сидя':
+            return ('legs seatedLegCurl');
+            break;
+        case 'Сгибание одной ноги сидя':
+            return ('legs seatedSingleLegCurl');
+            break;
+        case 'Тяга гири к подбородку из плие-приседа':
+            return ('legs plieSquatKettlebellUprightRow');
+            break;
+        case 'Тяга нижнего блока между ног':
+            return ('legs pullThrough');
+            break;
+        case 'Экстензия на тренажёре GHD':
+            return ('legs ghdBackExtension');
+            break;
+        case 'Экстензия с акцентом на ягодицы и бицепс бедра':
+            return ('legs gluteAndHamstringFocusedExtension');
+            break;
+        case 'Ягодичный мостик в тренажёре':
+            return ('legs machineGluteBridge');
+            break;
+        case 'Ягодичный мостик лёжа с гантелей':
+            return ('legs lyingDumbbellGluteBridge');
+            break;
+        case 'Ягодичный мостик с ногами на скамье':
+            return ('legs feetElevatedGluteBridge');
             break;
         default:
             return ('legs walkingWithDumbbells');

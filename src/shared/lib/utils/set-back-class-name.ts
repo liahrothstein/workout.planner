@@ -198,6 +198,75 @@ export function setBackClassName(exercise: string): string {
         case 'Тяга вертикального блока рукояткой':
             return ('back tractionOfTheVerticalBlockByTheHandle');
             break;
+        case 'Вертикальная тяга в Хаммере обратным хватом':
+            return ('back reverseGripHammerStrengthLatPulldown');
+            break;
+        case 'Вертикальная тяга в Хаммере одной рукой':
+            return ('back singleArmHammerStrengthLatPulldown');
+            break;
+        case 'Вертикальная тяга в Хаммере':
+            return ('back hammerStrengthLatPulldown');
+            break;
+        case 'Горизонтальная тяга в рычажном тренажёре двумя руками':
+            return ('back twoArmLeverageSeatedRow');
+            break;
+        case 'Горизонтальная тяга в рычажном тренажёре нейтральным хватом':
+            return ('back neutralGripLeverageSeatedRow');
+            break;
+        case 'Горизонтальная тяга в рычажном тренажёре обратным хватом':
+            return ('back reverseGripLeverageSeatedRow');
+            break;
+        case 'Горизонтальная тяга в рычажном тренажёре прямым хватом':
+            return ('back overhandGripLeverageSeatedRow');
+            break;
+        case 'Горизонтальная тяга на трапецию и ромбовидные':
+            return ('back trapsAndRhomboidsSeatedRow');
+            break;
+        case 'Подтягивание с резинкой':
+            return ('back resistanceBandPullUp');
+            break;
+        case 'Подтягивания в Гравитроне (широким)':
+            return ('back wideGripAssistedPullUp');
+            break;
+        case 'Подтягивания в Гравитроне обратным хватом':
+            return ('back reverseGripAssistedPullUp');
+            break;
+        case 'Пуловер в тренажёре':
+            return ('back machinePullover');
+            break;
+        case 'Пуловер канатной рукояткой в кроссовере':
+            return ('back cableRopePullover');
+            break;
+        case 'Разгибание шеи с отягощением лежа на наклонной скамье':
+            return ('back inclineBenchWeightedNeckExtension');
+            break;
+        case 'Разгибание шеи с отягощением сидя':
+            return ('back seatedWeightedNeckExtension');
+            break;
+        case 'Разгибание шеи стоя с отягощением':
+            return ('back standingWeightedNeckExtension');
+            break;
+        case 'Сгибание шеи лежа на скамье с отягощением (блином)':
+            return ('back benchWeightedNeckFlexion');
+            break;
+        case 'Тяга вертикального блока канатной рукояткой':
+            return ('back ropeLatPulldown');
+            break;
+        case 'Тяга вертикального блока узкая рукоятка 2':
+            return ('back narrowGripLatPulldownVariationTwo');
+            break;
+        case 'Тяга вертикального блока широкая рукоятка 2':
+            return ('back wideGripLatPulldownVariationTwo');
+            break;
+        case 'Тяга Т-грифа обратным хватом':
+            return ('back reverseGripTBarRow');
+            break;
+        case 'Утяжелённые австралийские подтягивания с опорой ног на скамью':
+            return ('back weightedFeetElevatedInvertedRow');
+            break;
+        case 'Экстензия':
+            return ('back backExtension');
+            break;
         default:
             return ('back verticalBlockThrustWithNarrowThreadedGrip');
             break;

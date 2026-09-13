@@ -6,7 +6,8 @@ import {
     setLegsClassName,
     setPressClassName,
     setTricepsClassName,
-    setForearmsClassName
+    setForearmsClassName,
+    setCalfClassName
 } from "./index";
 
 import { MuscleGroup } from "../../types/workout";
@@ -33,6 +34,9 @@ export function setClassName(exercise: string, muscleGroup: string): string {
             break;
         case MuscleGroup.Forearms:
             return (setForearmsClassName(exercise));
+            break;
+        case MuscleGroup.Calf:
+            return (setCalfClassName(exercise));
             break;
         default:
             return (setBicepsClassName(exercise));

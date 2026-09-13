@@ -11,7 +11,8 @@ import {
   setLegs,
   setTriceps,
   setPress,
-  setForearms
+  setForearms,
+  setCalf
 } from '../model/muscle-groups';
 import { muscleGroupCheckboxes } from '@constants/muscle-groups';
 
@@ -29,6 +30,7 @@ export function MuscleGroups() {
   const [isTriceps, setIsTriceps] = useState<boolean>(false);
   const [isPress, setIsPress] = useState<boolean>(false);
   const [isForearms, setIsForearms] = useState<boolean>(false);
+  const [isCalf, setIsCalf] = useState<boolean>(false);
 
   const { Title } = Typography;
 
@@ -56,12 +58,15 @@ export function MuscleGroups() {
   useEffect(() => {
     dispatch(setMuscleGroups(setForearms(isForearms, muscleGroups)))
   }, [isForearms]);
+  useEffect(() => {
+    dispatch(setMuscleGroups(setCalf(isCalf, muscleGroups)))
+  }, [isCalf]);
 
   return (
     <>
       <Title level={4} className='muscleGroups'>Группы мышц</Title>
       <div className="muscleGroups">
-        {muscleGroupCheckboxes(setIsShoulders, setIsBack, setIsChest, setIsBiceps, setIsLegs, setIsTriceps, setIsPress, setIsForearms).map((msclGrp) => (
+        {muscleGroupCheckboxes(setIsShoulders, setIsBack, setIsChest, setIsBiceps, setIsLegs, setIsTriceps, setIsPress, setIsForearms, setIsCalf).map((msclGrp) => (
           <Checkbox key={msclGrp.muscleGroup} onChange={(e) => { msclGrp.dispatch(e.target.checked) }}>{msclGrp.muscleGroup}</Checkbox>
         ))}
       </div>

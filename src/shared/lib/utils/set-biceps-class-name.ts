@@ -159,6 +159,30 @@ export function setBicepsClassName(exercise: string): string {
         case 'Сгибание рук со штангой на бицепс Строгий':
             return ('biceps flexionOfTheArmsWithABarbellOnTheBicepsIsStrict');
             break;
+        case 'Концентрированное сгибание руки в кроссовере сидя':
+            return ('biceps concentratedArmFlexionInASeatedCableCrossover');
+            break;
+        case 'Концентрированное сгибание руки сидя с резинкой':
+            return ('biceps concentratedArmCurlInASeatedPositionWithAResistanceBand');
+            break;
+        case 'Паучьи сгибания нейтральным хватом':
+            return ('biceps spiderCurlsWithANeutralGrip');
+            break;
+        case 'Перекрёстное сгибание рук с гантелями':
+            return ('biceps crossBodyDumbbellCurls');
+            break;
+        case 'Сгибание рук на бицепс лёжа с нижнего блока':
+            return ('biceps bicepsCurlsLyingDownWithTheLowerPulley');
+            break;
+        case 'Сгибание рук со штангой сидя с упором локтей в бёдра':
+            return ('biceps seatedBarbellBicepsCurlWithTheElbowsRestingOnTheThighs');
+            break;
+        case 'Сгибание руки на бицепс с фитнес-резинкой (эспандером)':
+            return ('biceps resistanceBandBicepCurl');
+            break;
+        case 'Сгибание руки на кроссовере от верхнего блока':
+            return ('biceps highCableCrossoverBicepCurl');
+            break;
         default:
             return ('biceps zottmanBicepLift');
             break;

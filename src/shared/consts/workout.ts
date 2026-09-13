@@ -19,5 +19,6 @@ export const groups: MuscleGroup[] = [
     MuscleGroup.Legs,
     MuscleGroup.Triceps,
     MuscleGroup.Press,
-    MuscleGroup.Forearms
+    MuscleGroup.Forearms,
+    MuscleGroup.Calf
 ]

@@ -141,6 +141,66 @@ export function setShouldersClassName(exercise: string,): string {
         case 'Тяга к корпусу канатной рукоятки в кроссовере верхнего блока':
             return ('shoulders tractionToTheBodyOfTheRopeHandleInTheCrossoverOfTheUpperBlock');
             break;
+        case 'Жим Арнольда 2 вариация':
+            return ('shoulders arnoldPressVariationTwo');
+            break;
+        case 'Жим блина стоя над головой':
+            return ('shoulders standingOverheadPlatePress');
+            break;
+        case 'Обратные махами с гантелями в наклоне + Молотки':
+            return ('shoulders bentOverReverseDumbbellFlyesToHammerCurls');
+            break;
+        case 'Отведение гантелей в стороны в наклоне (с опорой на скамью)':
+            return ('shoulders benchSupportedBentOverDumbbellLateralRaise');
+            break;
+        case 'Отведение гантелей назад в наклоне':
+            return ('shoulders bentOverDumbbellRearDeltFlyes');
+            break;
+        case 'Отведение рук в тренажёре Peck-Deck (нейтральный хват)':
+            return ('shoulders pecDeckRearDeltFlyesNeutralGrip');
+            break;
+        case 'Отведение рук в тренажёре Peck-Deck (прямым хватом)':
+            return ('shoulders pecDeckRearDeltFlyesOverhandGrip');
+            break;
+        case 'Отведение штанги назад в наклоне':
+            return ('shoulders bentOverBarbellRearDeltRaise');
+            break;
+        case 'Повороты гантели (руль) перед собой стоя':
+            return ('shoulders standingDumbbellSteeringWheel');
+            break;
+        case 'Подъем гантелей перед собой + отведения в стороны':
+            return ('shoulders dumbbellFrontRaiseToLateralRaise');
+            break;
+        case 'Подъём гантелей через стороны лёжа на скамье под углом':
+            return ('shoulders inclineBenchProneDumbbellLateralRaise');
+            break;
+        case 'Подъём гантели в сторону лёжа на боку (на скамье)':
+            return ('shoulders sideLyingBenchDumbbellLateralRaise');
+            break;
+        case 'Подъём гантели одной рукой лёжа боком на наклонной скамье':
+            return ('shoulders inclineBenchSideLyingSingleArmDumbbellLateralRaise');
+            break;
+        case 'Подъём гантели перед собой лёжа на наклонной скамье':
+            return ('shoulders inclineBenchDumbbellFrontRaise');
+            break;
+        case 'Подъём гантели перед собой одной рукой в наклоне с опорой (супинацией)':
+            return ('shoulders supportedBentOverSingleArmDumbbellFrontRaiseWithSupination');
+            break;
+        case 'Подъем гантели перед собой сидя, нейтральным хватом':
+            return ('shoulders seatedNeutralGripDumbbellFrontRaise');
+            break;
+        case 'Подъём одной гантели лёжа на боку':
+            return ('shoulders sideLyingSingleDumbbellRaise');
+            break;
+        case 'Подъём штанги перед собой сидя':
+            return ('shoulders seatedBarbellFrontRaise');
+            break;
+        case 'Поочерёдный жим гантелей стоя':
+            return ('shoulders standingAlternatingDumbbellPress');
+            break;
+        case 'Тяга горизонтального блока к груди (на заднюю дельту)':
+            return ('shoulders seatedCableRowToChestForRearDelts');
+            break;
         default:
             return ('shoulders standingDumbbellPress');
             break;

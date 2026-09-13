@@ -99,6 +99,60 @@ export function setTricepsClassName(exercise: string): string {
         case 'Обратные отжимания от скамьи':
             return ('triceps reversePushUpsFromTheBench');
             break;
+        case 'Брусья в Гравитроне':
+            return ('triceps assistedDips');
+            break;
+        case 'Брусья с весом':
+            return ('triceps weightedDips');
+            break;
+        case 'Жим узким в Гравитроне (на трицепс)':
+            return ('triceps assistedCloseGripBenchPress');
+            break;
+        case 'Жим узким с переходом в пуловер':
+            return ('triceps closeGripBenchPressToPullover');
+            break;
+        case 'Концентрированное разгибание руки в кроссовере':
+            return ('triceps cableConcentrationTricepsExtension');
+            break;
+        case 'Обратные отжимания от скамьи с ногами на возвышении с весом':
+            return ('triceps weightedElevatedBenchDips');
+            break;
+        case 'Обратные отжимания от скамьи с ногами на возвышении':
+            return ('triceps elevatedBenchDips');
+            break;
+        case 'Отведение гантелей назад на наклонной скамье':
+            return ('triceps inclineDumbbellKickback');
+            break;
+        case 'Отведение назад гантелей сидя в наклоне':
+            return ('triceps seatedBentOverDumbbellKickback');
+            break;
+        case 'Отжимания в рычажном тренажёре на трицепс сидя':
+            return ('triceps seatedMachineTricepsDip');
+            break;
+        case 'Отжимания на брусьях с акцентом на трицепс':
+            return ('triceps tricepsFocusedDips');
+            break;
+        case 'Разгибание рук на трицепс лежа на полу с нижнего блока':
+            return ('triceps lyingFloorLowCableTricepsExtension');
+            break;
+        case 'Разгибания рук из-за головы на верхнем блоке с канатной рукоятью':
+            return ('triceps overheadHighCableRopeTricepsExtension');
+            break;
+        case 'Разгибания рук на трицепс из-за головы с нижнего блока стоя на коленях':
+            return ('triceps kneelingOverheadLowCableTricepsExtension');
+            break;
+        case 'Французский жим (старой школы)':
+            return ('triceps oldSchoolSkullcrusher');
+            break;
+        case 'Французский жим гантелями на наклонной скамье':
+            return ('triceps inclineDumbbellSkullcrusher');
+            break;
+        case 'Французский жим лёжа на горизонтальной скамье':
+            return ('triceps flatBenchSkullcrusher');
+            break;
+        case 'Французский жим штангой с изогнутым грифом (на скамье с отрицательным наклоном)':
+            return ('triceps declineEzBarSkullcrusher');
+            break;
         default:
             return ('triceps theTatePress');
             break;

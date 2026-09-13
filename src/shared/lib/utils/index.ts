@@ -6,6 +6,7 @@ export { setPressClassName } from './set-press-class-name';
 export { setShouldersClassName } from './set-shoulders-class-name';
 export { setTricepsClassName } from './set-triceps-class-name';
 export { setForearmsClassName } from './set-forearms-class-name';
+export { setCalfClassName } from './set-calf-class-name';
 export { CascaderOption } from './cascader-option';
 export { checkNumber } from './check-number';
 export { TableColumn } from './table-column';

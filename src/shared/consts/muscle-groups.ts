@@ -10,7 +10,8 @@ export function muscleGroupCheckboxes(
     setIsLegs: (value: React.SetStateAction<boolean>) => void,
     setIsTriceps: (value: React.SetStateAction<boolean>) => void,
     setIsPress: (value: React.SetStateAction<boolean>) => void,
-    setIsForearms: (value: React.SetStateAction<boolean>) => void
+    setIsForearms: (value: React.SetStateAction<boolean>) => void,
+    setIsCalf: (value: React.SetStateAction<boolean>) => void
 
 ): MuscleGroupCheckbox[] {
     return [
@@ -21,6 +22,7 @@ export function muscleGroupCheckboxes(
         new MuscleGroupCheckbox(setIsLegs, MuscleGroup.Legs),
         new MuscleGroupCheckbox(setIsTriceps, MuscleGroup.Triceps),
         new MuscleGroupCheckbox(setIsPress, MuscleGroup.Press),
-        new MuscleGroupCheckbox(setIsForearms, MuscleGroup.Forearms)
+        new MuscleGroupCheckbox(setIsForearms, MuscleGroup.Forearms),
+        new MuscleGroupCheckbox(setIsCalf, MuscleGroup.Calf)
     ]
 }

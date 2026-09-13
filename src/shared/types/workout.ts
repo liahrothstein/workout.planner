@@ -24,7 +24,8 @@ export enum MuscleGroup {
     Chest = 'Грудь',
     Biceps = 'Бицепс',
     Press = 'Пресс',
-    Forearms = 'Предплечья'
+    Forearms = 'Предплечья',
+    Calf = 'Икры'
 };
 
 export interface CardioExercise {

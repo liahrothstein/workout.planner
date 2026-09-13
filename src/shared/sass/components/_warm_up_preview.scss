@@ -15,6 +15,9 @@ div.warmUpPreview {
     }
 
     img {
+        max-width: 320px;
+        max-height: 320px;
+
         &.warmUp.bodyTiltsToTheSides {
             content: url('../../assets/images/warm-up/bodyTiltsToTheSides.gif');
         }
@@ -73,6 +76,90 @@ div.warmUpPreview {
 
         &.warmUp.tiltingTheBodyWithTheHandToTheSides {
             content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
+        }
+
+        &.warmUp.tiltingTheBodyWithTheHandToTheSides {
+            content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
+        }
+
+        &.warmUp.ankleCircles {
+            content: url('../../assets/images/warm-up/ankleCircles.gif');
+        }
+
+        &.warmUp.armAndKneeRaises {
+            content: url('../../assets/images/warm-up/armAndKneeRaises.gif');
+        }
+
+        &.warmUp.armCircles {
+            content: url('../../assets/images/warm-up/armCircles.gif');
+        }
+
+        &.warmUp.armCirclesWithButtKicks {
+            content: url('../../assets/images/warm-up/armCirclesWithButtKicks.gif');
+        }
+
+        &.warmUp.backAndSpineArches {
+            content: url('../../assets/images/warm-up/backAndSpineArches.gif');
+        }
+
+        &.warmUp.elbowAbductionForDeltsAndShoulders {
+            content: url('../../assets/images/warm-up/elbowAbductionForDeltsAndShoulders.gif');
+        }
+
+        &.warmUp.elbowCircles {
+            content: url('../../assets/images/warm-up/elbowCircles.gif');
+        }
+
+        &.warmUp.footPullsForQuadStretch {
+            content: url('../../assets/images/warm-up/footPullsForQuadStretch.gif');
+        }
+
+        &.warmUp.headTilts {
+            content: url('../../assets/images/warm-up/headTilts.gif');
+        }
+
+        &.warmUp.hipCircles {
+            content: url('../../assets/images/warm-up/hipCircles.gif');
+        }
+
+        &.warmUp.kneeCircles {
+            content: url('../../assets/images/warm-up/kneeCircles.gif');
+        }
+
+        &.warmUp.legCircles {
+            content: url('../../assets/images/warm-up/legCircles.gif');
+        }
+
+        &.warmUp.legSwings {
+            content: url('../../assets/images/warm-up/legSwings.gif');
+        }
+
+        &.warmUp.lungesLegWarmup {
+            content: url('../../assets/images/warm-up/lungesLegWarmup.gif');
+        }
+
+        &.warmUp.shoulderCircles {
+            content: url('../../assets/images/warm-up/shoulderCircles.gif');
+        }
+
+        &.warmUp.sideLungesLegWarmup {
+            content: url('../../assets/images/warm-up/sideLungesLegWarmup.gif');
+        }
+
+        &.warmUp.squatBendForBackAndShoulders {
+            content: url('../../assets/images/warm-up/squatBendForBackAndShoulders.gif');
+        }
+
+        &.warmUp.squatsWithArmRaises {
+            content: url('../../assets/images/warm-up/squatsWithArmRaises.gif');
+        }
+
+        &.warmUp.toeTouchesForHamstrings {
+            content: url('../../assets/images/warm-up/toeTouchesForHamstrings.gif');
+        }
+
+        &.warmUp.torsoTwistsForAbsAndObliques {
+            content: url('../../assets/images/warm-up/torsoTwistsForAbsAndObliques.gif');
         }
     }
 }

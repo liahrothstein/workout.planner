@@ -96,6 +96,51 @@ export function setChestClassName(exercise: string): string {
         case 'Вращение гантелей в стороны лежа':
             return ('chest rotatingDumbbellsToTheSidesWhileLyingDown');
             break;
+        case 'Жим в тренажёре Хамммер':
+            return ('chest hammerStrengthChestPress');
+            break;
+        case 'Жим в тренажёре Хаммер одной рукой (боковой)':
+            return ('chest singleArmSideHammerStrengthChestPress');
+            break;
+        case 'Жим в тренажёре Хаммер одной рукой':
+            return ('chest singleArmHammerStrengthChestPress');
+            break;
+        case 'Жим гантели на наклонной скамье':
+            return ('chest inclineDumbbellPress');
+            break;
+        case 'Жим одной гантели лёжа на горизонтальной скамье':
+            return ('chest singleArmFlatDumbbellPress');
+            break;
+        case 'Жим одной рукой сидя в кроссовере':
+            return ('chest seatedSingleArmCableChestPress');
+            break;
+        case 'Жим штанги лёжа без опоры ног':
+            return ('chest feetUpBarbellBenchPress');
+            break;
+        case 'Жим штанги лёжа широким хватом':
+            return ('chest wideGripBarbellBenchPress');
+            break;
+        case 'Отжимания в Гравитроне':
+            return ('chest assistedPushUps');
+            break;
+        case 'Отжимания на брусьях с акцентом на грудные мышцы':
+            return ('chest chestFocusedDips');
+            break;
+        case 'Отжимания от пола с упоров':
+            return ('chest pushUpsWithHandles');
+            break;
+        case 'Разведение гантелей лёжа на полу':
+            return ('chest floorDumbbellFlyes');
+            break;
+        case 'Разведение гантелей лёжа поочерёдно':
+            return ('chest alternatingDumbbellFlyes');
+            break;
+        case 'Сведение рук в кроссовере сидя на скамье':
+            return ('chest seatedBenchCableChestFlyes');
+            break;
+        case 'Сведение рук в тренажёре Pec-Deck':
+            return ('chest pecDeckFlyes');
+            break;
         default:
             return ('chest svendsStandingBenchPressWithDumbbell');
             break;
