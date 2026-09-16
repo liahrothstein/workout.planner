@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/workout.planner/",
+  base: '/workout.planner/',
   plugins: [react()],
   server: {
     host: true,
@@ -23,7 +23,7 @@ export default defineConfig({
       '@entities': path.resolve(__dirname, 'src/entities'),
       '@features': path.resolve(__dirname, 'src/features'),
       '@widgets': path.resolve(__dirname, 'src/widgets'),
-      '@store': path.resolve(__dirname, 'src/app/store')
-    }
-  }
-})
+      '@store': path.resolve(__dirname, 'src/app/store'),
+    },
+  },
+});

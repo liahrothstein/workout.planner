@@ -1,19 +1,23 @@
-import { TableColumn } from "@utils/table-column";
-import type { CardioExercise } from "../../../shared/types/workout";
+import { TableColumn } from '@utils/table-column';
+
+import type { CardioExercise } from '../../../shared/types/workout';
 
 export const columns: TableColumn[] = [
-    new TableColumn('Время', 'time', 'time'),
-    new TableColumn('Ритм', 'rhytm', 'rhytm')
+  new TableColumn('Время', 'time', 'time'),
+  new TableColumn('Ритм', 'rhytm', 'rhytm'),
 ];
 
-export function deleteCardioExercise(index: number, cardioExercise: CardioExercise[]): CardioExercise[] {
-    let tempArray = new Array();
+export function deleteCardioExercise(
+  index: number,
+  cardioExercise: CardioExercise[],
+): CardioExercise[] {
+  const tempArray = [];
 
-    cardioExercise.forEach((cardioExercise, i) => {
-        if (index !== i) {
-            tempArray.push(cardioExercise)
-        }
-    });
+  cardioExercise.forEach((cardioExercise, i) => {
+    if (index !== i) {
+      tempArray.push(cardioExercise);
+    }
+  });
 
-    return (tempArray)
+  return tempArray;
 }

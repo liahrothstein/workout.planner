@@ -1,15 +1,14 @@
 import './Notes.scss';
 
 interface NotesProps {
-    notes: string
-};
+  notes: string;
+}
 
 export function Notes({ notes }: NotesProps) {
-
-    return (
-        <div className='notes'>
-            <p className="header">Заметки</p>
-            <p>{notes}</p>
-        </div>
-    )
+  return (
+    <div className="notes">
+      <p className="header">Заметки</p>
+      <p>{notes}</p>
+    </div>
+  );
 }

@@ -1,31 +1,38 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-
-import { cardioSlice, exerciseSilce, muscleGroupsSlice, notesSlice, stretchingSlice, trainingTypeSlice, warmUpSlice, workoutSlice } from '@slices/index';
+import {
+  cardioSlice,
+  exerciseSilce,
+  muscleGroupsSlice,
+  notesSlice,
+  stretchingSlice,
+  trainingTypeSlice,
+  warmUpSlice,
+  workoutSlice,
+} from '@slices/index';
 
 const rootReducer = combineReducers({
-    exercise: exerciseSilce.reducer,
-    muscleGroups: muscleGroupsSlice.reducer,
-    trainingType: trainingTypeSlice.reducer,
-    notes: notesSlice.reducer,
-    cardio: cardioSlice.reducer,
-    workout: workoutSlice.reducer,
-    warmUp: warmUpSlice.reducer,
-    stretching: stretchingSlice.reducer
+  exercise: exerciseSilce.reducer,
+  muscleGroups: muscleGroupsSlice.reducer,
+  trainingType: trainingTypeSlice.reducer,
+  notes: notesSlice.reducer,
+  cardio: cardioSlice.reducer,
+  workout: workoutSlice.reducer,
+  warmUp: warmUpSlice.reducer,
+  stretching: stretchingSlice.reducer,
 });
 
 export function setupStore() {
-    return (
-        configureStore({
-            reducer: rootReducer,
-            middleware: (getDefaultMiddleware) => (getDefaultMiddleware({
-                serializableCheck: {
-                    ignoredActions: ['exercise/editExercise', 'workout/setWorkout'],
-                    ignoredPaths: ['exercise', 'workout.exercises']
-                }
-            }))
-        })
-    )
-};
+  return configureStore({
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: {
+          ignoredActions: ['exercise/editExercise', 'workout/setWorkout'],
+          ignoredPaths: ['exercise', 'workout.exercises'],
+        },
+      }),
+  });
+}
 
 export const store = setupStore();
 

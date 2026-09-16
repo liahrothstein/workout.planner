@@ -6,13 +6,13 @@ import type { TrainingType } from '../../types/workout';
 const initialState: TrainingType | string = 'Пусто';
 
 export const trainingTypeSlice = createSlice({
-    name: 'trainingType',
-    initialState,
-    reducers: {
-        editTrainingType: (_, action: PayloadAction<TrainingType | string>) => {
-            return (action.payload)
-        }
-    }
+  name: 'trainingType',
+  initialState,
+  reducers: {
+    editTrainingType: (_, action: PayloadAction<TrainingType | string>) => {
+      return action.payload;
+    },
+  },
 });
 
 export const { editTrainingType } = trainingTypeSlice.actions;

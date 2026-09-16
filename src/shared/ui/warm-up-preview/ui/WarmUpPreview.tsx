@@ -1,25 +1,26 @@
-import { Typography } from 'antd';
-import { EyeOutlined } from '@ant-design/icons';
-
-import { setWarmUpClassName } from '@utils/set-warm-up-class-name';
-
 import './WarmUpPreview.scss';
 
+import { EyeOutlined } from '@ant-design/icons';
+import { setWarmUpClassName } from '@utils/set-warm-up-class-name';
+import { Typography } from 'antd';
+
 interface WarmUpPreviewProps {
-    exercise: string[] | null | undefined
-};
+  exercise: string[] | null | undefined;
+}
 
 export function WarmUpPreview({ exercise }: WarmUpPreviewProps) {
-    const { Text } = Typography;
+  const { Text } = Typography;
 
-    return (
-        <div className='warmUpPreview'>
-            {((exercise === null) || (exercise === undefined)) ?
-                <>
-                    <EyeOutlined />
-                    <Text>Предпросмотр</Text>
-                </> :
-                <img alt="preview" className={setWarmUpClassName(exercise[0])} />}
-        </div>
-    )
+  return (
+    <div className="warmUpPreview">
+      {exercise === null || exercise === undefined ? (
+        <>
+          <EyeOutlined />
+          <Text>Предпросмотр</Text>
+        </>
+      ) : (
+        <img alt="preview" className={setWarmUpClassName(exercise[0])} />
+      )}
+    </div>
+  );
 }
