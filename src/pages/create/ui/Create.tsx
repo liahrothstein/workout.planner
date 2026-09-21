@@ -1,15 +1,13 @@
-import { Form } from 'antd';
-
-import { FillData, GenerateLink } from '@features/index';
-
 import './Create.scss';
 
-export function Create() {
+import { FillData, GenerateLink } from '@features/index';
+import { Form } from 'antd';
 
-    return (
-        <Form className='create'>
-            <FillData />
-            <GenerateLink />
-        </Form>
-    )
+export function Create() {
+  return (
+    <Form className="create">
+      <FillData />
+      <GenerateLink />
+    </Form>
+  );
 }

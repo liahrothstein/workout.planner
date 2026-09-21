@@ -1,73 +1,73 @@
 @use '../abstracts' as *;
 
 td.tableCell {
-    border: 1px solid $tableBorderColor;
-    width: 80px;
-    height: 37.1px;
-    position: relative;
-    font-family: 'Eskal';
-    font-size: 24px;
-    font-weight: bold;
+  border: 1px solid $tableBorderColor;
+  width: 80px;
+  height: 37.1px;
+  position: relative;
+  font-family: 'Eskal';
+  font-size: 24px;
+  font-weight: bold;
 
-    p.times {
-        position: absolute;
-        top: -4px;
-        left: 6px;
-        color: $timesFontColor;
-        cursor: help;
+  p.times {
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    color: $timesFontColor;
+    cursor: help;
 
-        &:hover::before {
-            position: absolute;
-            top: -30px;
-            left: -126px;
-            color: $tipTextColor;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: normal;
-            font-size: 16px;
-            border: 1px solid $tipBorderColor;
-            border-radius: 5px;
-            box-shadow: 5px 5px 5px $tipShadowColor;
-            font-style: italic;
-            padding: 0 5px 0 5px;
-            background-color: $tipBackgroundColor;
-            content: 'Количество повторений';
-        }
+    &:hover::before {
+      position: absolute;
+      top: -30px;
+      left: -126px;
+      color: $tipTextColor;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 16px;
+      border: 1px solid $tipBorderColor;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px $tipShadowColor;
+      font-style: italic;
+      padding: 0 5px 0 5px;
+      background-color: $tipBackgroundColor;
+      content: 'Количество повторений';
     }
+  }
 
-    p.weight {
-        position: absolute;
-        right: 6px;
-        bottom: -12px;
-        cursor: help;
+  p.weight {
+    position: absolute;
+    right: 6px;
+    bottom: -12px;
+    cursor: help;
 
-        &:hover::before {
-            position: absolute;
-            top: -30px;
-            left: -32px;
-            color: $tipTextColor;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: normal;
-            font-size: 16px;
-            border: 1px solid $tipBorderColor;
-            border-radius: 5px;
-            box-shadow: 5px 5px 5px $tipShadowColor;
-            font-style: italic;
-            padding: 0 5px 0 5px;
-            background-color: $tipBackgroundColor;
-            content: 'Вес';
-        }
+    &:hover::before {
+      position: absolute;
+      top: -30px;
+      left: -32px;
+      color: $tipTextColor;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      font-size: 16px;
+      border: 1px solid $tipBorderColor;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px $tipShadowColor;
+      font-style: italic;
+      padding: 0 5px 0 5px;
+      background-color: $tipBackgroundColor;
+      content: 'Вес';
     }
+  }
 
-    div.diagonal {
-        position: absolute;
-        left: -5px;
-        width: 87.6px;
-        height: 1px;
-        rotate: -26deg;
-        background-color: $tableCellDiagonalColor;
-    }
+  div.diagonal {
+    position: absolute;
+    left: -5px;
+    width: 87.6px;
+    height: 1px;
+    rotate: -26deg;
+    background-color: $tableCellDiagonalColor;
+  }
 
-    div.void {
-        width: 77px;
-    }
+  div.void {
+    width: 77px;
+  }
 }

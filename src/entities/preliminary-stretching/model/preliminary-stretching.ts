@@ -1,20 +1,20 @@
-import { TableColumn } from "@utils/table-column";
+import { TableColumn } from '@utils/table-column';
 
-import type { Stretching } from "../../../shared/types/workout";
+import type { Stretching } from '../../../shared/types/workout';
 
 export const columns: TableColumn[] = [
-    new TableColumn('Подходы', 'attempts', 'attempts'),
-    new TableColumn('Повторения', 'times', 'times')
+  new TableColumn('Подходы', 'attempts', 'attempts'),
+  new TableColumn('Повторения', 'times', 'times'),
 ];
 
 export function deleteStretching(index: number, stretching: Stretching[]): Stretching[] {
-    let tempArray = new Array();
+  const tempArray = [];
 
-    stretching.forEach((stretching, i) => {
-        if (index !== i) {
-            tempArray.push(stretching)
-        }
-    });
+  stretching.forEach((stretching, i) => {
+    if (index !== i) {
+      tempArray.push(stretching);
+    }
+  });
 
-    return (tempArray)
+  return tempArray;
 }

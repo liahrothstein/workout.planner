@@ -1,1 +1,1 @@
-export { PreliminaryStretching } from './ui/PreliminaryStretching'
+export { PreliminaryStretching } from './ui/PreliminaryStretching';

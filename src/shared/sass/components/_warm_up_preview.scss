@@ -1,78 +1,165 @@
 @use '../abstracts' as *;
 
 div.warmUpPreview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $previewBorderColor;
-    background-color: $previewBackgroundColor;
-    max-width: 322px;
-    height: 322px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $previewBorderColor;
+  background-color: $previewBackgroundColor;
+  max-width: 322px;
+  height: 322px;
 
-    span {
-        padding-left: 5px;
-        color: $previewTextColor;
+  span {
+    padding-left: 5px;
+    color: $previewTextColor;
+  }
+
+  img {
+    max-width: 320px;
+    max-height: 320px;
+
+    &.warmUp.bodyTiltsToTheSides {
+      content: url('../../assets/images/warm-up/bodyTiltsToTheSides.gif');
     }
 
-    img {
-        &.warmUp.bodyTiltsToTheSides {
-            content: url('../../assets/images/warm-up/bodyTiltsToTheSides.gif');
-        }
-
-        &.warmUp.bodyTurnsFromSideToSide {
-            content: url('../../assets/images/warm-up/bodyTurnsFromSideToSide.gif');
-        }
-
-        &.warmUp.bodyTurnsToTheSides {
-            content: url('../../assets/images/warm-up/bodyTurnsToTheSides.gif');
-        }
-
-        &.warmUp.breedingAndBringingHandsTogether {
-            content: url('../../assets/images/warm-up/breedingAndBringingHandsTogether.gif');
-        }
-
-        &.warmUp.bringingYourHandsTogetherInFrontOfYou {
-            content: url('../../assets/images/warm-up/bringingYourHandsTogetherInFrontOfYou.gif');
-        }
-
-        &.warmUp.circularHandRotations {
-            content: url('../../assets/images/warm-up/circularHandRotations.gif');
-        }
-
-        &.warmUp.elbowRotationsForward {
-            content: url('../../assets/images/warm-up/elbowRotationsForward.gif');
-        }
-
-        &.warmUp.flexionOfArmsAndFlexionOfHands {
-            content: url('../../assets/images/warm-up/flexionOfArmsAndFlexionOfHands.gif');
-        }
-
-        &.warmUp.flexionOfTheArmsOnTheUpperBack {
-            content: url('../../assets/images/warm-up/flexionOfTheArmsOnTheUpperBack.gif');
-        }
-
-        &.warmUp.hipLiftsAndHandRotations {
-            content: url('../../assets/images/warm-up/hipLiftsAndHandRotations.gif');
-        }
-
-        &.warmUp.keepingYourElbowsInFrontOfYou {
-            content: url('../../assets/images/warm-up/keepingYourElbowsInFrontOfYou.gif');
-        }
-
-        &.warmUp.millToStraightLegs {
-            content: url('../../assets/images/warm-up/millToStraightLegs.gif');
-        }
-
-        &.warmUp.millWithoutExtensionOfTheBody {
-            content: url('../../assets/images/warm-up/millWithoutExtensionOfTheBody.gif');
-        }
-
-        &.warmUp.semicircularHeadRotations {
-            content: url('../../assets/images/warm-up/semicircularHeadRotations.gif');
-        }
-
-        &.warmUp.tiltingTheBodyWithTheHandToTheSides {
-            content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
-        }
+    &.warmUp.bodyTurnsFromSideToSide {
+      content: url('../../assets/images/warm-up/bodyTurnsFromSideToSide.gif');
     }
+
+    &.warmUp.bodyTurnsToTheSides {
+      content: url('../../assets/images/warm-up/bodyTurnsToTheSides.gif');
+    }
+
+    &.warmUp.breedingAndBringingHandsTogether {
+      content: url('../../assets/images/warm-up/breedingAndBringingHandsTogether.gif');
+    }
+
+    &.warmUp.bringingYourHandsTogetherInFrontOfYou {
+      content: url('../../assets/images/warm-up/bringingYourHandsTogetherInFrontOfYou.gif');
+    }
+
+    &.warmUp.circularHandRotations {
+      content: url('../../assets/images/warm-up/circularHandRotations.gif');
+    }
+
+    &.warmUp.elbowRotationsForward {
+      content: url('../../assets/images/warm-up/elbowRotationsForward.gif');
+    }
+
+    &.warmUp.flexionOfArmsAndFlexionOfHands {
+      content: url('../../assets/images/warm-up/flexionOfArmsAndFlexionOfHands.gif');
+    }
+
+    &.warmUp.flexionOfTheArmsOnTheUpperBack {
+      content: url('../../assets/images/warm-up/flexionOfTheArmsOnTheUpperBack.gif');
+    }
+
+    &.warmUp.hipLiftsAndHandRotations {
+      content: url('../../assets/images/warm-up/hipLiftsAndHandRotations.gif');
+    }
+
+    &.warmUp.keepingYourElbowsInFrontOfYou {
+      content: url('../../assets/images/warm-up/keepingYourElbowsInFrontOfYou.gif');
+    }
+
+    &.warmUp.millToStraightLegs {
+      content: url('../../assets/images/warm-up/millToStraightLegs.gif');
+    }
+
+    &.warmUp.millWithoutExtensionOfTheBody {
+      content: url('../../assets/images/warm-up/millWithoutExtensionOfTheBody.gif');
+    }
+
+    &.warmUp.semicircularHeadRotations {
+      content: url('../../assets/images/warm-up/semicircularHeadRotations.gif');
+    }
+
+    &.warmUp.tiltingTheBodyWithTheHandToTheSides {
+      content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
+    }
+
+    &.warmUp.tiltingTheBodyWithTheHandToTheSides {
+      content: url('../../assets/images/warm-up/tiltingTheBodyWithTheHandToTheSides.gif');
+    }
+
+    &.warmUp.ankleCircles {
+      content: url('../../assets/images/warm-up/ankleCircles.gif');
+    }
+
+    &.warmUp.armAndKneeRaises {
+      content: url('../../assets/images/warm-up/armAndKneeRaises.gif');
+    }
+
+    &.warmUp.armCircles {
+      content: url('../../assets/images/warm-up/armCircles.gif');
+    }
+
+    &.warmUp.armCirclesWithButtKicks {
+      content: url('../../assets/images/warm-up/armCirclesWithButtKicks.gif');
+    }
+
+    &.warmUp.backAndSpineArches {
+      content: url('../../assets/images/warm-up/backAndSpineArches.gif');
+    }
+
+    &.warmUp.elbowAbductionForDeltsAndShoulders {
+      content: url('../../assets/images/warm-up/elbowAbductionForDeltsAndShoulders.gif');
+    }
+
+    &.warmUp.elbowCircles {
+      content: url('../../assets/images/warm-up/elbowCircles.gif');
+    }
+
+    &.warmUp.footPullsForQuadStretch {
+      content: url('../../assets/images/warm-up/footPullsForQuadStretch.gif');
+    }
+
+    &.warmUp.headTilts {
+      content: url('../../assets/images/warm-up/headTilts.gif');
+    }
+
+    &.warmUp.hipCircles {
+      content: url('../../assets/images/warm-up/hipCircles.gif');
+    }
+
+    &.warmUp.kneeCircles {
+      content: url('../../assets/images/warm-up/kneeCircles.gif');
+    }
+
+    &.warmUp.legCircles {
+      content: url('../../assets/images/warm-up/legCircles.gif');
+    }
+
+    &.warmUp.legSwings {
+      content: url('../../assets/images/warm-up/legSwings.gif');
+    }
+
+    &.warmUp.lungesLegWarmup {
+      content: url('../../assets/images/warm-up/lungesLegWarmup.gif');
+    }
+
+    &.warmUp.shoulderCircles {
+      content: url('../../assets/images/warm-up/shoulderCircles.gif');
+    }
+
+    &.warmUp.sideLungesLegWarmup {
+      content: url('../../assets/images/warm-up/sideLungesLegWarmup.gif');
+    }
+
+    &.warmUp.squatBendForBackAndShoulders {
+      content: url('../../assets/images/warm-up/squatBendForBackAndShoulders.gif');
+    }
+
+    &.warmUp.squatsWithArmRaises {
+      content: url('../../assets/images/warm-up/squatsWithArmRaises.gif');
+    }
+
+    &.warmUp.toeTouchesForHamstrings {
+      content: url('../../assets/images/warm-up/toeTouchesForHamstrings.gif');
+    }
+
+    &.warmUp.torsoTwistsForAbsAndObliques {
+      content: url('../../assets/images/warm-up/torsoTwistsForAbsAndObliques.gif');
+    }
+  }
 }

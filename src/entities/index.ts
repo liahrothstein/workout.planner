@@ -1,10 +1,10 @@
 export { AddExercise } from './add-exercise';
 export { Cardio } from './cardio';
+export { MuscleGroups } from './muscle-groups';
 export { PreliminaryCardio } from './preliminary-cardio';
 export { PreliminaryExercise } from './preliminary-exercise';
-export { MuscleGroups } from './muscle-groups';
-export { TableRow } from './table-row';
-export { WarmUp } from './warm-up';
+export { PreliminaryStretching } from './preliminary-stretching';
 export { PreliminaryWarmUp } from './preliminary-warm-up';
 export { Stretching } from './stretching';
-export { PreliminaryStretching } from './preliminary-stretching';
+export { TableRow } from './table-row';
+export { WarmUp } from './warm-up';

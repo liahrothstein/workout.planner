@@ -1,1 +1,1 @@
-export { Stretching } from './ui/Stretching'
+export { Stretching } from './ui/Stretching';

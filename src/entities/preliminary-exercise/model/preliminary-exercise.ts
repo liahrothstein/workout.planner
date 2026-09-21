@@ -1,31 +1,41 @@
-import { Attempt, TableColumn, TableData, checkNumber } from "@utils/index";
+import { Attempt, checkNumber, TableColumn, TableData } from '@utils/index';
 
-import type { ExerciseWithAttmepts } from "../../../shared/types/exercise";
+import type { ExerciseWithAttmepts } from '../../../shared/types/exercise';
 
 export const columns: TableColumn[] = [
-    new TableColumn('Подходы', 'attempts', 'attempts'),
-    new TableColumn('Количество повторений', 'times', 'times'),
-    new TableColumn('Вес', 'weight', 'weight')
+  new TableColumn('Подходы', 'attempts', 'attempts'),
+  new TableColumn('Количество повторений', 'times', 'times'),
+  new TableColumn('Вес', 'weight', 'weight'),
 ];
 
 export function generateDataSource(attempts: Attempt[]) {
-    let tempArray = new Array();
+  const tempArray = [];
 
-    attempts.forEach((attempt) => {
-        tempArray.push(new TableData(`${attempt.number}`, `Подход ${attempt.number}`, checkNumber(attempt.times), checkNumber(attempt.weight)))
-    });
+  attempts.forEach((attempt) => {
+    tempArray.push(
+      new TableData(
+        `${attempt.number}`,
+        `Подход ${attempt.number}`,
+        checkNumber(attempt.times),
+        checkNumber(attempt.weight),
+      ),
+    );
+  });
 
-    return (tempArray);
-};
+  return tempArray;
+}
 
-export function deleteExercise(index: number, exercises: ExerciseWithAttmepts[]): ExerciseWithAttmepts[] {
-    let tempArray = new Array();
+export function deleteExercise(
+  index: number,
+  exercises: ExerciseWithAttmepts[],
+): ExerciseWithAttmepts[] {
+  const tempArray = [];
 
-    exercises.forEach((exercise, i) => {
-        if (index !== i) {
-            tempArray.push(exercise)
-        }
-    });
+  exercises.forEach((exercise, i) => {
+    if (index !== i) {
+      tempArray.push(exercise);
+    }
+  });
 
-    return (tempArray)
+  return tempArray;
 }

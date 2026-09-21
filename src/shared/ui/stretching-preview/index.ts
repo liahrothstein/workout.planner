@@ -1,1 +1,1 @@
-export { StretchingPreview } from './ui/StretchingPreview'
+export { StretchingPreview } from './ui/StretchingPreview';

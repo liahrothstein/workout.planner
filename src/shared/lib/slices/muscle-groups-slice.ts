@@ -6,13 +6,13 @@ import type { MuscleGroup } from '../../types/workout';
 const initialState: MuscleGroup[] = [];
 
 export const muscleGroupsSlice = createSlice({
-    name: 'muscleGroups',
-    initialState,
-    reducers: {
-        setMuscleGroups: (__, action: PayloadAction<MuscleGroup[]>) => {
-            return (action.payload)
-        }
-    }
+  name: 'muscleGroups',
+  initialState,
+  reducers: {
+    setMuscleGroups: (__, action: PayloadAction<MuscleGroup[]>) => {
+      return action.payload;
+    },
+  },
 });
 
 export const { setMuscleGroups } = muscleGroupsSlice.actions;

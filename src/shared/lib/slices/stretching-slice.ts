@@ -3,16 +3,16 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import type { Stretching } from '../../types/workout';
 
-const initialState = new Array();
+const initialState = [];
 
 export const stretchingSlice = createSlice({
-    name: 'stretching',
-    initialState,
-    reducers: {
-        setStretching: (_, action: PayloadAction<Stretching[]>) => {
-            return (action.payload)
-        }
-    }
+  name: 'stretching',
+  initialState,
+  reducers: {
+    setStretching: (_, action: PayloadAction<Stretching[]>) => {
+      return action.payload;
+    },
+  },
 });
 
 export const { setStretching } = stretchingSlice.actions;

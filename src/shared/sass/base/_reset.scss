@@ -12,22 +12,22 @@ ul[class],
 ol[class],
 li,
 hr {
-    margin: 0;
+  margin: 0;
 }
 
 ul[class],
 ol[class] {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: $defaultLinkColor;
+  text-decoration: none;
+  color: $defaultLinkColor;
 }
 
 button {
-    background: none;
-    border: none;
-    padding: 0;
+  background: none;
+  border: none;
+  padding: 0;
 }

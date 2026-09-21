@@ -1,1 +1,1 @@
-export { Cardio } from './ui/Cardio'
+export { Cardio } from './ui/Cardio';
